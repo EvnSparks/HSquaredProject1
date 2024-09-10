@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class SawMovement : MonoBehaviour
@@ -21,7 +22,7 @@ public class SawMovement : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         bool inObject = planeSlice.InsideObject();
         if (cutting == 0 && Input.GetKey(KeyCode.Mouse0) && !inObject)
@@ -35,25 +36,20 @@ public class SawMovement : MonoBehaviour
             planeSlice.IsEnabled(false);
         }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo))
+        if (Physics.Raycast(ray, out RaycastHit hitInfo) && Input.GetKey(KeyCode.Mouse0))
         {
             //move to mouse cursor position (if cursor is on any object
             if (cutting == 1 && inObject)
             {
-                transform.position += (hitInfo.point - transform.position) * cutSpeed * Time.deltaTime;
+                transform.position += (hitInfo.point - transform.position) * cutSpeed * Time.fixedDeltaTime;
                 //add sawing motion
-                transform.position += (transform.position - Camera.main.transform.position).normalized * sawAnimationStrength * Mathf.Sin(Time.time * sawAnimationSpeed) * Time.deltaTime;
+                transform.position += (transform.position - Camera.main.transform.position).normalized * sawAnimationStrength * Mathf.Sin(Time.time * sawAnimationSpeed) * Time.fixedDeltaTime;
             }   
             else 
-                transform.position += (hitInfo.point - transform.position) * baseSpeed * Time.deltaTime;
-        }
-            
-
+                transform.position += (hitInfo.point - transform.position) * baseSpeed * Time.fixedDeltaTime;
+        }   
         else
             // store object away from camera
             transform.position = Vector3.forward * 100;
-        transform.rotation = Quaternion.LookRotation(Camera.main.transform.position - transform.position);
-
-        
     }
 }

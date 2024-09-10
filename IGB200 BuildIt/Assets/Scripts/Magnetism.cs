@@ -13,6 +13,11 @@ public class Magnetism : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        try
+        {
+            GameManager.instance.currentProject = this.gameObject.GetComponent<Projects>();
+        }
+        catch { }
         rb = GetComponent<Rigidbody>();
         offset = GetComponent<MeshFilter>().mesh.bounds.center;
     }

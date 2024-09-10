@@ -54,6 +54,8 @@ public class PlaneSlice : MonoBehaviour
                 }
 
                 GameObject[] slices = Slicer.Slice(plane, other.gameObject);
+                // save the original object's position
+                Vector3 tempPos = other.gameObject.GetComponent<Projects>().magnetPos;
                 // remove the original object
                 startSlice.Remove(other.gameObject);
                 Destroy(other.gameObject);
@@ -65,10 +67,12 @@ public class PlaneSlice : MonoBehaviour
                 // delete the smaller object
                 int deleteObject = FindSmallestMeshNum(slices);
                 slices[deleteObject].AddComponent<DeleteObject>();
+                slices[deleteObject].GetComponent<Rigidbody>().useGravity = true;
                 Destroy(slices[deleteObject].GetComponent<Sliceable>());
 
                 // apply magnetism to larger object
-                slices[-1 * (deleteObject - 1)].AddComponent<Magnetism>();
+                Projects project = slices[-1 * (deleteObject - 1)].AddComponent<Projects>();
+                project.magnetPos = tempPos;
             }
         }
     }
