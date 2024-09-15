@@ -2,58 +2,103 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
+using Unity.VisualScripting;
 
 public class Dialogue : MonoBehaviour
 {
+    // Inspector Adjustable Variables
     public TextMeshProUGUI textComponent;
-
-    // Stores a list of dialogue strings that can be used
-    // going to try implement an inspector version of this to keep it easy... - Evan
-    public List<string[]> dialogueList = new List<string[]>() 
-    {
-        new string[] { "Hi this is dialogue 1 speaking here", 
-            "yup just confirming I am dialogue 1 here lol"},
-
-        new string[] {"This is dialogue 2 I am hoping it will just loop around to this yuuupp"}
-    };
-
-    private int ActiveDialogue = 0;
-    
-    private string[] lines;
     public float textSpeed;
+    public GameObject dialogueBox;
 
+    // Track Dialogue and NPC's
+    private string[] lines;
+    
+    // Tracks current dialogue tree
     private int index;
 
-    void OnEnable()
+    // Tracks which dialogue tree to move to
+    private int activeDialogue = 0;
+    
+    private int activeNPC;
+    private int previousNPC = 0;
+    private bool scriptActive = false;
+
+    // Dialogue Lists per NPC type
+    private List<string[]> npc1DialogueList = new List<string[]>() 
     {
-        // Ideally this random range loops through the list, but if the object is inactive this won't work, need to figure out a solution to this - Evan
-        lines = dialogueList[Random.Range(0,2)];
-            
+        new string[] { "Hi my name is NPC 1, I like to buy products that are mass produced" },
+
+        new string[] { "I always find following the blueprint to give the best results, can't go wrong with the instructions!" }
+    };
+
+    private List<string[]> npc2DialogueList = new List<string[]>()
+    {
+        new string[] { "Hi my name is NPC 2, I like to buy products that are technical" },
+
+        new string[] { "Using complex tools in an effective is the best way to show expertise" }
+    };
+
+    private List<string[]> npc3DialogueList = new List<string[]>()
+    {
+        new string[] { "Hi my name is NPC 3, I like to buy products that are creative" },
+
+        new string[] { "Let your creatviity flow through your projects, nothing like showcasing something unique and different for the client" }
+    };
+
+    public void StartDialogue(int activeNPC)
+    {
         textComponent.text = string.Empty;
-        StartDialogue();
+        scriptActive = true;
+
+        // Check if NPC has been spoken to if not reset dialogue tree
+        if (activeNPC != previousNPC)
+        {
+            index = 0;
+            previousNPC = activeNPC;
+        }
+
+        if (activeDialogue > 1)
+        {
+            activeDialogue = 0;
+        }
+
+        // Load in the correct NPC Dialogue tree
+        if (activeNPC == 1)
+        {
+            lines = npc1DialogueList[activeDialogue];
+        }
+        if (activeNPC == 2)
+        {
+            lines = npc2DialogueList[activeDialogue];
+        }
+        if (activeNPC == 3)
+        {
+            lines = npc3DialogueList[activeDialogue];
+        }
+
+        StartCoroutine(TypeLine());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (scriptActive)
         {
-            if (textComponent.text == lines[index])
+            if (Input.GetMouseButtonDown(0))
             {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
+                if (textComponent.text == lines[index])
+                {
+                    NextLine();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    textComponent.text = lines[index];
+                }
             }
         }
-    }
-
-    void StartDialogue()
-    {
-        index = 0;
-        StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine()
@@ -64,7 +109,6 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
-
     void NextLine()
     {
         if (index < lines.Length - 1)
@@ -75,7 +119,9 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            dialogueBox.SetActive(false);
+            scriptActive = false;
+            activeDialogue += 1;
         }
     }
 }

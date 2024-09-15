@@ -10,10 +10,11 @@ public class Workshop_UI : MonoBehaviour
     // 0 = WorkshopUI
     // 1 = ShopUI
     // 2 - 4 = Shop 1 - 3
-    // 5 - 7 = Shop Dialogue Active
+    // 5 Dialogue Talk Active
 
     // Keeps track of active shop
     private int ActiveShop;
+    public Dialogue dialogueScript;
 
     //  Relates to buttons in WorkshopUI
     public void Gamestart()
@@ -39,13 +40,7 @@ public class Workshop_UI : MonoBehaviour
     {
         CanvasList[1].SetActive(false);
         CanvasList[2].SetActive(true);
-
         ActiveShop = 2;
-    }
-
-    public void ShopDialogue1()
-    {
-        CanvasList[5].SetActive(true);
     }
 
     public void ShopEnter2()
@@ -56,11 +51,6 @@ public class Workshop_UI : MonoBehaviour
         ActiveShop = 3;
     }
 
-    public void ShopDialogue2()
-    {
-        CanvasList[6].SetActive(true);
-    }
-
     public void ShopEnter3()
     {
         CanvasList[1].SetActive(false);
@@ -69,9 +59,12 @@ public class Workshop_UI : MonoBehaviour
         ActiveShop = 4;
     }
 
-    public void ShopDialogue3()
+    public void ShopDialogue()
     {
-        CanvasList[7].SetActive(true);
+        CanvasList[5].SetActive(true);
+        
+        // ActiveShop - 1 has to be done to keep it in line with actual shop values in dialogue script
+        dialogueScript.StartDialogue(ActiveShop - 1);
     }
 
     public void ShopExit()
