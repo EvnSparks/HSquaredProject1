@@ -67,6 +67,18 @@ public class Workshop_UI : MonoBehaviour
         dialogueScript.StartDialogue(ActiveShop - 1);
     }
 
+    public void SellItem()
+    {
+        // Turn off return button
+        CanvasList[6].SetActive(false);
+        // Open up inventory
+        CanvasList[7].SetActive(true);
+        // Open up dialogue box
+        CanvasList[5].SetActive(true);
+
+        dialogueScript.StartDialogue(4);
+    }
+
     public void ShopExit()
     {
         CanvasList[1].SetActive(true);

@@ -21,9 +21,9 @@ public class Dialogue : MonoBehaviour
     // Tracks which dialogue tree to move to
     private int activeDialogue = 0;
     
-    private int activeNPC;
     private int previousNPC = 0;
     private bool scriptActive = false;
+    private bool shopActive = false;
 
     // Dialogue Lists per NPC type
     private List<string[]> npc1DialogueList = new List<string[]>() 
@@ -47,6 +47,11 @@ public class Dialogue : MonoBehaviour
         new string[] { "Let your creatviity flow through your projects, nothing like showcasing something unique and different for the client" }
     };
 
+    private List<string[]> defaultShopDialogue = new List<string[]>()
+    {
+        new string[] { "What would you like to sell?" }
+    };
+
     public void StartDialogue(int activeNPC)
     {
         textComponent.text = string.Empty;
@@ -56,7 +61,14 @@ public class Dialogue : MonoBehaviour
         if (activeNPC != previousNPC)
         {
             index = 0;
+            shopActive = false;
             previousNPC = activeNPC;
+        }
+
+        // Check if NPC shop is active
+        if (activeNPC == 4) 
+        {
+            shopActive = true;
         }
 
         if (activeDialogue > 1)
@@ -77,6 +89,10 @@ public class Dialogue : MonoBehaviour
         {
             lines = npc3DialogueList[activeDialogue];
         }
+        if (activeNPC == 4)
+        {
+            lines = defaultShopDialogue[0];
+        }
 
         StartCoroutine(TypeLine());
     }
@@ -86,16 +102,19 @@ public class Dialogue : MonoBehaviour
     {
         if (scriptActive)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (!shopActive) 
             {
-                if (textComponent.text == lines[index])
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextLine();
-                }
-                else
-                {
-                    StopAllCoroutines();
-                    textComponent.text = lines[index];
+                    if (textComponent.text == lines[index])
+                    {
+                        NextLine();
+                    }
+                    else
+                    {
+                        StopAllCoroutines();
+                        textComponent.text = lines[index];
+                    }
                 }
             }
         }
