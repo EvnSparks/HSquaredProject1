@@ -7,6 +7,7 @@ using UnityEngine;
 public class DragProjects : MonoBehaviour
 {
     public Projects? grabbedProject = null;
+    private Vector3 offset;
     // Update is called once per frame
     void Update()
     {
@@ -19,7 +20,8 @@ public class DragProjects : MonoBehaviour
                 {
                     try
                     {
-                        grabbedProject = hitInfo1.collider.gameObject.GetComponent<Projects>();
+                        grabbedProject = hitInfo1.collider.gameObject.GetComponentInParent<Projects>();
+                        offset = hitInfo1.point - grabbedProject.magnetPos;
                         Debug.Log(grabbedProject);
                     }
                     catch { }
@@ -31,9 +33,13 @@ public class DragProjects : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hitInfo, 100, LayerMask.GetMask("ObstructsSaw")))
             {
-                grabbedProject.magnetPos = hitInfo.point;
+                grabbedProject.magnetPos = hitInfo.point - offset;
             }
         }
-        if (Input.GetKeyUp(KeyCode.Mouse1)) grabbedProject = null;
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            grabbedProject = null;
+            GameManager.instance.SetState(GameManager.State.Default);
+        }
     }
 }

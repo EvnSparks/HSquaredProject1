@@ -9,7 +9,6 @@ public class Projects : MonoBehaviour
     public float tableOffset = 0;
     Vector3 center;
     Rigidbody rb;
-    Vector3 offset;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +19,6 @@ public class Projects : MonoBehaviour
         }
         catch { }
         rb = GetComponent<Rigidbody>();
-        offset = GetComponent<MeshFilter>().mesh.bounds.center;
     }
 
     // Update is called once per frame

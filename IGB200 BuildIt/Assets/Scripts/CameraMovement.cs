@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -15,9 +14,9 @@ public class CameraMovement : MonoBehaviour
     public float zoomSpeed = 1;
     public float maxZoom = 60;
     public float minZoom = 10;
-    
 
-    private float angle = 0;
+    private float anglex = 0;
+    private float angley = 0;
     private float cameraHeight = 0.5f;
     private float cameraZoom;
 
@@ -35,20 +34,40 @@ public class CameraMovement : MonoBehaviour
         // handle inputs
         if (Input.GetKey(KeyCode.A))
         {
-            angle += turnSpeed * Time.deltaTime;
-            if (angle > 360) angle -= 360;
+            angley += turnSpeed * Time.deltaTime;
+            if (angley > 360) angley -= 360;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            angle -= turnSpeed * Time.deltaTime;
-            if (angle < 0) angle += 360;
+            angley -= turnSpeed * Time.deltaTime;
+            if (angley < 0) angley += 360;
         }
         if (Input.GetKey(KeyCode.W))
+        {
+            anglex += turnSpeed * Time.deltaTime;
+            if (anglex > 90)
+            {
+                anglex = 90;
+                cameraHeight += heightSpeed * Time.deltaTime;
+                if (cameraHeight > maxHeight) cameraHeight = maxHeight;
+            }
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            anglex -= turnSpeed * Time.deltaTime;
+            if (anglex < 0)
+            {
+                anglex = 0;
+                cameraHeight -= heightSpeed * Time.deltaTime;
+                if (cameraHeight < 0) cameraHeight = 0;
+            }
+        }
+        if (Input.GetKey(KeyCode.Space))
         {
             cameraHeight += heightSpeed * Time.deltaTime;
             if (cameraHeight > maxHeight) cameraHeight = maxHeight;
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             cameraHeight -= heightSpeed * Time.deltaTime;
             if (cameraHeight < 0) cameraHeight = 0;
@@ -63,6 +82,6 @@ public class CameraMovement : MonoBehaviour
         // Adjust Camera settings accordingly
         camera.fieldOfView = cameraZoom;
         anchor.position = new Vector3(anchor.transform.position.x, cameraHeight, anchor.transform.position.z);
-        anchor.rotation = Quaternion.Euler(0, angle, 0);
+        anchor.rotation = Quaternion.Euler(anglex, angley, 0);
     }
 }

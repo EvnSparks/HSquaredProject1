@@ -10,7 +10,13 @@ public class NewMaterial : MonoBehaviour, IPointerEnterHandler
     public GameObject newProject;
     public void CreateNewProject()
     {
-        grabObject.grabbedProject = Instantiate(newProject).GetComponent<Projects>();
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hitInfo))
+        {
+            grabObject.grabbedProject = Instantiate(newProject, hitInfo.point, Quaternion.Euler(0, 0, 0)).GetComponent<Projects>();
+            GameManager.instance.SetState(GameManager.State.NewProject);
+        }
+            
     }
     public void OnPointerEnter(PointerEventData eventData)
     {

@@ -25,7 +25,7 @@ public class SawMovement : MonoBehaviour
     void FixedUpdate()
     {
         bool inObject = planeSlice.InsideObject();
-        if (cutting == 0 && Input.GetKey(KeyCode.Mouse0) && !inObject)
+        if (cutting == 0 && Input.GetKey(KeyCode.Mouse0) && !inObject && GameManager.instance.GetState() == GameManager.State.UsingSaw)
         {
             cutting = 1;
             planeSlice.IsEnabled(true);
@@ -36,7 +36,7 @@ public class SawMovement : MonoBehaviour
             planeSlice.IsEnabled(false);
         }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo) && Input.GetKey(KeyCode.Mouse0))
+        if (Physics.Raycast(ray, out RaycastHit hitInfo) && Input.GetKey(KeyCode.Mouse0) && cutting == 1)
         {
             //move to mouse cursor position (if cursor is on any object
             if (cutting == 1 && inObject)
