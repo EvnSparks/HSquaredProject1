@@ -24,7 +24,6 @@ public class Projects : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (magnetPos.y < tableOffset) magnetPos = new Vector3 (magnetPos.x, tableOffset, magnetPos.z);
         rb.MovePosition(magnetPos);
         rb.MoveRotation(Quaternion.Euler(magnetRotation));
     }

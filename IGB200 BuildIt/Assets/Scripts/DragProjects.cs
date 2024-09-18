@@ -20,7 +20,7 @@ public class DragProjects : MonoBehaviour
                 {
                     try
                     {
-                        grabbedProject = hitInfo1.collider.gameObject.GetComponentInParent<Projects>();
+                        grabbedProject = hitInfo1.collider.gameObject.GetComponent<Projects>();
                         offset = hitInfo1.point - grabbedProject.magnetPos;
                         Debug.Log(grabbedProject);
                     }

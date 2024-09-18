@@ -55,7 +55,7 @@ public class PlaneSlice : MonoBehaviour
 
                 GameObject[] slices = Slicer.Slice(plane, other.gameObject);
                 // save the original object's position
-                Vector3 tempPos = other.gameObject.GetComponentInParent<Projects>().magnetPos;
+                Vector3 tempPos = other.gameObject.GetComponent<Projects>().magnetPos;
                 // remove the original object
                 startSlice.Remove(other.gameObject);
                 Destroy(other.gameObject);
