@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         SelectSlice
     }
     private State state = State.UsingSaw;
-    private State lastTool = State.UsingSaw;
+    private State lastTool = State.UsingSaw;    
 
     private void Update()
     {

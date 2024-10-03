@@ -7,15 +7,7 @@
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\workshop_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\uiscripts\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\uiscripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\evnsp\\documents\\a_my_files\\c_school\\igb200\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -36,46 +28,23 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIScripts\\Workshop_UI.cs",
               "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\UIScripts\\Workshop_UI.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIScripts\\Workshop_UI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:17:52.619Z",
+              "WhenOpened": "2024-10-03T14:13:23.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Dialogue.cs",
-              "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\UIScripts\\Dialogue.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIScripts\\Dialogue.cs",
-              "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\UIScripts\\Dialogue.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIScripts\\Dialogue.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAkwEQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T16:28:35.707Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\UIScripts\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIScripts\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\UIScripts\\MainMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIScripts\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T11:43:03.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T11:43:41.128Z"
+              "WhenOpened": "2024-09-13T11:43:41.128Z",
+              "EditorCaption": ""
             }
           ]
         }

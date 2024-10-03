@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Shopping_Street.unity
     guid: e411ba8a43ca15b479fd33f8512e8b00
   - enabled: 1
-    path: Assets/Scenes/Workshop_UI.unity
+    path: Assets/Scenes/WorkShop.unity
     guid: fcd8e74d0e20135409bc5c78591d81bb
   m_configObjects: {}
