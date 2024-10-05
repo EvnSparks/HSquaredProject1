@@ -5574,6 +5574,8 @@ MonoBehaviour:
   inventory: []
   currentProject: {fileID: 0}
   activeShop: 0
+  shopItemSelected: 0
+  money: 10
 --- !u!4 &1295800530
 Transform:
   m_ObjectHideFlags: 0

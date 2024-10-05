@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SellableObjectButton : MonoBehaviour
 {
@@ -15,44 +16,52 @@ public class SellableObjectButton : MonoBehaviour
     private float sellPrice;
     private int activeShop;
 
-    private bool itemSelected;
-
     // GUI Variables
     public GameObject itemViewerGUI;
+    public GameObject sellButton;
+    public SellButton sellScript;
+
+    // Updates text name of object
+    private void Start()
+    {
+        gameObject.GetComponentInChildren<TextMeshProUGUI>().text = objectName;
+    }
 
     // Button Interactions
     public void OnHover()
     {
-        // Set up GUI
-        itemViewerGUI.SetActive(true);
-
-        // Calculate Sell Price
-        activeShop = GameManager.instance.activeShop;
-        if (activeShop == 1)
+        if (!GameManager.instance.shopItemSelected)
         {
-            // Calc for precision Shop
-            sellPrice = basePrice * precisionScore;
-        }
-        else
-        {
-            // Calc for time Shop
-            sellPrice = basePrice * timeScore;
-        }
+            // Set up GUI
+            itemViewerGUI.SetActive(true);
 
-        // Update all the values in the window
-        itemViewerGUI.transform.Find("ItemDesc").GetComponent<TextMeshProUGUI>().text = objectName;
-        itemViewerGUI.transform.Find("ItemVariables/PrecisionScore").GetComponent<TextMeshProUGUI>().text =
-            "Precision Score: " + precisionScore.ToString() + "/5";
-        itemViewerGUI.transform.Find("ItemVariables/TimeScore").GetComponent<TextMeshProUGUI>().text =
-            "Time Score: " + timeScore.ToString() + "/5";
+            // Calculate Sell Price
+            activeShop = GameManager.instance.activeShop;
+            if (activeShop == 1)
+            {
+                // Calc for precision Shop
+                sellPrice = basePrice * precisionScore;
+            }
+            else
+            {
+                // Calc for time Shop
+                sellPrice = basePrice * timeScore;
+            }
 
-        itemViewerGUI.transform.Find("ItemVariables/Price").GetComponent<TextMeshProUGUI>().text =
-            "Sell Price: $" + sellPrice.ToString();
+            // Update all the values in the window
+            itemViewerGUI.transform.Find("ItemDesc").GetComponent<TextMeshProUGUI>().text = objectName;
+            itemViewerGUI.transform.Find("ItemVariables/PrecisionScore").GetComponent<TextMeshProUGUI>().text =
+                "Precision Score: " + precisionScore.ToString() + "/5";
+            itemViewerGUI.transform.Find("ItemVariables/TimeScore").GetComponent<TextMeshProUGUI>().text =
+                "Time Score: " + timeScore.ToString() + "/5";
+            itemViewerGUI.transform.Find("ItemVariables/Price").GetComponent<TextMeshProUGUI>().text =
+                "Sell Price: $" + sellPrice.ToString();
+        }
     }
 
     public void LeaveHover()
     {
-        if (!itemSelected)
+        if (!GameManager.instance.shopItemSelected)
         {
             itemViewerGUI.SetActive(false);
         }
@@ -60,22 +69,15 @@ public class SellableObjectButton : MonoBehaviour
 
     public void OnClick()
     {
-        itemSelected = true;
-        // Keep item viewer locked
-            // Some sort of bool value
-        // Prevent hover on working on any other object
-            // Use game manager to lock inventory hover
+        GameManager.instance.shopItemSelected = true;
+        sellScript.sellObject = gameObject.GetComponent<SellableObjectButton>();
     }
 
     public void Sell()
     {
         GameManager.instance.money += sellPrice;
-    }
-
-    public void ExitItemViewer()
-    {
-        // Item view lock = false
+        Destroy(gameObject);
         itemViewerGUI.SetActive(false);
-        itemSelected = false;
+        GameManager.instance.shopItemSelected = false;
     }
 }

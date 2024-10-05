@@ -38,7 +38,7 @@ public class DialogueManager : MonoBehaviour
                 StopAllCoroutines();
                 dialogueArea.text = currentLine.line;
 
-                if (CanvasDialogue[3].activeSelf == false)
+                if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[3].activeSelf == false)
                 {
                     CanvasDialogue[1].SetActive(true);
                 }
