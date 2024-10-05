@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SellableObjectButton : MonoBehaviour
@@ -13,6 +14,8 @@ public class SellableObjectButton : MonoBehaviour
 
     private float sellPrice;
     private int activeShop;
+
+    private bool itemSelected;
 
     // GUI Variables
     public GameObject itemViewerGUI;
@@ -49,11 +52,15 @@ public class SellableObjectButton : MonoBehaviour
 
     public void LeaveHover()
     {
-        itemViewerGUI.SetActive(false);
+        if (!itemSelected)
+        {
+            itemViewerGUI.SetActive(false);
+        }
     }
 
     public void OnClick()
     {
+        itemSelected = true;
         // Keep item viewer locked
             // Some sort of bool value
         // Prevent hover on working on any other object
@@ -62,12 +69,13 @@ public class SellableObjectButton : MonoBehaviour
 
     public void Sell()
     {
-
+        GameManager.instance.money += sellPrice;
     }
 
     public void ExitItemViewer()
     {
         // Item view lock = false
         itemViewerGUI.SetActive(false);
+        itemSelected = false;
     }
 }

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     //Universal Shop UI Tracker
     public int activeShop;
+    public bool shopItemSelected;
     public float money;
 
     public enum State
