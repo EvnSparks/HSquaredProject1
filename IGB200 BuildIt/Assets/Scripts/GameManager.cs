@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour
     public string currentScene;
     public List<Projects> inventory = new List<Projects>();
     public Projects currentProject;
+
+    //Universal Shop UI Tracker
+    public int activeShop;
+    public float money;
+
     public enum State
     {
         Default, // resets to last tool used
@@ -20,7 +25,12 @@ public class GameManager : MonoBehaviour
         SelectSlice
     }
     private State state = State.UsingSaw;
-    private State lastTool = State.UsingSaw;    
+    private State lastTool = State.UsingSaw;
+
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     private void Update()
     {
