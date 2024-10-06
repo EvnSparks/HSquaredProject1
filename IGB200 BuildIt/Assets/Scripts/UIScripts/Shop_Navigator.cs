@@ -30,6 +30,7 @@ public class Shop_Navigator : MonoBehaviour
     public void EnterShop3()
     {
         activeShop = 3;
+        GameManager.instance.activeShop = activeShop;
         ShopOpen();
     }
 
