@@ -6,6 +6,7 @@ using UnityEngine;
 public class Hammer : MonoBehaviour
 {
     public GameObject projectContainer;
+    private GameObject? firstObject = null;
     void Start()
     {
 
@@ -20,41 +21,34 @@ public class Hammer : MonoBehaviour
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out RaycastHit hitInfo))
                 {
-                    //move to mouse cursor position (if cursor is on any object
-                    transform.position = hitInfo.point;
-                    Debug.Log(hitInfo.normal.ToString());
-                    transform.rotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
-
-                    Ray nailRay = new Ray(transform.position, -hitInfo.normal);
-                    RaycastHit[] nailHit = Physics.RaycastAll(nailRay, 2f);
-
-                    Debug.DrawRay(transform.position, -hitInfo.normal, Color.red, 1f, false);
-
-                    Debug.Log(nailHit.Length);
-
-                    List<MeshFilter> hits = new List<MeshFilter>();
-                    MeshFilter currentMesh;
-                    foreach (RaycastHit hit in nailHit)
+                    if (hitInfo.collider.gameObject.GetComponent<Projects>())
                     {
-                        if (hit.collider.gameObject.GetComponent<MeshFilter>())
+                        //move to mouse cursor position (if cursor is on any object
+                        transform.position = hitInfo.point;
+                        Debug.Log(hitInfo.normal.ToString());
+                        transform.rotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
+
+                        if (firstObject == null) firstObject = hitInfo.collider.gameObject;
+                        else if (firstObject == hitInfo.collider.gameObject) firstObject = null;
+                        else
                         {
-                            currentMesh = hit.collider.gameObject.GetComponent<MeshFilter>();
-                            if (!hits.Contains(currentMesh)) hits.Add(currentMesh);
+                            Debug.Log("success");
+                            List<MeshFilter> meshes = new List<MeshFilter>();
+                            meshes.Add(firstObject.GetComponent<MeshFilter>());
+                            meshes.Add(hitInfo.collider.gameObject.GetComponent<MeshFilter>());
+                            CombineMesh(meshes);
+                            firstObject = null;
+                            // add joining particle effects and sfx here
                         }
-                    }   
-                    if (hits.Count > 1)
-                    {
-                        Debug.Log("success");
-                        CombineMeshes(hits);
                     }
                 }
             }
-            else if (Input.GetKeyUp(KeyCode.Mouse0)) transform.position = Vector3.forward * 100;
+            else if (Input.GetKeyUp(KeyCode.Mouse0) && firstObject == null) transform.position = Vector3.forward * 100;
         }
         else transform.position = Vector3.forward * 100;
     }
 
-    public void CombineMeshes(List<MeshFilter> sourceMeshFilters)
+    public void CombineMesh(List<MeshFilter> sourceMeshFilters)
     {
         var combine = new CombineInstance[sourceMeshFilters.Count];
 

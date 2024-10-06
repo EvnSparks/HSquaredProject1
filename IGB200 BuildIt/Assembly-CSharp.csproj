@@ -76,6 +76,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\UIScripts\Shop_UI.cs" />
     <Compile Include="Assets\Scripts\Inventory\ObjectSpawner.cs" />
+    <Compile Include="Assets\Scripts\InventoryItem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
