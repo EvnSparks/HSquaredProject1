@@ -41,6 +41,7 @@ public class DialogueManager : MonoBehaviour
                 if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[3].activeSelf == false)
                 {
                     CanvasDialogue[1].SetActive(true);
+                    CanvasDialogue[4].SetActive(true);
                 }
             }
         }
@@ -77,6 +78,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(currentLine));
 
         CanvasDialogue[1].SetActive(false);
+        CanvasDialogue[4].SetActive(false);
     }
 
     IEnumerator TypeSentence(DialogueLine dialogueLine)
@@ -94,11 +96,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
         isDialogueActive = false;
         CanvasDialogue[0].SetActive(false);
         CanvasDialogue[1].SetActive(false);
         CanvasDialogue[2].SetActive(true);
+        CanvasDialogue[4].SetActive(false);
     }
 }
