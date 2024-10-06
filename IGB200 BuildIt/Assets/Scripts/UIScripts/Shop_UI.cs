@@ -31,9 +31,6 @@ public class Shop_UI : MonoBehaviour
         
         // Set active inventory menu
         ShopUI[1].SetActive(true);
-
-        // Fill in the inventory from the GameManager
-        // Instantiate all game objects with their details into the list...
     }
 
     public void ExitInvetory()
