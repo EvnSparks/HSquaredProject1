@@ -38,6 +38,11 @@ public class Shop_UI : MonoBehaviour
         ShopUI[1].SetActive(false);
         ShopUI[3].SetActive(false);
         ShopUI[0].SetActive(true);
+        ShopUI[2].SetActive(false);
+
+        // Reset Shop Item Selected Variable
+        GameManager.instance.shopItemSelected = false;
+
         DialogueManager.Instance.isDialogueActive = false;
     }
 

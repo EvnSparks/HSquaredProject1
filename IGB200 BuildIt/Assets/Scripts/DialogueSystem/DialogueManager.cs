@@ -38,7 +38,8 @@ public class DialogueManager : MonoBehaviour
                 StopAllCoroutines();
                 dialogueArea.text = currentLine.line;
 
-                if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[3].activeSelf == false)
+                // Only shows the continue/ exit buttons if all inventories and exit workshop button is off
+                if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[3].activeSelf == false && CanvasDialogue[5].activeSelf == false)
                 {
                     CanvasDialogue[1].SetActive(true);
                     CanvasDialogue[4].SetActive(true);

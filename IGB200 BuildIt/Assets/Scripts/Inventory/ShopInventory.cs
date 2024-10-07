@@ -47,7 +47,9 @@ public class ShopInventory : MonoBehaviour
             craftedObject.GetComponent<BuyObjectButton>().buyScript = buyScript;
 
             craftedObject.GetComponent<BuyObjectButton>().objectName = "Wood Block";
-            
+            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 3;
+
+
             //Instantiate(craftedObject,this.transform);
         }
 
@@ -60,6 +62,7 @@ public class ShopInventory : MonoBehaviour
             craftedObject.GetComponent<BuyObjectButton>().buyScript = buyScript;
 
             craftedObject.GetComponent<BuyObjectButton>().objectName = "Nail";
+            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 7;
             //Instantiate(craftedObject,this.transform);
         }
 }

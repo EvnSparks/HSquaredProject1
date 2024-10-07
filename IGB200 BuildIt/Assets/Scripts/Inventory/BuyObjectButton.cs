@@ -7,15 +7,10 @@ using UnityEngine.UI;
 
 public class BuyObjectButton : MonoBehaviour
 {
-     // Object Variables
+    // Object Variables
     public string objectName;
     public string objectDescription;
-    
-    public float basePrice;
-
-    private float sellPrice;
-    private float buyPrice;
-    private int activeShop;
+    public float buyPrice = 0;
 
     // GUI Variables
     public GameObject itemViewerGUI;
@@ -36,12 +31,9 @@ public class BuyObjectButton : MonoBehaviour
             // Set up GUI
             itemViewerGUI.SetActive(true);
 
-            // Calculate Sell Price
-            activeShop = GameManager.instance.activeShop;
-
             // Update all the values in the window
-            itemViewerGUI.transform.Find("ItemDesc2").GetComponent<TextMeshProUGUI>().text = objectName;
-            itemViewerGUI.transform.Find("ItemVariables/Price").GetComponent<TextMeshProUGUI>().text =
+            itemViewerGUI.transform.Find("MaterialName").GetComponent<TextMeshProUGUI>().text = objectName;
+            itemViewerGUI.transform.Find("ItemVariables/Text/Price").GetComponent<TextMeshProUGUI>().text =
                 "Buy Cost: $" + buyPrice.ToString();
         }
     }
@@ -71,6 +63,5 @@ public class BuyObjectButton : MonoBehaviour
             itemViewerGUI.SetActive(false);
             GameManager.instance.shopItemSelected = false;
         }
-        
     }
 }
