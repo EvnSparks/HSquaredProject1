@@ -14,6 +14,7 @@ public class SellableObjectButton : MonoBehaviour
     public float basePrice;
 
     private float sellPrice;
+    private float buyPrice;
     private int activeShop;
 
     // GUI Variables
@@ -80,4 +81,5 @@ public class SellableObjectButton : MonoBehaviour
         itemViewerGUI.SetActive(false);
         GameManager.instance.shopItemSelected = false;
     }
+
 }
