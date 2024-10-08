@@ -7,12 +7,11 @@ using UnityEngine.SceneManagement;
 public class Workshop_UI : MonoBehaviour
 {
     public GameObject[] CanvasList;
+    // 0 = Workshop UI
+    // 1 = Shop Selector
+    // 2 = Start Window
 
-    //  Relates to buttons in WorkshopUI
-    // void Start()
-    // {
-    //     CanvasList[2].SetActive(false);
-    // }
+
     public void Gamestart()
     {
         SceneManager.LoadScene("SampleScene");
@@ -39,10 +38,8 @@ public class Workshop_UI : MonoBehaviour
 
     public void ExitShopSelector()
     {
-        CanvasList[1].SetActive(false);
         CanvasList[0].SetActive(true);
+        CanvasList[1].SetActive(false);
         CanvasList[2].SetActive(false);
     }
-
-    
 }

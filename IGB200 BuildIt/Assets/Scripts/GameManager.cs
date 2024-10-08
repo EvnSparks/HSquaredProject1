@@ -18,6 +18,12 @@ public class GameManager : MonoBehaviour
     public bool shopItemSelected;
     public float money;
 
+    //Player Variables
+    public string playerName;
+
+    //Game State Tracker
+    public bool firstTime = true;
+
     public enum State
     {
         Default, // resets to last tool used

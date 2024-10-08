@@ -91,9 +91,11 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
 
+        // If the shop exit is off and the text has finished being typed turn on the continue and exit conversation buttons.
         if (CanvasDialogue[3].activeSelf == false) 
         {
             CanvasDialogue[1].SetActive(true);
+            CanvasDialogue[4].SetActive(true);
         }
     }
 

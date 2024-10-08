@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -7,6 +8,12 @@ using UnityEngine.UIElements;
 public class Info_UI : MonoBehaviour
 {
     public GameObject[] CanvasList;
+
+    private void Start()
+    {
+        // Set the player name upon scene being started up
+        CanvasList[3].GetComponent<TextMeshProUGUI>().text = "Name: " + GameManager.instance.playerName;
+    }
 
     public void ToDoList()
     {

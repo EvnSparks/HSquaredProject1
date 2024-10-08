@@ -8,6 +8,7 @@ public class ShopInventory : MonoBehaviour
 
         // Start is called before the first frame update
         public GameObject craftedObject;
+
         // GUI Variables
         public GameObject itemViewerGUI;
         public GameObject buyButton;
@@ -18,51 +19,39 @@ public class ShopInventory : MonoBehaviour
 
         private void Start()
         {
-            // for (int i = 0; i < objectCount; i++) 
-            // {
-            //     craftedObject.GetComponent<SellableObjectButton>().itemViewerGUI = itemViewerGUI;
-            //     craftedObject.GetComponent<SellableObjectButton>().sellButton = buyButton;
-            //     //craftedObject.GetComponent<SellableObjectButton>().sellScript = sellScript;
-
-            //     craftedObject.GetComponent<SellableObjectButton>().objectName = "Plank " + i.ToString();
-            //     craftedObject.GetComponent<SellableObjectButton>().precisionScore = Random.Range(1, 5);
-            //     craftedObject.GetComponent<SellableObjectButton>().timeScore = Random.Range(1, 5);
-            //     craftedObject.GetComponent<SellableObjectButton>().basePrice = 3;
-
-            //     Instantiate(craftedObject, this.transform);
-            // }
-           
-           Item01();
-           Item02();
-        }
-
-        //Since your snapping already works, I'll just add items for the shop like this. So every new item here will just be added to the
-
-        //Raw Wood Plank
-        private void Item01()
-        {
-            Instantiate(craftedObject,this.transform);
+            // Establish Consistent variables to spawn
             craftedObject.GetComponent<BuyObjectButton>().itemViewerGUI = itemViewerGUI;
             craftedObject.GetComponent<BuyObjectButton>().buyButton = buyButton;
             craftedObject.GetComponent<BuyObjectButton>().buyScript = buyScript;
 
-            craftedObject.GetComponent<BuyObjectButton>().objectName = "Wood Block";
-            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 3;
-
-
-            //Instantiate(craftedObject,this.transform);
+            Material_1();
+            Material_2();
+            Material_3();
         }
 
-        //Nails
-        private void Item02()
+        //Low Quality Material
+        private void Material_1()
         {
-            Instantiate(craftedObject,this.transform);
-            craftedObject.GetComponent<BuyObjectButton>().itemViewerGUI = itemViewerGUI;
-            craftedObject.GetComponent<BuyObjectButton>().buyButton = buyButton;
-            craftedObject.GetComponent<BuyObjectButton>().buyScript = buyScript;
+            craftedObject.GetComponent<BuyObjectButton>().objectName = "Low Quality";
+            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 5;
 
-            craftedObject.GetComponent<BuyObjectButton>().objectName = "Nail";
-            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 7;
-            //Instantiate(craftedObject,this.transform);
+            Instantiate(craftedObject,this.transform);
+        }
+
+        //Medium Quality Material
+        private void Material_2()
+        {
+            craftedObject.GetComponent<BuyObjectButton>().objectName = "Med Quality";
+            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 10;
+            Instantiate(craftedObject,this.transform);
+        }
+
+        //High Quality Material
+
+        private void Material_3()
+        {
+            craftedObject.GetComponent<BuyObjectButton>().objectName = "High Quality";
+            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 15;
+            Instantiate(craftedObject, this.transform);
         }
 }
