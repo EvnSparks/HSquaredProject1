@@ -48,10 +48,7 @@ public class BuyButton : MonoBehaviour
 
     public void DecreaseAmount()
     {
-<<<<<<< HEAD
-=======
         // Prvents the player from printing free money... 0_0
->>>>>>> main
         if(buyAmount > 0)
         {
            buyAmount -= 1;
