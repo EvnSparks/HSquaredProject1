@@ -13,11 +13,6 @@ public class Projects : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        try
-        {
-            GameManager.instance.currentProject = this;
-        }
-        catch { }
         rb = GetComponent<Rigidbody>();
     }
 

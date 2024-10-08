@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class SawMovement : MonoBehaviour
@@ -10,7 +9,7 @@ public class SawMovement : MonoBehaviour
     public float cutSpeed = 5f;
     public float sawAnimationSpeed = 1f;
     public float sawAnimationStrength = 1f;
-    int cutting = 0;
+    public int cutting = 0;
     float speedMultiplier;
     PlaneSlice planeSlice;
     MeshRenderer meshRenderer;

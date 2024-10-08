@@ -9,8 +9,9 @@ public class GameManager : MonoBehaviour
     //Singleton Setup
     public static GameManager instance = null;
     public string currentScene;
-    public List<Projects> inventory = new List<Projects>();
-    public Projects currentProject;
+    public List<InventoryItem> inventory = new List<InventoryItem>();
+    public InventoryItem currentProject;
+    public InventoryItem.ProjectType projectType = InventoryItem.ProjectType.Plank;
 
     //Universal Shop UI Tracker
     public int activeShop;
@@ -25,7 +26,7 @@ public class GameManager : MonoBehaviour
         NewProject,
         SelectSlice
     }
-    private State state = State.UsingSaw;
+    public State state = State.UsingSaw;
     private State lastTool = State.UsingSaw;
 
     private void Start()

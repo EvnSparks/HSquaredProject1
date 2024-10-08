@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class DragProjects : MonoBehaviour
@@ -24,7 +22,6 @@ public class DragProjects : MonoBehaviour
                         grabbedProject = hitInfo1.collider.gameObject.GetComponent<Projects>();
                         offset = hitInfo1.point - grabbedProject.magnetPos;
                         plane.transform.position = hitInfo1.point;
-                        Debug.Log(grabbedProject);
                     }
                 }
             }

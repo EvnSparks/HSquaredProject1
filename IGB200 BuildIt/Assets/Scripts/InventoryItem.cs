@@ -12,14 +12,16 @@ public class InventoryItem
         Cabinet // likely unused
     }
     
-    public GameObject item;
+    //public GameObject item;
     public float accuracyRating;
+    public float materialCost;
     public ProjectType projectType;
-
-    public InventoryItem(GameObject item, float accuracyRating, ProjectType projectType)
+    
+    public InventoryItem(float accuracyRating, float materialCost, ProjectType projectType)
     {
-        this.item = item;
+        //this.item = item;
         this.accuracyRating = accuracyRating;
+        this.materialCost = materialCost;
         this.projectType = projectType;
     }
 }

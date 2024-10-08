@@ -1,12 +1,12 @@
 using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlaneSlice : MonoBehaviour
 {
     public float cutForce = 10f;
+    public float snappingPoints = 1.0f; // recommended to keep as whole numbers
     bool isEnabled = false;
     public Dictionary<GameObject, Vector3> startSlice = new Dictionary<GameObject, Vector3>();
     public List<GameObject> insideObject = new List<GameObject>();
@@ -34,6 +34,14 @@ public class PlaneSlice : MonoBehaviour
                 //Create a triangle between the start, end and camera so that we can get the normal
                 Vector3 side1 = endSlice - startSlice[other.gameObject];
                 Vector3 side2 = endSlice - Camera.main.gameObject.transform.position;
+
+                // normalise vectors to prevent rounding to (0, 0, 0)
+                side1.Normalize();
+                side2.Normalize();
+
+                // increase scale to number of snapping points
+                side1 = side1 * snappingPoints;
+                side2 = side2 * snappingPoints;
 
                 // round to make neater edges
                 side1 = Vector3Int.RoundToInt(side1);
@@ -114,5 +122,10 @@ public class PlaneSlice : MonoBehaviour
     public bool InsideObject(GameObject other)
     {
         return insideObject.Contains(other);
+    }
+
+    public void RemoveObjectFromList(GameObject go)
+    {
+        insideObject.Remove(go);
     }
 }
