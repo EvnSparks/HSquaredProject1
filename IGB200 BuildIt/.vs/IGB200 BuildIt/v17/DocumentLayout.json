@@ -3,8 +3,37 @@
   "WorkspaceRootPath": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\uiscripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\constructionscripts\\detectoverlap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\detectoverlap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\constructionscripts\\dragprojects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\dragprojects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\constructionscripts\\newmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\newmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\constructionscripts\\hammer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\hammer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\inventory\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\inventory\\sellableobjectbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\sellableobjectbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\constructionscripts\\planeslice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\planeslice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,6 +44,7 @@
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\workshop_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\uiscripts\\info_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\info_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -52,6 +82,13 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\constructionscripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\constructionscripts\\sawmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\sawmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\constructionscripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -62,6 +99,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -86,12 +124,128 @@
               "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\UIScripts\\MainMenu.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIScripts\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+=======
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DragProjects.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T05:33:30.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Hammer.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\Hammer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\Hammer.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\Hammer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\Hammer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T05:32:39.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SellableObjectButton.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T05:25:43.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ObjectSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T05:16:33.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CameraMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\CameraMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\CameraMovement.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\CameraMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\CameraMovement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T03:46:37.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetectOverlap.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DetectOverlap.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\DetectOverlap.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DetectOverlap.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\DetectOverlap.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T01:05:30.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewMaterial.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\NewMaterial.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\NewMaterial.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\NewMaterial.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\NewMaterial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T01:42:42.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SawMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T01:11:02.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlaneSlice.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\PlaneSlice.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\PlaneSlice.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\PlaneSlice.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\PlaneSlice.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAIAAAAhAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T14:15:02.469Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "ShopInventory.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ShopInventory.cs",
@@ -202,6 +356,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 7,
+>>>>>>> Stashed changes
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -209,12 +366,15 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T02:56:27.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T02:56:27.58Z"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 10,
+=======
+              "DocumentIndex": 8,
+>>>>>>> Stashed changes
               "Title": "InventoryItem.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\InventoryItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryItem.cs",
