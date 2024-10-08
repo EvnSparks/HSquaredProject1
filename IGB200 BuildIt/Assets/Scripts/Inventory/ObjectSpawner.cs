@@ -13,20 +13,22 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject sellButton;
     public SellButton sellScript;
 
+    public float objectCount = 3;
+
     // This works for the moment, need to edit this to combine with the inventory system later
 
     private void Start()
     {
-        SellableObjectButton objectSettings = craftedObject.GetComponent<SellableObjectButton>();
-        objectSettings.itemViewerGUI = itemViewerGUI;
-        objectSettings.sellButton = sellButton;
-        objectSettings.sellScript = sellScript;
-        foreach (InventoryItem item in GameManager.instance.inventory)
+        for (int i = 0; i < objectCount; i++) 
         {
-            objectSettings.objectName = item.projectType.ToString();
-            objectSettings.precisionScore = item.accuracyRating;
-            objectSettings.timeScore = Random.Range(1, 5);
-            objectSettings.basePrice = 3;
+            craftedObject.GetComponent<SellableObjectButton>().itemViewerGUI = itemViewerGUI;
+            craftedObject.GetComponent<SellableObjectButton>().sellButton = sellButton;
+            craftedObject.GetComponent<SellableObjectButton>().sellScript = sellScript;
+
+            craftedObject.GetComponent<SellableObjectButton>().objectName = "Plank " + i.ToString();
+            craftedObject.GetComponent<SellableObjectButton>().precisionScore = Random.Range(1, 5);
+            craftedObject.GetComponent<SellableObjectButton>().timeScore = Random.Range(1, 5);
+            craftedObject.GetComponent<SellableObjectButton>().basePrice = 3;
 
             Instantiate(craftedObject, this.transform);
         }

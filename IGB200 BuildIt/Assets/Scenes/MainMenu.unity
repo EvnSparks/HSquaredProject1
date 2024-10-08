@@ -7855,19 +7855,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScene: 
-<<<<<<< Updated upstream
   projectType: 0
   activeShop: 0
   shopItemSelected: 0
   money: 10
   playerName: 
   firstTime: 1
-=======
-  projectType: 1
-  activeShop: 0
-  shopItemSelected: 0
-  money: 10
->>>>>>> Stashed changes
   state: 1
 --- !u!4 &1295800530
 Transform:

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 
 public class NewMaterial : MonoBehaviour, IPointerEnterHandler
 {
@@ -45,6 +44,5 @@ public class NewMaterial : MonoBehaviour, IPointerEnterHandler
         rating = rating / enabledCount;
         Debug.Log(rating);
         GameManager.instance.inventory.Add(new InventoryItem(rating, 0, GameManager.instance.projectType));
-        SceneManager.LoadScene("WorkShop");
     }
 }
