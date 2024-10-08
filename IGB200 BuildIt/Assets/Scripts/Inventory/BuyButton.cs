@@ -39,7 +39,7 @@ public class BuyButton : MonoBehaviour
 
     public void decreasebuy()
     {
-        if(buyAmount <0)
+        if(buyAmount > 0)
         {
            buyAmount-=1; 
         }
