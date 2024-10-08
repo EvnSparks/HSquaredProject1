@@ -25,4 +25,9 @@ public class NewMaterial : MonoBehaviour, IPointerEnterHandler
             Destroy(grabObject.grabbedProject.gameObject);
         }
     }
+
+    public void SaveProject()
+    {
+
+    }
 }

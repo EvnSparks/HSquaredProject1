@@ -7,14 +7,9 @@ public class SellButton : MonoBehaviour
 {
     public SellableObjectButton sellObject;
 
-    
-
     public void SellObject()
     {
         sellObject.Sell();
     }
-
-    
-
 
 }

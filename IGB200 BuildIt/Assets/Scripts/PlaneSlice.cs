@@ -30,9 +30,14 @@ public class PlaneSlice : MonoBehaviour
             if (isEnabled && startSlice.ContainsKey(other.gameObject))
             {
                 Vector3 endSlice = other.ClosestPoint(transform.position);
+
                 //Create a triangle between the start, end and camera so that we can get the normal
                 Vector3 side1 = endSlice - startSlice[other.gameObject];
                 Vector3 side2 = endSlice - Camera.main.gameObject.transform.position;
+
+                // round to make neater edges
+                side1 = Vector3Int.RoundToInt(side1);
+                side2 = Vector3Int.RoundToInt(side2);
 
                 //Get the point perpendicular to the triangle above which is the normal
                 //https://docs.unity3d.com/Manual/ComputingNormalPerpendicularVector.html

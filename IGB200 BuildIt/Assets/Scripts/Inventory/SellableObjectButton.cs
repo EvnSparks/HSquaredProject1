@@ -38,6 +38,7 @@ public class SellableObjectButton : MonoBehaviour
 
             // Calculate Sell Price
             activeShop = GameManager.instance.activeShop;
+
             if (activeShop == 1)
             {
                 // Calc for precision Shop
@@ -48,7 +49,7 @@ public class SellableObjectButton : MonoBehaviour
                 // Calc for time Shop
                 sellPrice = basePrice * timeScore;
             }
-
+                
             // Update all the values in the window
             itemViewerGUI.transform.Find("ItemDesc").GetComponent<TextMeshProUGUI>().text = objectName;
             itemViewerGUI.transform.Find("ItemVariables/PrecisionScore").GetComponent<TextMeshProUGUI>().text =

@@ -7,6 +7,7 @@ using UnityEngine;
 public class DragProjects : MonoBehaviour
 {
     public Projects? grabbedProject = null;
+    public GameObject plane;
     private Vector3 offset;
     // Update is called once per frame
     void Update()
@@ -18,13 +19,13 @@ public class DragProjects : MonoBehaviour
             {
                 if (hitInfo1.collider != null)
                 {
-                    try
+                    if (hitInfo1.collider.gameObject.GetComponent<Projects>())
                     {
                         grabbedProject = hitInfo1.collider.gameObject.GetComponent<Projects>();
                         offset = hitInfo1.point - grabbedProject.magnetPos;
+                        plane.transform.position = hitInfo1.point;
                         Debug.Log(grabbedProject);
                     }
-                    catch { }
                 }
             }
         }
