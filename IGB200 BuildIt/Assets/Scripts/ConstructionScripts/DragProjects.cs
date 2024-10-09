@@ -34,7 +34,7 @@ public class DragProjects : MonoBehaviour
                 grabbedProject.magnetPos = hitInfo.point - offset;
             }
         }
-        if (Input.GetKeyUp(KeyCode.Mouse1))
+        if (Input.GetKeyUp(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Mouse0) && GameManager.instance.state == GameManager.State.NewProject)
         {
             grabbedProject = null;
             GameManager.instance.SetState(GameManager.State.Default);

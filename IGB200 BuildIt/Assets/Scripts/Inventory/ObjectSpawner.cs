@@ -19,17 +19,17 @@ public class ObjectSpawner : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < objectCount; i++) 
+        SellableObjectButton objectSettings = craftedObject.GetComponent<SellableObjectButton>();
+        objectSettings.itemViewerGUI = itemViewerGUI;
+        objectSettings.sellButton = sellButton;
+        objectSettings.sellScript = sellScript;
+        foreach (InventoryItem item in GameManager.instance.inventory)
         {
-            craftedObject.GetComponent<SellableObjectButton>().itemViewerGUI = itemViewerGUI;
-            craftedObject.GetComponent<SellableObjectButton>().sellButton = sellButton;
-            craftedObject.GetComponent<SellableObjectButton>().sellScript = sellScript;
-
-            craftedObject.GetComponent<SellableObjectButton>().objectName = "Plank " + i.ToString();
-            craftedObject.GetComponent<SellableObjectButton>().precisionScore = Random.Range(1, 5);
-            craftedObject.GetComponent<SellableObjectButton>().timeScore = Random.Range(1, 5);
-            craftedObject.GetComponent<SellableObjectButton>().basePrice = 3;
-
+            objectSettings.objectName = item.projectType.ToString();
+            objectSettings.precisionScore = item.accuracyRating;
+            objectSettings.timeScore = Random.Range(1, 5);
+            objectSettings.basePrice = 3;
+            objectSettings.originalItem = item;
             Instantiate(craftedObject, this.transform);
         }
     }

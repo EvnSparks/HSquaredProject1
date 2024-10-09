@@ -12,14 +12,14 @@ public class SawMovement : MonoBehaviour
     public int cutting = 0;
     float speedMultiplier;
     PlaneSlice planeSlice;
-    MeshRenderer meshRenderer;
+    public List<MeshRenderer> meshRenderer;
+    public Transform sawMotion;
 
     void Start()
     {
         if (slicer != null)
         {
             planeSlice = slicer.GetComponent<PlaneSlice>();
-            meshRenderer = slicer.GetComponent<MeshRenderer>();
         }
     }
 
@@ -32,23 +32,25 @@ public class SawMovement : MonoBehaviour
         {
             cutting = 1;
             planeSlice.IsEnabled(true);
-            meshRenderer.enabled = true;
+            foreach (MeshRenderer renderer in meshRenderer)
+                renderer.enabled = true;
         }
         if (cutting == 1 && !Input.GetKey(KeyCode.Mouse0) && !inObject)
         {
             cutting = 0;
             planeSlice.IsEnabled(false);
-            meshRenderer.enabled = false;
+            foreach (MeshRenderer renderer in meshRenderer)
+                renderer.enabled = true;
         }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo))
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, 100, LayerMask.GetMask("Default")))
         {
             //move to mouse cursor position (if cursor is on any object
             if (cutting == 1 && inObject)
             {
                 transform.position += (hitInfo.point - transform.position) * cutSpeed * Time.fixedDeltaTime;
                 //add sawing motion
-                transform.position += (transform.position - Camera.main.transform.position).normalized * sawAnimationStrength * Mathf.Sin(Time.time * sawAnimationSpeed) * Time.fixedDeltaTime;
+                sawMotion.transform.position += (transform.position - Camera.main.transform.position).normalized * sawAnimationStrength * Mathf.Sin(Time.time * sawAnimationSpeed) * Time.fixedDeltaTime;
             }   
             else 
                 transform.position += (hitInfo.point - transform.position) * baseSpeed * Time.fixedDeltaTime;
