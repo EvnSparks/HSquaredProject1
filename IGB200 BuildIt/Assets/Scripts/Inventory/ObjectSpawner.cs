@@ -13,8 +13,6 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject sellButton;
     public SellButton sellScript;
 
-    public float objectCount = 3;
-
     // This works for the moment, need to edit this to combine with the inventory system later
 
     private void Start()

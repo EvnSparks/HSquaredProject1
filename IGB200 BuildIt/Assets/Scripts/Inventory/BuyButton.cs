@@ -10,31 +10,34 @@ public class BuyButton : MonoBehaviour
    public TMP_Text amountText;
    public int buyAmount = 0;
 
+   private int materialReference;
+
    public void BuyObject()
    {
         // Compare player money and amount needing to be paid
-        if (GameManager.instance.money > (buyAmount * buyObject.buyPrice))
+        if (GameManager.instance.money >= (buyAmount * buyObject.buyPrice))
         {
-            // Pass the amount being bought to the button
-            // Activate the buy part of the button
-        }
+            GameManager.instance.money -= buyAmount * buyObject.buyPrice;
 
-
-
-        int i;
-
-        //make sure player has enough money
-        if(GameManager.instance.money > buyAmount * buyObject.buyPrice)
-        {
-            for(i=0;i<buyAmount;i++)
+            // An unglamorous way to code this in but it'll work...
+            if (buyObject.objectName == "Low Quality")
             {
-                buyObject.Buy();
+                materialReference = 0;
             }
+            if (buyObject.objectName == "Med Quality")
+            {
+                materialReference = 1;
+            }
+            if (buyObject.objectName == "High Quality")
+            {
+                materialReference = 2;
+            }
+
+            GameManager.instance.materialInventory[materialReference].inventoryAmount += buyAmount;
+            buyObject.Buy();
         }
-        //else just print like a prompt say you cannot buy. I lazy do now
-        
-            
    }
+
    public void IncreaseAmount()
     {
         // Prevents amount being increased passed a certain amount

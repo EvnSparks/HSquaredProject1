@@ -13,6 +13,14 @@ public class GameManager : MonoBehaviour
     public InventoryItem currentProject;
     public InventoryItem.ProjectType projectType = InventoryItem.ProjectType.Plank;
 
+    //Inventory of Materials - Hard coded unless we wanted to make selling inventory bigger?
+    public List<MaterialItem> materialInventory = new List<MaterialItem>
+    {
+        new MaterialItem("Low_Quality", 3, 3, 1),
+        new MaterialItem("Medium_Quality", 9, 6, 0),
+        new MaterialItem("High_Quality", 20, 10, 0)
+    };
+
     //Universal Shop UI Tracker
     public int activeShop;
     public bool shopItemSelected;
@@ -32,6 +40,7 @@ public class GameManager : MonoBehaviour
         NewProject,
         SelectSlice
     }
+
     public State state = State.UsingSaw;
     private State lastTool = State.UsingSaw;
 

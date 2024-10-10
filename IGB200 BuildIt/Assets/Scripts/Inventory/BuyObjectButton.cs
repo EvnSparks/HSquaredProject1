@@ -17,6 +17,9 @@ public class BuyObjectButton : MonoBehaviour
     public GameObject buyButton;
     public BuyButton buyScript;
 
+    // ItemTracker
+    private int materialReference;
+
     // Updates text name of object
     private void Start()
     {
@@ -28,6 +31,20 @@ public class BuyObjectButton : MonoBehaviour
     {
         if (!GameManager.instance.shopItemSelected)
         {
+            // An unglamorous way to code this in but it'll work...
+            if (objectName == "Low Quality")
+            {
+                materialReference = 0;
+            }
+            if (objectName == "Med Quality")
+            {
+                materialReference = 1;
+            }
+            if (objectName == "High Quality")
+            {
+                materialReference = 2;
+            }
+
             // Set up GUI
             itemViewerGUI.SetActive(true);
 
@@ -35,6 +52,8 @@ public class BuyObjectButton : MonoBehaviour
             itemViewerGUI.transform.Find("MaterialName").GetComponent<TextMeshProUGUI>().text = objectName;
             itemViewerGUI.transform.Find("ItemVariables/Text/Price").GetComponent<TextMeshProUGUI>().text =
                 "Buy Cost: $" + buyPrice.ToString();
+            itemViewerGUI.transform.Find("ItemVariables/Text/In_Inventory").GetComponent<TextMeshProUGUI>().text = "In-Inventory: " +
+                GameManager.instance.materialInventory[materialReference].inventoryAmount.ToString();
         }
     }
 
@@ -52,16 +71,11 @@ public class BuyObjectButton : MonoBehaviour
         buyScript.buyObject = gameObject.GetComponent<BuyObjectButton>();
     }
 
-
-    //Changes here
+        
+    // This button basically just closes the itemviewgui to reset it.
     public void Buy()
     {
-        //Make sure player has enough to buy item
-        if(GameManager.instance.money > buyPrice)
-        {
-            GameManager.instance.money -= buyPrice;
-            itemViewerGUI.SetActive(false);
-            GameManager.instance.shopItemSelected = false;
-        }
+        itemViewerGUI.SetActive(false);
+        GameManager.instance.shopItemSelected = false;
     }
 }
