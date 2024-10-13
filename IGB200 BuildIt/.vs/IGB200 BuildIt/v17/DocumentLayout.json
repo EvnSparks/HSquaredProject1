@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\",
+  "WorkspaceRootPath": "C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\constructionscripts\\sawmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\sawmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ObjectSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Inventory\\ObjectSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\constructionscripts\\dragprojects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\dragprojects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\SawMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ConstructionScripts\\SawMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\inventory\\sellableobjectbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\sellableobjectbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ConstructionScripts\\DragProjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\inventory\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellableObjectButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Inventory\\SellableObjectButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +26,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DragProjects.cs",
-              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "DocumentMoniker": "C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
-              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "ToolTip": "C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
               "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwCQAAACMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T00:20:58.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T00:20:58.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SawMovement.cs",
+              "DocumentMoniker": "C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
+              "ToolTip": "C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T01:11:02.971Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SawMovement.cs",
-              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
-              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAYwDQAAAArAAAA",
+              "Title": "ObjectSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
+              "ToolTip": "C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T01:11:02.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T00:12:04.265Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ObjectSpawner.cs",
-              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
-              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB8AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T00:12:04.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "SellableObjectButton.cs",
-              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
+              "DocumentMoniker": "C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
-              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
+              "ToolTip": "C:\\Users\\yladr\\Desktop\\QUT 2024\\igb200\\IGB_200_H_Squared_Project\\HSquaredProject1\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
               "RelativeToolTip": "Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T00:10:10.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T00:10:10.952Z"
             }
           ]
         }
