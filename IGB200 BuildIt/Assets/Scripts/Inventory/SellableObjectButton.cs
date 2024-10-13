@@ -15,6 +15,7 @@ public class SellableObjectButton : MonoBehaviour
     private float timeScoreVisible; // rounded, only used for display
     public float basePrice;
     public InventoryItem originalItem;
+    public int inventoryReference;
 
     private float sellPrice;
     private float buyPrice;
@@ -47,7 +48,7 @@ public class SellableObjectButton : MonoBehaviour
             if (activeShop == 1)
             {
                 // Calc for precision Shop
-                sellPrice = Mathf.Round(basePrice * timeScore);
+                sellPrice = Mathf.Round(basePrice * precisionScoreVisible);
             }
             else
             {
@@ -83,7 +84,10 @@ public class SellableObjectButton : MonoBehaviour
     public void Sell()
     {
         GameManager.instance.money += sellPrice;
+
+        // This currently does not delete the object from the inventory list - Evan
         GameManager.instance.inventory.Remove(originalItem);
+
         Destroy(gameObject);
         itemViewerGUI.SetActive(false);
         GameManager.instance.shopItemSelected = false;
