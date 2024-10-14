@@ -85,11 +85,13 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\UIScripts\Info_UI.cs" />
     <Compile Include="Assets\Scripts\Inventory\BuyButton.cs" />
+    <Compile Include="Assets\Scripts\ConstructionScripts\Stars.cs" />
     <Compile Include="Assets\Scripts\DialogueSystem\DialogueTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\TaskSystem\TaskTracker.cs" />
     <Compile Include="Assets\Scripts\UIScripts\EscapeMenu_UI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scripts\ConstructionScripts\Finish_UI.cs" />
     <Compile Include="Assets\Scripts\Inventory\SellableObjectButton.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -98,7 +100,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Scripts\ConstructionScripts\Hammer.cs" />
     <Compile Include="Assets\Scripts\ConstructionScripts\PlaneSlice.cs" />
-    <Compile Include="Assets\Scripts\ConstructionScripts\NewMaterial.cs" />
     <Compile Include="Assets\Scripts\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\ConstructionScripts\DetectOverlap.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="Assets\Scripts\ConstructionScripts\CameraMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\ConstructionScripts\Button_UI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />

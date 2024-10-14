@@ -61,6 +61,8 @@ public class Workshop_UI : MonoBehaviour
     }
     public void Gamestart()
     {
+        SceneManager.LoadScene("SampleScene");
+
         // Part of tutorial code that is throwing out errors in current workshop implementation
         /*
         if(tutorial.DialogueIndex == 16)

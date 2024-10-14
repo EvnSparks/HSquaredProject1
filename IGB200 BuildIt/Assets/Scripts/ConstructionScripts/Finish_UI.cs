@@ -49,7 +49,7 @@ public class Finish_UI : MonoBehaviour
     public void MainMenu()
     {
         GameManager.instance.inventory.Add(item);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("WorkShop");
     }
 
     
