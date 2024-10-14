@@ -14272,6 +14272,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024ea922143d5ff43904be69eb2abf9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorial: {fileID: 0}
+  HeaderD: {fileID: 0}
+  DescD: {fileID: 0}
   CanvasList:
   - {fileID: 1344801516}
   - {fileID: 133066263}
@@ -26697,6 +26700,7 @@ MonoBehaviour:
   - {fileID: 601928625}
   - {fileID: 1514814842}
   dialogueScript: {fileID: 1955423485}
+  tutorial: {fileID: 0}
 --- !u!114 &1955423485
 MonoBehaviour:
   m_ObjectHideFlags: 0

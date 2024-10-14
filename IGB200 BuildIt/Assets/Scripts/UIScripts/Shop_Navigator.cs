@@ -19,10 +19,13 @@ public class Shop_Navigator : MonoBehaviour
         activeShop = 1;
         GameManager.instance.activeShop = activeShop;
         ShopOpen();
+
+        /* Part of code erroring out current workshop implementation
         if(tutorial.DialogueIndex == 8)
         {
             tutorial.IndexClick();
         }
+        */
     }
 
     public void EnterShop2()
@@ -45,10 +48,12 @@ public class Shop_Navigator : MonoBehaviour
         ShopScenes[activeShop].SetActive(false);
         ShopScenes[4].SetActive(false);
         
+        /*
         if(tutorial.DialogueIndex == 10)
         {
             tutorial.IndexClick();
         }
+        */
     
     }
 

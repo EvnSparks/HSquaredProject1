@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tasksystem\\tasktracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\evnsp\\documents\\a_my_files\\c_school\\igb200\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\evnsp\\documents\\a_my_files\\c_school\\igb200\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\tasksystem\\testtasktracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tasksystem\\testtasktracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -58,8 +62,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestTaskTracker.cs",
+              "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\TaskSystem\\TestTaskTracker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TaskSystem\\TestTaskTracker.cs",
+              "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\TaskSystem\\TestTaskTracker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TaskSystem\\TestTaskTracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T09:43:23.869Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -68,14 +85,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\TaskSystem\\TaskTracker.cs",
               "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\TaskSystem\\TaskTracker.cs",
               "RelativeToolTip": "Assets\\Scripts\\TaskSystem\\TaskTracker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T09:14:53.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ShopInventory.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ShopInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ShopInventory.cs",
@@ -87,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SellButton.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\SellButton.cs",
@@ -99,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BuyButton.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\BuyButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\BuyButton.cs",
@@ -111,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BuyObjectButton.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\BuyObjectButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\BuyObjectButton.cs",
@@ -123,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "NewMaterial.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\NewMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\NewMaterial.cs",
@@ -135,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MaterialItem.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\MaterialItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\MaterialItem.cs",
@@ -147,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DragProjects.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
@@ -159,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "SawMovement.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
@@ -171,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ObjectSpawner.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
@@ -183,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SellableObjectButton.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
@@ -195,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -203,8 +220,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T12:45:09.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T12:45:09.793Z"
             }
           ]
         }

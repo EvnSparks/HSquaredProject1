@@ -77,12 +77,7 @@ public class Tutorial : MonoBehaviour
                 {
                     IndexClick();
                 }
-                
-                
-
             }
-            
-            
         }
         else
         {

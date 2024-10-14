@@ -37,7 +37,9 @@ public class DialogueManager : MonoBehaviour
             {
                 StopAllCoroutines();
                 dialogueArea.text = currentLine.line;
-                DisplayNextDialogueLine();
+
+                // This is the potential fault/ bug issue here.
+                //DisplayNextDialogueLine();
 
                 // Only shows the continue/ exit buttons if all inventories and exit workshop button is off
                 if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[3].activeSelf == false && CanvasDialogue[5].activeSelf == false)
