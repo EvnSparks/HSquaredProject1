@@ -22,10 +22,12 @@ public class DetectOverlap : MonoBehaviour
         else GetComponent<MeshRenderer>().enabled = false;
     }
 
-    public float Overlap() // returns a rating from 0 to 5 stars
+    public Vector2 Overlap() // returns a rating from 0 to 5 stars
     {
         float score = 0;
+        float totalScore = 0;
         float target = 0;
+        float lowestScore = 6;
         foreach (Vector3 d in dir)
         {
             target = MathF.Sqrt(MathF.Pow(d.x * transform.localScale.x, 2) + MathF.Pow(d.y * transform.localScale.y, 2) + MathF.Pow(d.z * transform.localScale.z, 2));
@@ -33,11 +35,16 @@ public class DetectOverlap : MonoBehaviour
             if (Physics.Raycast(transform.position + d * (1 + target / 2), -d, out RaycastHit hitInfo, 1 + target / 2, LayerMask.GetMask("Default")))
             {
                 Debug.Log("actual dist " + hitInfo.distance);
-                score += scoreMult * (1 - MathF.Sqrt(Mathf.Abs(1 - hitInfo.distance)));
+                score = scoreMult * (1 - MathF.Sqrt(Mathf.Abs(1 - hitInfo.distance)));
+                totalScore += score;
             }
-            else Debug.Log("failed to hit an object on Default Layer within 5 in direction" + d.ToString());
-            Debug.Log("score" + score);
+            else
+            {
+                Debug.Log("failed to hit an object on Default Layer within 5 in direction" + d.ToString());
+                score = 0;
+            }
+            if (score < lowestScore) lowestScore = score;
         }
-        return score / dir.Length;
+        return new Vector2(totalScore / dir.Length, lowestScore);
     }
 }
