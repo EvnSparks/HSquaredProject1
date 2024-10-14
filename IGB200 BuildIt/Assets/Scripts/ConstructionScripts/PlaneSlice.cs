@@ -35,21 +35,17 @@ public class PlaneSlice : MonoBehaviour
                 Vector3 side1 = endSlice - startSlice[other.gameObject];
                 Vector3 side2 = endSlice - Camera.main.gameObject.transform.position;
 
-                // normalise vectors to prevent rounding to (0, 0, 0)
-                side1.Normalize();
-                side2.Normalize();
-
-                // increase scale to number of snapping points
-                side1 = side1 * snappingPoints;
-                side2 = side2 * snappingPoints;
-
                 // round to make neater edges
-                side1 = Vector3Int.RoundToInt(side1);
-                side2 = Vector3Int.RoundToInt(side2);
+
+                Debug.DrawRay(startSlice[other.gameObject], side1, Color.red, 10);
+                Debug.DrawRay(startSlice[other.gameObject], side2, Color.red, 10);
 
                 //Get the point perpendicular to the triangle above which is the normal
                 //https://docs.unity3d.com/Manual/ComputingNormalPerpendicularVector.html
-                Vector3 normal = Vector3.Cross(side1, side2).normalized;
+                Vector3 normal = Vector3.Cross(side1, side2).normalized * snappingPoints;
+                Debug.DrawRay(startSlice[other.gameObject], normal, Color.green, 10);
+                normal = Vector3.Normalize(Vector3Int.RoundToInt(normal));
+                Debug.DrawRay(startSlice[other.gameObject], normal, Color.blue, 10);
 
                 //Transform the normal so that it is aligned with the object we are slicing's transform.
                 Vector3 transformedNormal = ((Vector3)(other.gameObject.transform.localToWorldMatrix.transpose * normal)).normalized;
