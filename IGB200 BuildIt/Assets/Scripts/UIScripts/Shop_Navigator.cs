@@ -11,6 +11,7 @@ public class Shop_Navigator : MonoBehaviour
     // Keeps track of active shop
     private int activeShop;
     public DialogueTrigger dialogueScript;
+    public Tutorial tutorial;
 
     // Button Options
     public void EnterShop1()
@@ -18,6 +19,10 @@ public class Shop_Navigator : MonoBehaviour
         activeShop = 1;
         GameManager.instance.activeShop = activeShop;
         ShopOpen();
+        if(tutorial.DialogueIndex == 8)
+        {
+            tutorial.IndexClick();
+        }
     }
 
     public void EnterShop2()
@@ -39,6 +44,12 @@ public class Shop_Navigator : MonoBehaviour
         ShopScenes[0].SetActive(true);
         ShopScenes[activeShop].SetActive(false);
         ShopScenes[4].SetActive(false);
+        
+        if(tutorial.DialogueIndex == 10)
+        {
+            tutorial.IndexClick();
+        }
+    
     }
 
     // Repeat Button Functions

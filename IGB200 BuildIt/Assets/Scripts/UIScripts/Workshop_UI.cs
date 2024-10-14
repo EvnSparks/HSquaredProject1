@@ -9,7 +9,10 @@ public class Workshop_UI : MonoBehaviour
 {
     private bool Mat1Selected, Mat2Selected,Mat3Selected;
     private TMP_Text DescTitle, Desc;
+
+    public Tutorial tutorial;
     
+    public GameObject HeaderD, DescD;
 
     public GameObject[] CanvasList;
     // 0 = Workshop UI
@@ -18,8 +21,7 @@ public class Workshop_UI : MonoBehaviour
 
     void Start()
     {
-        GameObject HeaderD = GameObject.Find("DescriptionHeader");
-        GameObject DescD = GameObject.Find("DescriptionText");
+        
         DescTitle = HeaderD.GetComponent<TMP_Text>();
         Desc = DescD.GetComponent<TMP_Text>();
     }
@@ -53,6 +55,11 @@ public class Workshop_UI : MonoBehaviour
     }
     public void Gamestart()
     {
+        if(tutorial.DialogueIndex ==16)
+        {
+            tutorial.isTutorialActive = false;
+            tutorial.isTutorialCompleted = true;
+        }
         if(Mat1Selected || Mat2Selected || Mat3Selected)
         {
             SceneManager.LoadScene("SampleScene");
@@ -62,6 +69,10 @@ public class Workshop_UI : MonoBehaviour
     public void StartWindow()
     {
         CanvasList[2].SetActive(true);
+        if(tutorial.DialogueIndex == 12)
+        {
+            tutorial.IndexClick();
+        }
         
     }
     
@@ -76,6 +87,11 @@ public class Workshop_UI : MonoBehaviour
         CanvasList[1].SetActive(true);
         CanvasList[0].SetActive(false);
         CanvasList[2].SetActive(false);
+
+        if(tutorial.DialogueIndex ==3)
+        {
+            tutorial.IndexClick();
+        }
     }
 
     public void ExitShopSelector()
@@ -83,11 +99,19 @@ public class Workshop_UI : MonoBehaviour
         CanvasList[0].SetActive(true);
         CanvasList[1].SetActive(false);
         CanvasList[2].SetActive(false);
+        if(tutorial.DialogueIndex == 11)
+        {
+            tutorial.IndexClick();
+        }
     }
 
     public void SelectMatwindow()
     {
         CanvasList[3].SetActive(true);
+        if(tutorial.DialogueIndex == 13)
+        {
+            tutorial.IndexClick();
+        }
     }
 
     public void ExitSelectMat()
@@ -100,6 +124,10 @@ public class Workshop_UI : MonoBehaviour
         Mat1Selected = true;
         Mat2Selected = false;
         Mat3Selected = false;
+        if(tutorial.DialogueIndex == 14)
+        {
+            tutorial.IndexClick();
+        }
     }
 
     public void SelectMat2()
