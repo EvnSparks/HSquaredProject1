@@ -1299,112 +1299,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130997639}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &133066263
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 133066264}
-  - component: {fileID: 133066267}
-  - component: {fileID: 133066266}
-  - component: {fileID: 133066265}
-  m_Layer: 5
-  m_Name: ShopSelectorUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &133066264
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133066263}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1633209563}
-  - {fileID: 1416060441}
-  - {fileID: 2084878158}
-  - {fileID: 1995521816}
-  - {fileID: 1003504544}
-  m_Father: {fileID: 1955423480}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 540}
-  m_SizeDelta: {x: 1920, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &133066265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133066263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &133066266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133066263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &133066267
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133066263}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &135395725
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,7 +2616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 29a41e613d78f69459e5844df55a31fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3eafd9064316d67438eb1c1f3d1da764, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3033,8 +2927,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.72535706}
-  m_SizeDelta: {x: -16.543, y: -1.4507}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &252188206
 MonoBehaviour:
@@ -4134,6 +4028,46 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326451542}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &331841104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 331841105}
+  m_Layer: 5
+  m_Name: ShopSelectorUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &331841105
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331841104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1633209563}
+  - {fileID: 1416060441}
+  - {fileID: 2084878158}
+  - {fileID: 1995521816}
+  - {fileID: 1003504544}
+  m_Father: {fileID: 1955423480}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &331957175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7145,10 +7079,10 @@ RectTransform:
   - {fileID: 285330218}
   m_Father: {fileID: 20129135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -160}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &537776261
 MonoBehaviour:
@@ -7258,7 +7192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     dialogueLines:
-    - line: Let's take a look at what you've got!
+    - line: Let's take a look at what you've got.
   dialogueManagerScript: {fileID: 93309439}
 --- !u!1001 &550439647
 PrefabInstance:
@@ -7693,10 +7627,10 @@ RectTransform:
   - {fileID: 1918008152}
   m_Father: {fileID: 20129135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 610, y: -50}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &569720408
 MonoBehaviour:
@@ -7806,8 +7740,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     dialogueLines:
-    - line: Aha! Interested I see! Well my special quest involves making  3 planks
-        of average quality, once done come back to recieve your reward.
+    - line: "Well, looking for a challenge? Well, personally I found mastering the
+        basics to be a great way to start into this profession. Let\u2019s keep it
+        simple, come back once you\u2019ve made 3, 5/5 planks. I\u2019ll be sure
+        to give you a nice reference to help you out. "
     - line: Current Progress 0/3
   dialogueManagerScript: {fileID: 93309439}
 --- !u!1 &570426937
@@ -11197,7 +11133,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Master Craftsman
+  m_text: The Master Craftsmen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a0be45260f50dd048970d7330512a8de, type: 2}
   m_sharedMaterial: {fileID: 4825452519255540300, guid: a0be45260f50dd048970d7330512a8de,
@@ -12734,7 +12670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &927706279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13958,11 +13894,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 939168541}
-  m_Father: {fileID: 133066264}
+  m_Father: {fileID: 331841105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -55, y: 55}
+  m_AnchoredPosition: {x: 855, y: -435}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1003504545
@@ -14295,7 +14231,7 @@ MonoBehaviour:
   DescD: {fileID: 0}
   CanvasList:
   - {fileID: 1344801516}
-  - {fileID: 133066263}
+  - {fileID: 331841104}
   - {fileID: 458078033}
 --- !u!114 &1018440558
 MonoBehaviour:
@@ -19192,7 +19128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1344801517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19808,7 +19744,7 @@ RectTransform:
   m_LocalScale: {x: 0.76484376, y: 0.76484376, z: 0.76484376}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 133066264}
+  m_Father: {fileID: 331841105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21706,10 +21642,10 @@ RectTransform:
   - {fileID: 447394214}
   m_Father: {fileID: 20129135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -50}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1593368296
 MonoBehaviour:
@@ -21819,13 +21755,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     dialogueLines:
-    - line: Are you interested in learning more about carpentry?
-    - line: I would be happy to show you some new things that can expand your projects.
-        A hammer might be nifty perhaps?
-    - line: Just need you to complete my special quest. You sure look like you could
-        do it.
-    - line: Haha, otherwise remember sometimes being slow and steady gives the most
-        precise results! Its safer too!
+    - line: Wondering how I got my start in carpentry?
+    - line: Well just like you I started with simple tinkering learning from making
+        simple objects.
+    - line: Afterwards I manage to get an apprenticeship with the local craftsmen
+        at the time. After 4 years I received my certificate 3 in carpentry and many
+        years after here I am.
+    - line: You could also get an apprenticeship through TAFE as well.
+    - line: "My parents? Well, they were hesitant at first but it\u2019s an industry
+        with great pay and plenty of reward for hard work. It\u2019s becoming much
+        easier to get into for all as well. So, they were onboard after explaining
+        it all."
+    - line: 'Haha I believe in you, it may be tricky at first but after enough tinkering
+        you''ll find a way. '
+    - line: Otherwise, a word of advice is to remember sometimes being slow and steady
+        gives the most precise results! Its safer too!
   dialogueManagerScript: {fileID: 93309439}
 --- !u!1 &1595294652
 GameObject:
@@ -22546,7 +22490,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 133066264}
+  m_Father: {fileID: 331841105}
   m_LocalEulerAnglesHint: {x: 4.842, y: 0, z: 0}
 --- !u!114 &1633209564
 MonoBehaviour:
@@ -23114,7 +23058,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 29a41e613d78f69459e5844df55a31fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3eafd9064316d67438eb1c1f3d1da764, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26657,7 +26601,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 133066264}
+  - {fileID: 331841105}
   - {fileID: 927706279}
   - {fileID: 1143450914}
   - {fileID: 601928630}
@@ -26748,7 +26692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShopScenes:
-  - {fileID: 133066263}
+  - {fileID: 331841104}
   - {fileID: 927706278}
   - {fileID: 1143450909}
   - {fileID: 601928625}
@@ -27120,7 +27064,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 29a41e613d78f69459e5844df55a31fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3eafd9064316d67438eb1c1f3d1da764, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27175,7 +27119,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995521815}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27183,7 +27127,7 @@ RectTransform:
   - {fileID: 1721734400}
   - {fileID: 1977266714}
   - {fileID: 927759590}
-  m_Father: {fileID: 133066264}
+  m_Father: {fileID: 331841105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28409,16 +28353,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084878157}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 133066264}
+  m_Father: {fileID: 331841105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
+  m_AnchoredPosition: {x: 0, y: 465}
   m_SizeDelta: {x: 1100, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2084878159
@@ -28707,8 +28651,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -255.68802, y: -124.4}
-  m_SizeDelta: {x: 993.4744, y: 200}
+  m_AnchoredPosition: {x: -255.68802, y: -74.5}
+  m_SizeDelta: {x: 993.4744, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094635403
 MonoBehaviour:
