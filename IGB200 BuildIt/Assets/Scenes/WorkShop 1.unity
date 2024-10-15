@@ -1200,6 +1200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2df73dfc0598a4a96408cb323209ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorial: {fileID: 281674119}
   dialogueArea: {fileID: 252188206}
   CanvasDialogue:
   - {fileID: 2094635401}
@@ -2898,9 +2899,11 @@ MonoBehaviour:
     lost. Let's show you the shop before teaching you how to craft
   - Click on the shop cart button here to go to the shop
   - This is the shop. This is where you can buy or sell things to different sellers
-  - 'Shop 1:'
-  - 'Shop 2:'
-  - 'Shop 3:'
+  - 'Shop 1: This buyer values precision. You can sell your products with higher
+    accuracy score here'
+  - 'Shop 2: This buyer values efficiency and likes to sell in bulk. You should sell
+    your products with a higher time score here.'
+  - 'Shop 3: You can buy materials for building here later.'
   - Now Click on Shop 1
   - Welcome to shop 1. The most important function of the shop is to sell your materials
     in the shop after you obtain them
@@ -20642,8 +20645,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Welcome to BuildIt! Enable Tutorial?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a0be45260f50dd048970d7330512a8de, type: 2}
+  m_sharedMaterial: {fileID: 4825452519255540300, guid: a0be45260f50dd048970d7330512a8de,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

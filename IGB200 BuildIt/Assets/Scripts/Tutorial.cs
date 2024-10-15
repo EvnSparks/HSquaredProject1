@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Tutorial : MonoBehaviour
 {
@@ -107,6 +108,7 @@ public class Tutorial : MonoBehaviour
     {
         isTutorialActive = false;
         TutorialPanel.SetActive(false);
+        SceneManager.LoadScene("WorkShop");
     }
 
     //When Click increase the index and cycle through the tutorial

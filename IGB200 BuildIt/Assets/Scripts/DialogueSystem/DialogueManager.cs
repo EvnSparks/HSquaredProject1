@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
+    public Tutorial tutorial;
     public static DialogueManager Instance;
 
     public TextMeshProUGUI dialogueArea;
@@ -48,6 +49,15 @@ public class DialogueManager : MonoBehaviour
                     CanvasDialogue[4].SetActive(true);
                 }
             }
+        }
+
+        if(tutorial.isTutorialActive)
+        {
+            typingSpeed = 0;
+        }
+        else
+        {
+            typingSpeed = 0.05f;
         }
     }
 
