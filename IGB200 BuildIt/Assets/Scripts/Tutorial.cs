@@ -68,8 +68,6 @@ public class Tutorial : MonoBehaviour
             prompt.SetActive(true);
 
             IndexLogic();
-
-
             
             if(Input.GetMouseButtonDown(0))
             {
@@ -129,8 +127,6 @@ public class Tutorial : MonoBehaviour
                     TutArrows[ArrowIndex -1].SetActive(false);
                     TutArrows[ArrowIndex].SetActive(true);
                 }
-                           
-
             }
         }
     }
@@ -195,10 +191,5 @@ public class Tutorial : MonoBehaviour
             {
                 TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location3.transform.position,10f);
             }
-
-    }
-
-    
-
-    
+    } 
 }

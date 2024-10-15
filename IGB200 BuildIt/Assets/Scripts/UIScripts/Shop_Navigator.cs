@@ -53,8 +53,6 @@ public class Shop_Navigator : MonoBehaviour
         {
             tutorial.IndexClick();
         }
-        
-    
     }
 
     // Repeat Button Functions

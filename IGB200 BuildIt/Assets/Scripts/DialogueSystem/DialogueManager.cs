@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Tutorial tutorial;
     public static DialogueManager Instance;
 
     public TextMeshProUGUI dialogueArea;
@@ -39,9 +38,6 @@ public class DialogueManager : MonoBehaviour
                 StopAllCoroutines();
                 dialogueArea.text = currentLine.line;
 
-                // This is the potential fault/ bug issue here.
-                //DisplayNextDialogueLine();
-
                 // Only shows the continue/ exit buttons if all inventories and exit workshop button is off
                 if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[3].activeSelf == false && CanvasDialogue[5].activeSelf == false)
                 {
@@ -51,7 +47,8 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        if(tutorial.isTutorialActive)
+        // Check GameManager for First Time Check, if true then do the following
+        if(GameManager.instance.firstTime)
         {
             typingSpeed = 0;
         }
