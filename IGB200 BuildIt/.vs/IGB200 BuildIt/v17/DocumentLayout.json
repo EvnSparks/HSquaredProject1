@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\evnsp\\documents\\a_my_files\\c_school\\igb200\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\constructionscripts\\finish_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\finish_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\evnsp\\documents\\a_my_files\\c_school\\igb200\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\dialoguesystem\\imagechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguesystem\\imagechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\evnsp\\documents\\a_my_files\\c_school\\igb200\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\uiscripts\\workshop_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\evnsp\\documents\\a_my_files\\c_school\\igb200\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\dialoguesystem\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguesystem\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\dialoguesystem\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguesystem\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\uiscripts\\workshop_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\workshop_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\constructionscripts\\finish_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\finish_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\uiscripts\\shop_navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\dialoguesystem\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguesystem\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\dialoguesystem\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguesystem\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\tasksystem\\tasktracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,6 +95,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ImageChanger.cs",
+              "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\ImageChanger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueSystem\\ImageChanger.cs",
+              "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\ImageChanger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DialogueSystem\\ImageChanger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T00:03:24.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DialogueManager.cs",
+              "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueSystem\\DialogueManager.cs",
+              "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DialogueSystem\\DialogueManager.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T15:18:53.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DialogueTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
+              "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T15:18:49.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Finish_UI.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\Finish_UI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\Finish_UI.cs",
@@ -98,12 +141,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\Finish_UI.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwDYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T15:48:46.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T15:48:46.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Shop_Navigator.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\UIScripts\\Shop_Navigator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIScripts\\Shop_Navigator.cs",
@@ -115,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Tutorial.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Tutorial.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial.cs",
@@ -127,44 +169,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Workshop_UI.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\UIScripts\\Workshop_UI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIScripts\\Workshop_UI.cs",
               "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\UIScripts\\Workshop_UI.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIScripts\\Workshop_UI.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAhwD8AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T15:20:25.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T15:20:25.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DialogueManager.cs",
-              "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueSystem\\DialogueManager.cs",
-              "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DialogueSystem\\DialogueManager.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAzwCkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T15:18:53.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DialogueTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
-              "ToolTip": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T15:18:49.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TestTaskTracker.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\TaskSystem\\TestTaskTracker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TaskSystem\\TestTaskTracker.cs",
@@ -176,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "TaskTracker.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\TaskSystem\\TaskTracker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TaskSystem\\TaskTracker.cs",
@@ -188,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ShopInventory.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ShopInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ShopInventory.cs",
@@ -200,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "SellButton.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\SellButton.cs",
@@ -212,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BuyButton.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\BuyButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\BuyButton.cs",
@@ -224,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "BuyObjectButton.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\BuyObjectButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\BuyObjectButton.cs",
@@ -236,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "NewMaterial.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\NewMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\NewMaterial.cs",
@@ -248,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "MaterialItem.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\MaterialItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\MaterialItem.cs",
@@ -260,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "DragProjects.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
@@ -272,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "SawMovement.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\SawMovement.cs",
@@ -284,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ObjectSpawner.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ObjectSpawner.cs",
@@ -296,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "SellableObjectButton.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\SellableObjectButton.cs",
@@ -308,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\EvnSp\\Documents\\A_My_Files\\C_School\\IGB200\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",

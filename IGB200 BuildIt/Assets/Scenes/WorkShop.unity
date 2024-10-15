@@ -3371,6 +3371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 286403114}
+  - component: {fileID: 286403115}
   m_Layer: 5
   m_Name: NPC_Image
   m_TagString: Untagged
@@ -3398,6 +3399,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &286403115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286403113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86bbdef55d831f84e8328a4759da5fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcImage: {fileID: 1997726338}
+  Portraits:
+  - {fileID: 21300000, guid: 7f5f69a871b73c8469203da98c09e551, type: 3}
+  - {fileID: 21300000, guid: 65f1b8d1df04a0449893c7674c1ee68f, type: 3}
+  DialogueManager: {fileID: 93309439}
 --- !u!1 &287401710
 GameObject:
   m_ObjectHideFlags: 0
@@ -8583,7 +8601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 242.3, y: 355}
+  m_AnchoredPosition: {x: 242.3, y: 328}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &628607137
@@ -8606,7 +8624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bc68f3068e397848b80c7fcb23f5fee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 258d25bd6a803bb4da627c29bbc0f099, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18034,6 +18052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1251748825}
+  - component: {fileID: 1251748826}
   m_Layer: 5
   m_Name: NPC_Image
   m_TagString: Untagged
@@ -18061,6 +18080,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1251748826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251748824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86bbdef55d831f84e8328a4759da5fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcImage: {fileID: 628607137}
+  Portraits:
+  - {fileID: 21300000, guid: 258d25bd6a803bb4da627c29bbc0f099, type: 3}
+  - {fileID: 21300000, guid: 63d02614bac7b704eaffa8c68d1e11af, type: 3}
+  DialogueManager: {fileID: 93309439}
 --- !u!1 &1266072259
 GameObject:
   m_ObjectHideFlags: 0
@@ -25544,7 +25580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 242.3, y: 352}
+  m_AnchoredPosition: {x: 242.3, y: 332}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1867605694
@@ -25567,7 +25603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 50c49fa34dbf0db4ca18eb5b7be6bdaf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3142b5af9718fc47a142fa5a607b926, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25823,6 +25859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1906805362}
+  - component: {fileID: 1906805363}
   m_Layer: 5
   m_Name: NPC_Image
   m_TagString: Untagged
@@ -25850,6 +25887,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1906805363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906805361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86bbdef55d831f84e8328a4759da5fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcImage: {fileID: 1867605694}
+  Portraits:
+  - {fileID: 21300000, guid: c3142b5af9718fc47a142fa5a607b926, type: 3}
+  - {fileID: 21300000, guid: 0594ce99b040f4c4e96a60323c482f21, type: 3}
+  DialogueManager: {fileID: 93309439}
 --- !u!1 &1908760928
 GameObject:
   m_ObjectHideFlags: 0
@@ -27219,7 +27273,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d1a743aed80bed347819db2bd0040148, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7f5f69a871b73c8469203da98c09e551, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

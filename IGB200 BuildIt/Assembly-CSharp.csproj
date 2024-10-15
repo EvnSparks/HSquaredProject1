@@ -132,6 +132,7 @@
     <Compile Include="Assets\Scripts\TvTig Scripts\SlicesMetadata.cs" />
     <Compile Include="Assets\Scripts\TaskSystem\TestTaskTracker.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\Scripts\DialogueSystem\ImageChanger.cs" />
     <Compile Include="Assets\Scripts\Inventory\SellButton.cs" />
   </ItemGroup>
   <ItemGroup>
