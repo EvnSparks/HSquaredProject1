@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\constructionscripts\\dragprojects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\dragprojects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\constructionscripts\\button_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\button_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\constructionscripts\\tutorialprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\tutorialprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\constructionscripts\\tutorialenqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constructionscripts\\tutorialenqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\dialoguesystem\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguesystem\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|c:\\users\\cameron\\documents\\github\\igb_200_h_squared_project\\igb200 buildit\\assets\\scripts\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B1C1C-15B0-9A25-B70F-DF9C437D180C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Button_UI.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\Button_UI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\Button_UI.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\Button_UI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\Button_UI.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAuwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T00:39:12.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TutorialEnqueue.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\TutorialEnqueue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\TutorialEnqueue.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\TutorialEnqueue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\TutorialEnqueue.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAA5wFUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T21:33:36.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TutorialProgress.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\TutorialProgress.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\TutorialProgress.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\TutorialProgress.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\TutorialProgress.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAmwD4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T21:31:57.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DialogueTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DialogueSystem\\DialogueTrigger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T15:18:49.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Tutorial.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Tutorial.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\Tutorial.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tutorial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T21:38:27.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryItem.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\InventoryItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryItem.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\InventoryItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventoryItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T00:48:33.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DragProjects.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstructionScripts\\DragProjects.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwCgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T00:20:58.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Cameron\\Documents\\GitHub\\IGB_200_H_Squared_Project\\IGB200 BuildIt\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwCEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T12:45:09.793Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
