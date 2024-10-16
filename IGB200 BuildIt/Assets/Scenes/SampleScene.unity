@@ -679,7 +679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScene: 
-  projectType: 2
+  projectType: 0
   activeShop: 0
   shopItemSelected: 0
   money: 0
