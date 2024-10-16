@@ -40,7 +40,7 @@ public class SawMovement : MonoBehaviour
             cutting = 0;
             planeSlice.IsEnabled(false);
             foreach (MeshRenderer renderer in meshRenderer)
-                renderer.enabled = true;
+                renderer.enabled = false;
         }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hitInfo, 100, LayerMask.GetMask("Default")))
@@ -51,8 +51,8 @@ public class SawMovement : MonoBehaviour
                 transform.position += (hitInfo.point - transform.position) * cutSpeed * Time.fixedDeltaTime;
                 //add sawing motion
                 sawMotion.transform.position += (transform.position - Camera.main.transform.position).normalized * sawAnimationStrength * Mathf.Sin(Time.time * sawAnimationSpeed) * Time.fixedDeltaTime;
-            }   
-            else 
+            }
+            else
                 transform.position += (hitInfo.point - transform.position) * baseSpeed * Time.fixedDeltaTime;
         }
     }

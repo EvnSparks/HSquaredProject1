@@ -8,6 +8,7 @@ public class InventoryItem
     {
         Plank,
         Table,
+        Sign,
         Chair, // likely unused
         Cabinet // likely unused
     }
@@ -25,6 +26,6 @@ public class InventoryItem
         this.accuracyRating = accuracyRating;
         this.materialCost = materialCost;
         this.projectType = projectType;
-        this.speedRating = Mathf.Min(5-(timeTaken/60), 1);
+        this.speedRating = Mathf.Max(5-(timeTaken/60), 1);
     }
 }

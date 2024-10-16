@@ -10,16 +10,17 @@ public class PlaneSlice : MonoBehaviour
     bool isEnabled = false;
     public Dictionary<GameObject, Vector3> startSlice = new Dictionary<GameObject, Vector3>();
     public List<GameObject> insideObject = new List<GameObject>();
+    public TutorialProgress updateTut;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Sliceable>())
         {
             insideObject.Add(other.gameObject);
-            if (isEnabled) 
+            if (isEnabled)
                 startSlice.Add(other.gameObject, other.ClosestPoint(transform.position));
         }
-        
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -83,6 +84,7 @@ public class PlaneSlice : MonoBehaviour
                 Projects project = slices[-1 * (deleteObject - 1)].AddComponent<Projects>();
                 project.magnetPos = tempPos;
                 project.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                updateTut.slice = true;
             }
         }
     }

@@ -59,6 +59,6 @@ public class Button_UI: MonoBehaviour, IPointerEnterHandler
         rating = ((rating / enabledCount) + leastAccurate) / 2;
         Debug.Log(rating);
         Debug.Log(5 - (Time.time - time) / 60);
-        Finish.ShowMenu(new InventoryItem(rating, Mathf.Max(5 - (Time.time - time)/60, 1), materialsUsed, 1,  GameManager.instance.projectType));
+        Finish.ShowMenu(new InventoryItem(rating, Time.time - time, materialsUsed, 1,  GameManager.instance.projectType));
     }
 }

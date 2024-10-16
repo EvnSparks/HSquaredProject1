@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class DragProjects : MonoBehaviour
@@ -22,6 +24,7 @@ public class DragProjects : MonoBehaviour
                         grabbedProject = hitInfo1.collider.gameObject.GetComponent<Projects>();
                         offset = hitInfo1.point - grabbedProject.magnetPos;
                         plane.transform.position = hitInfo1.point;
+                        Debug.Log(grabbedProject);
                     }
                 }
             }
@@ -34,7 +37,7 @@ public class DragProjects : MonoBehaviour
                 grabbedProject.magnetPos = hitInfo.point - offset;
             }
         }
-        if (Input.GetKeyUp(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Mouse0) && GameManager.instance.state == GameManager.State.NewProject)
+        if (Input.GetKeyUp(KeyCode.Mouse1))
         {
             grabbedProject = null;
             GameManager.instance.SetState(GameManager.State.Default);

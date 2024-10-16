@@ -10,6 +10,8 @@ public class TutorialProgress : MonoBehaviour
 
     public int progress = 0;
     private int currentTutorialText = 1000;
+    public bool slice = false;
+    public DetectOverlap blueprint;
 
     private void Update()
     {
@@ -34,7 +36,7 @@ public class TutorialProgress : MonoBehaviour
                         ExitDialogue();
                         currentTutorialText = 2;
                     }
-                    if (Input.GetKeyDown(KeyCode.Mouse0)) // change to saw cut detection
+                    if (slice) // change to saw cut detection
                         progress = 3;
                     break;
                 case 3:
@@ -50,7 +52,7 @@ public class TutorialProgress : MonoBehaviour
                         ExitDialogue();
                         currentTutorialText = 4;
                     }
-                    if (Input.GetKeyDown(KeyCode.Mouse0)) // change to blueprint detection  
+                    if (blueprint.Overlap().x > 4) // change to blueprint detection  
                         progress = 5;
                     break;
                 case 5:
@@ -58,6 +60,14 @@ public class TutorialProgress : MonoBehaviour
                     animations[1].SetActive(false);
                     if (Input.GetKeyDown(KeyCode.Mouse0) && TutorialEnqueue.Instance.textFinished)
                         progress = 6;
+                    break;
+                case 6:
+                    if (progress != currentTutorialText)
+                    {
+                        ExitDialogue();
+                        currentTutorialText = 4;
+                    }
+                    GameManager.instance.tutorialActive = false;
                     break;
                 default:
                     animations[0].SetActive(false);

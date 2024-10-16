@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     //Game State Tracker
     public bool firstTime = true;
+    public bool tutorialActive = false;
 
     public enum State
     {
