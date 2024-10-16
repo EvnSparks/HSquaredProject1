@@ -1,0 +1,568 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.38f1 (c5d5a7410213) revision 12965287'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 32459 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.38f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+C:/Users/yladr/Desktop/QUT 2024/igb200/IGB_200_H_Squared_Project/HSquaredProject1/IGB200 BuildIt
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+57599
+Successfully changed project path to: C:/Users/yladr/Desktop/QUT 2024/igb200/IGB_200_H_Squared_Project/HSquaredProject1/IGB200 BuildIt
+C:/Users/yladr/Desktop/QUT 2024/igb200/IGB_200_H_Squared_Project/HSquaredProject1/IGB200 BuildIt
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [41892]  Target information:
+
+Player connection [41892]  * "[IP] 10.2.0.2 [Port] 0 [Flags] 2 [Guid] 396073989 [EditorId] 396073989 [Version] 1048832 [Id] WindowsEditor(7,adrianyllai) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [41892]  * "[IP] 10.88.47.222 [Port] 0 [Flags] 2 [Guid] 396073989 [EditorId] 396073989 [Version] 1048832 [Id] WindowsEditor(7,adrianyllai) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [41892] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [41892] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Refreshing native plugins compatible for Editor in 11.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.38f1 (c5d5a7410213)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/yladr/Desktop/QUT 2024/igb200/IGB_200_H_Squared_Project/HSquaredProject1/IGB200 BuildIt/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti Laptop GPU (ID=0x2420)
+    Vendor:   NVIDIA
+    VRAM:     16175 MB
+    Driver:   32.0.15.6590
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.007585 seconds.
+- Loaded All Assemblies, in  0.271 seconds
+Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.206 seconds
+Domain Reload Profiling: 476ms
+	BeginReloadAssembly (76ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (109ms)
+		LoadAssemblies (76ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (107ms)
+			TypeCache.Refresh (106ms)
+				TypeCache.ScanAssembly (95ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (207ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (159ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.555 seconds
+Refreshing native plugins compatible for Editor in 6.96 ms, found 3 plugins.
+Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.613 seconds
+Domain Reload Profiling: 1165ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (382ms)
+		LoadAssemblies (271ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (171ms)
+			TypeCache.Refresh (139ms)
+				TypeCache.ScanAssembly (124ms)
+			ScanForSourceGeneratedMonoScriptInfo (23ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (613ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (496ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (256ms)
+			ProcessInitializeOnLoadMethodAttributes (156ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 5.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6168 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 108 unused Assets / (370.0 KB). Loaded Objects now: 6600.
+Memory consumption went from 231.8 MB to 231.4 MB.
+Total: 5.464100 ms (FindLiveObjects: 0.286000 ms CreateObjectMapping: 0.178900 ms MarkObjects: 4.810100 ms  DeleteObjects: 0.188300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 428651.415353 seconds.
+  path: Assets/Adrian/common-wood-plank-dimensions/textures/4k_WoodBake_Diffuse.png
+  artifactKey: Guid(50350588be197384393282877da77fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/common-wood-plank-dimensions/textures/4k_WoodBake_Diffuse.png using Guid(50350588be197384393282877da77fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7143501b6a09ad2051343aac3e5f693f') in 0.077147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Adrian/Materials/1000_F_330069115_iBbwoR3DhGw4PdgLsuHzrKgFt6ieqwNP.mat
+  artifactKey: Guid(f3d84d727ff8ff34fb7ea5646384c222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/Materials/1000_F_330069115_iBbwoR3DhGw4PdgLsuHzrKgFt6ieqwNP.mat using Guid(f3d84d727ff8ff34fb7ea5646384c222) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'fc3c49c34cde0b3a15471e0e8cbea41e') in 0.224432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Adrian/laxer tree pkg/Materials/bark pine wh.mat
+  artifactKey: Guid(f113aa97798e045439fc75f0f32b7573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/laxer tree pkg/Materials/bark pine wh.mat using Guid(f113aa97798e045439fc75f0f32b7573) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ae48db5a1a92a74cd6dc3a473e32347f') in 0.029881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat
+  artifactKey: Guid(f629c6e43dba4bf38cb74d8860150664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat using Guid(f629c6e43dba4bf38cb74d8860150664) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4ed726df2d64c9fdfe93ec9fafd54250') in 0.046370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Adrian/laxer tree pkg/Models/Materials/bark pine wh lw.mat
+  artifactKey: Guid(bd89ecb7585e33f41b8990012887c72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/laxer tree pkg/Models/Materials/bark pine wh lw.mat using Guid(bd89ecb7585e33f41b8990012887c72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '76439ec24f0a543cb51566251736ab7a') in 0.028350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Adrian/antique-lm-ericsson-phone/Materials/Bake_Low_Phone_BaseColor.mat
+  artifactKey: Guid(b574e7060e9556348a5e121d3170e464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/antique-lm-ericsson-phone/Materials/Bake_Low_Phone_BaseColor.mat using Guid(b574e7060e9556348a5e121d3170e464) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd036070b3c5d2580ed800f28eea8d55b') in 0.009062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat
+  artifactKey: Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat using Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '16def7c8f4180784c78381c3c8769737') in 0.062589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Adrian/antique-lm-ericsson-phone/textures/Bake_Low_Phone_Metallic.png
+  artifactKey: Guid(5b714d8c39671cf4e8192b95ca3a98a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/antique-lm-ericsson-phone/textures/Bake_Low_Phone_Metallic.png using Guid(5b714d8c39671cf4e8192b95ca3a98a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '438e115f077722605a14b949c921ef35') in 0.006509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Adrian/Textures/1000_F_330069115_iBbwoR3DhGw4PdgLsuHzrKgFt6ieqwNP.jpg
+  artifactKey: Guid(b94be61d9ffc98f41a39493bee366137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/Textures/1000_F_330069115_iBbwoR3DhGw4PdgLsuHzrKgFt6ieqwNP.jpg using Guid(b94be61d9ffc98f41a39493bee366137) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1ab4e4a2a52e8c894e155d512b7129fd') in 0.005536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Adrian/laxer tree pkg/Textures/bark.png
+  artifactKey: Guid(8875beb1e4179154eb0ce892639eb118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/laxer tree pkg/Textures/bark.png using Guid(8875beb1e4179154eb0ce892639eb118) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '224912926b9b3920f4e4d82f6396e203') in 0.006124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Adrian/antique-lm-ericsson-phone/textures/Bake_Low_Phone_Normal.png
+  artifactKey: Guid(b051e331178dbd04c9ad80509207d868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/antique-lm-ericsson-phone/textures/Bake_Low_Phone_Normal.png using Guid(b051e331178dbd04c9ad80509207d868) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8d11cbccd1851573ae2d706bda4337d8') in 0.006353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Adrian/laxer tree pkg/Materials/bark pine.mat
+  artifactKey: Guid(29c2b0eba15e760458c39566e404dfe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/laxer tree pkg/Materials/bark pine.mat using Guid(29c2b0eba15e760458c39566e404dfe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '093514a5b3da7286f0f240009ab21e91') in 0.007319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007851 seconds.
+  path: Assets/Shaders/Blueprint Outline.shadergraph
+  artifactKey: Guid(7850093942e044f4d9b0f79e7d548d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Blueprint Outline.shadergraph using Guid(7850093942e044f4d9b0f79e7d548d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6f52caba063742edff5b37fdf081caa0') in 0.010643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Adrian/old-blueprints/source/Blueprints/Blueprints.blend
+  artifactKey: Guid(d037e1337e09bc54b9e3b17e7214ad98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/old-blueprints/source/Blueprints/Blueprints.blend using Guid(d037e1337e09bc54b9e3b17e7214ad98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '34eea2f6fb9d71bad22f86d04a415079') in 0.159364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 82
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UIAssets/Materials/Blurmat.mat
+  artifactKey: Guid(8a9aacd645baa404c83a0c703dd748af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UIAssets/Materials/Blurmat.mat using Guid(8a9aacd645baa404c83a0c703dd748af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ef33e205c1ac09704b4c1ee845804158') in 0.341539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Adrian/old-blueprints/source/Blueprints/BlueprintsNML.png
+  artifactKey: Guid(b764eb4d619ed044a92f79a387cddf52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/old-blueprints/source/Blueprints/BlueprintsNML.png using Guid(b764eb4d619ed044a92f79a387cddf52) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e4eb81910f09670916a1020422a3e2fd') in 0.013101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.236052 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat
+  artifactKey: Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat using Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '02b7f56de337c23ffe951715a92e9b2f') in 0.019879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Adrian/lowpoly-tools-free-download/source/tools/lowpoly_tools_free/screwdriver_LOD3_roughness.jpg
+  artifactKey: Guid(177ec620b75be064b8054ff07e8fd808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/lowpoly-tools-free-download/source/tools/lowpoly_tools_free/screwdriver_LOD3_roughness.jpg using Guid(177ec620b75be064b8054ff07e8fd808) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f782d76c08e22ee18b11130a070d4aec') in 0.009475 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/tree-semi-realistic/source/TREE_REALISTIC/textures/TexturesCom_TreeBark2_1K_albedo.tif
+  artifactKey: Guid(b95bf5ed5e42f5c44a70938d677eb118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tree-semi-realistic/source/TREE_REALISTIC/textures/TexturesCom_TreeBark2_1K_albedo.tif using Guid(b95bf5ed5e42f5c44a70938d677eb118) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '86c4bf615c9a9f3ab6c0c5268f5ce468') in 0.011074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Adrian/hand plane-20241006T142209Z-001/hand plane/hand plane 7_gold screw_BaseMap.png
+  artifactKey: Guid(b87b21c2d00852648b7eed371d3aa4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/hand plane-20241006T142209Z-001/hand plane/hand plane 7_gold screw_BaseMap.png using Guid(b87b21c2d00852648b7eed371d3aa4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '05eb8c9b75e9bc94d103287d3ef49d3b') in 0.021718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Adrian/lowpoly-tools-free-download/Materials/screwdriver_LOD3_albedo.mat
+  artifactKey: Guid(2e441cb9518148948a48e9ac8a0b01ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/lowpoly-tools-free-download/Materials/screwdriver_LOD3_albedo.mat using Guid(2e441cb9518148948a48e9ac8a0b01ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a9812d7ab2bcf104488c901b6a935266') in 0.018979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Adrian/decorative-pottery-collection/Materials/TexturesCom_TilesZellige0078_3_seamless_S.mat
+  artifactKey: Guid(236aeb58970bc374fb65e2b1436ed2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/decorative-pottery-collection/Materials/TexturesCom_TilesZellige0078_3_seamless_S.mat using Guid(236aeb58970bc374fb65e2b1436ed2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7753bfe8026bbb3b7664bd2446968810') in 0.021345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Adrian/decorative-pottery-collection/Materials/TexturesCom_TilesZellige0184_6_seamless_S.mat
+  artifactKey: Guid(03baf95bec52ce94a8040a0d7c03702b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/decorative-pottery-collection/Materials/TexturesCom_TilesZellige0184_6_seamless_S.mat using Guid(03baf95bec52ce94a8040a0d7c03702b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'fb61f40ce8f078ddd1f61b84dcc12e8e') in 0.019523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Settings/SampleSceneProfile.asset
+  artifactKey: Guid(a6560a915ef98420e9faacc1c7438823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/SampleSceneProfile.asset using Guid(a6560a915ef98420e9faacc1c7438823) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'de29200738511273b2ec9da1797ee85a') in 0.001915 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Adrian/lowpoly-tools-free-download/source/tools/lowpoly_tools_free/screwdriver_LOD3_albedo.jpg
+  artifactKey: Guid(3b3a03a1fcf52ef4fb4aa0f8a44ebf8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/lowpoly-tools-free-download/source/tools/lowpoly_tools_free/screwdriver_LOD3_albedo.jpg using Guid(3b3a03a1fcf52ef4fb4aa0f8a44ebf8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '04ddc01173813e56ba903db3117bdd4d') in 0.008156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/tree-semi-realistic/source/TREE_REALISTIC/textures/TexturesCom_TreeBark2_1K_roughness.tif
+  artifactKey: Guid(014b6d1769cfac74598b01b8ba8ec50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tree-semi-realistic/source/TREE_REALISTIC/textures/TexturesCom_TreeBark2_1K_roughness.tif using Guid(014b6d1769cfac74598b01b8ba8ec50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '77780cb857526343fd327319a654ad39') in 0.011179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Adrian/decorative-pottery-collection/Materials/TexturesCom_OrientalMurals0030_2_seamless_.mat
+  artifactKey: Guid(2355a4a4dea9f4d498cfbdbad99b7f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/decorative-pottery-collection/Materials/TexturesCom_OrientalMurals0030_2_seamless_.mat using Guid(2355a4a4dea9f4d498cfbdbad99b7f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e22007b0b20e5f7fa4b11b7b51a1e403') in 0.020872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat
+  artifactKey: Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat using Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '46881c7b78d0b1708756936e678d31a6') in 0.012037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Adrian/lowpoly-tools-free-download/source/tools/lowpoly_tools_free/screwdriver_LOD3_normal.jpg
+  artifactKey: Guid(c31170ef64126644cb45a584ff7de58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/lowpoly-tools-free-download/source/tools/lowpoly_tools_free/screwdriver_LOD3_normal.jpg using Guid(c31170ef64126644cb45a584ff7de58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '73c17031182f1a8a82397227aa88198b') in 0.017243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Adrian/hand plane-20241006T142209Z-001/hand plane/hand plane 7_screw_BaseMap.png
+  artifactKey: Guid(9a693e3dd1e338344a5f26bf44fc817c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/hand plane-20241006T142209Z-001/hand plane/hand plane 7_screw_BaseMap.png using Guid(9a693e3dd1e338344a5f26bf44fc817c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '10840e12d0795cb11209ae087040fd47') in 0.006931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/tree-semi-realistic/source/TREE_REALISTIC/textures/TexturesCom_TreeBark2_1K_normal.tif
+  artifactKey: Guid(ff57764f219c8564785523c6b8d27ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tree-semi-realistic/source/TREE_REALISTIC/textures/TexturesCom_TreeBark2_1K_normal.tif using Guid(ff57764f219c8564785523c6b8d27ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '91a9441b1c2091d2bd03207bb35ba184') in 0.012738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png
+  artifactKey: Guid(c76d18757a194d618355f05f815cb0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png using Guid(c76d18757a194d618355f05f815cb0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e381aaf1b10f0757d0741e02f4dc8f64') in 0.009096 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/tree-semi-realistic/textures/TexturesCom_TreeBark2_1K_albedo.png
+  artifactKey: Guid(085f1f05b41a7f94fa42f3ce30466ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tree-semi-realistic/textures/TexturesCom_TreeBark2_1K_albedo.png using Guid(085f1f05b41a7f94fa42f3ce30466ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'fcc7a154fb00b73a5c2f56b3088333da') in 0.005320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Adrian/hand plane-20241006T142209Z-001/hand plane/Materials/hand plane 7_gold screw_BaseMap.mat
+  artifactKey: Guid(143f618d869581f47988e0d63e6794d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adrian/hand plane-20241006T142209Z-001/hand plane/Materials/hand plane 7_gold screw_BaseMap.mat using Guid(143f618d869581f47988e0d63e6794d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c7522b130db073b97d6fde41b83d77f3') in 0.007115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
