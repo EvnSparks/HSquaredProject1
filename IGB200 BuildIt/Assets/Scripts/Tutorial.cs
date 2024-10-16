@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Tutorial : MonoBehaviour
 {
@@ -67,8 +68,6 @@ public class Tutorial : MonoBehaviour
             prompt.SetActive(true);
 
             IndexLogic();
-
-
             
             if(Input.GetMouseButtonDown(0))
             {
@@ -107,6 +106,7 @@ public class Tutorial : MonoBehaviour
     {
         isTutorialActive = false;
         TutorialPanel.SetActive(false);
+        SceneManager.LoadScene("WorkShop");
     }
 
     //When Click increase the index and cycle through the tutorial
@@ -127,8 +127,6 @@ public class Tutorial : MonoBehaviour
                     TutArrows[ArrowIndex -1].SetActive(false);
                     TutArrows[ArrowIndex].SetActive(true);
                 }
-                           
-
             }
         }
     }
@@ -193,10 +191,5 @@ public class Tutorial : MonoBehaviour
             {
                 TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location3.transform.position,10f);
             }
-
-    }
-
-    
-
-    
+    } 
 }

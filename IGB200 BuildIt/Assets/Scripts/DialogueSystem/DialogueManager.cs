@@ -38,9 +38,6 @@ public class DialogueManager : MonoBehaviour
                 StopAllCoroutines();
                 dialogueArea.text = currentLine.line;
 
-                // This is the potential fault/ bug issue here.
-                //DisplayNextDialogueLine();
-
                 // Only shows the continue/ exit buttons if all inventories and exit workshop button is off
                 if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[3].activeSelf == false && CanvasDialogue[5].activeSelf == false)
                 {
@@ -48,6 +45,16 @@ public class DialogueManager : MonoBehaviour
                     CanvasDialogue[4].SetActive(true);
                 }
             }
+        }
+
+        // Check GameManager for First Time Check, if true then do the following
+        if(GameManager.instance.firstTime)
+        {
+            typingSpeed = 0;
+        }
+        else
+        {
+            typingSpeed = 0.05f;
         }
     }
 
