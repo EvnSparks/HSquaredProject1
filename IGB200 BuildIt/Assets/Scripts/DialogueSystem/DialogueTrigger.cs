@@ -21,17 +21,21 @@ public class DialogueTrigger : MonoBehaviour
 
     public DialogueManager dialogueManagerScript;
 
+    // Set the size of the dialogue box
+    public float dialogueBoxWidth;
+    public float dialogueBoxHeight;
+
     public void ShopWelcome(int activeShop)
     {
         DialogueList welcomeDialouge = new DialogueList();
         welcomeDialouge.dialogueLines.Add(dialogue.dialogueLines[activeShop - 1]);
 
-        DialogueManager.Instance.StartDialogue(welcomeDialouge);
+        DialogueManager.Instance.StartDialogue(welcomeDialouge, dialogueBoxWidth, dialogueBoxHeight);
     }
 
     public void TriggerDialogue()
     {
-        DialogueManager.Instance.StartDialogue(dialogue);
+        DialogueManager.Instance.StartDialogue(dialogue, dialogueBoxWidth, dialogueBoxHeight);
     }
 
     public void ExitDialogue()

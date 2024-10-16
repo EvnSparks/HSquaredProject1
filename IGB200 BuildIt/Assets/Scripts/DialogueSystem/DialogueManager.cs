@@ -7,17 +7,13 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
-
     public TextMeshProUGUI dialogueArea;
 
     public GameObject[] CanvasDialogue;
-
     private Queue<DialogueLine> lines;
-
     DialogueLine currentLine;
 
     public bool isDialogueActive = false;
-
     public float typingSpeed = 0.05f;
 
     private void Awake()
@@ -58,10 +54,17 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(DialogueList dialogue)
+    public void StartDialogue(DialogueList dialogue, float dialogueBoxWidth, float dialogueBoxHeight)
     {
         isDialogueActive = true;
+        
+        // Dialogue Box is set to active
         CanvasDialogue[0].SetActive(true);
+
+        // Set the size of the dialogue box
+        RectTransform box = CanvasDialogue[0].GetComponent<RectTransform>();
+        box.sizeDelta = new Vector2(dialogueBoxWidth, dialogueBoxHeight);
+        
         CanvasDialogue[2].SetActive(false);
 
         lines.Clear();
