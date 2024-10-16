@@ -72,7 +72,6 @@ public class Finish_UI : MonoBehaviour
             yield return new WaitForSeconds(waitTime[1]);
         }
         yield return new WaitForSeconds(waitTime[0]);
-        Debug.Log(Mathf.Round(item.speedRating));
         for (int i = 0; i < Mathf.Round(item.speedRating); i++)
         {
             speedStars[i].Spawn();

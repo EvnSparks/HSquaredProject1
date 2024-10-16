@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class DragProjects : MonoBehaviour
@@ -38,7 +37,6 @@ public class DragProjects : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Mouse0) && GameManager.instance.state == GameManager.State.NewProject)
         {
             grabbedProject = null;
-            plane.transform.position = Vector3.zero;
             GameManager.instance.SetState(GameManager.State.Default);
         }
     }

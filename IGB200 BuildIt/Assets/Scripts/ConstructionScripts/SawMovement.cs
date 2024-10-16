@@ -40,7 +40,7 @@ public class SawMovement : MonoBehaviour
             cutting = 0;
             planeSlice.IsEnabled(false);
             foreach (MeshRenderer renderer in meshRenderer)
-                renderer.enabled = false;
+                renderer.enabled = true;
         }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hitInfo, 100, LayerMask.GetMask("Default")))
