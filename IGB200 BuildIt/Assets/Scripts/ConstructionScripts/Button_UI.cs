@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Button_UI: MonoBehaviour, IPointerEnterHandler
 {
+    // Setting up variables
     public GameObject rubbishButton;
     public DragProjects grabObject;
     public GameObject newProject;
@@ -14,6 +15,7 @@ public class Button_UI: MonoBehaviour, IPointerEnterHandler
     public Finish_UI Finish;
     private float time;
     private int materialsUsed = 1;
+
     private void Start()
     {
         time = Time.time;
