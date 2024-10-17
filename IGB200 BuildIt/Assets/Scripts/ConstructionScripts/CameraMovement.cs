@@ -25,7 +25,7 @@ public class CameraMovement : MonoBehaviour
     private void Start()
     {
         camera = this.GetComponent<Camera>();
-        cameraZoom = maxZoom;
+        cameraZoom = 50;
     }
 
     // Update is called once per frame

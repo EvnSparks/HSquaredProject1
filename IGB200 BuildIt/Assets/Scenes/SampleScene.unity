@@ -4360,10 +4360,10 @@ GameObject:
   - component: {fileID: 1028505672}
   - component: {fileID: 1028505671}
   - component: {fileID: 1028505670}
-  - component: {fileID: 1028505678}
   - component: {fileID: 1028505675}
   - component: {fileID: 1028505677}
   - component: {fileID: 1028505676}
+  - component: {fileID: 1028505678}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4533,11 +4533,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1028505669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3e260a3e19da8147a364756c71d930e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e0438e671122994bbd92b6b3be28f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rubbishButton: {fileID: 1183164361}
-  grabObject: {fileID: 330585550}
+  grabObject: {fileID: 0}
   newProject: {fileID: 3662198253251919071, guid: e0041b0062e25904ab3f555620b1277a,
     type: 3}
   blueprints:
