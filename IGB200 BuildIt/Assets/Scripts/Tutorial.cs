@@ -107,6 +107,8 @@ public class Tutorial : MonoBehaviour
     {
         isTutorialActive = false;
         TutorialPanel.SetActive(false);
+        GameManager.instance.tutorialActive = false;
+        GameManager.instance.firstTime = false;
         SceneManager.LoadScene("WorkShop");
     }
 
