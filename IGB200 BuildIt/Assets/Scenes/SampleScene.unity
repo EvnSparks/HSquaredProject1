@@ -777,7 +777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentScene: 
   itemrefmodifier: 0
-  projectType: 0
+  projectType: 2
   materialselected: 0
   activeShop: 0
   shopItemSelected: 0
@@ -785,6 +785,12 @@ MonoBehaviour:
   playerName: 
   firstTime: 1
   tutorialActive: 1
+  quest1complete: 0
+  quest2complete: 0
+  quest3complete: 0
+  questactive: 1
+  fiveStarPlanksCount: 0
+  threeStarSignCount: 0
   state: 1
 --- !u!4 &199189393
 Transform:
@@ -873,7 +879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &246726048
 Transform:
   m_ObjectHideFlags: 0
@@ -1149,8 +1155,8 @@ Transform:
   m_GameObject: {fileID: 293742603}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 1.5, z: 1.5}
-  m_LocalScale: {x: 0.5, y: 3, z: 0.5}
+  m_LocalPosition: {x: -1, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2446,8 +2452,8 @@ Transform:
   m_GameObject: {fileID: 458041686}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 1.5, z: -1.5}
-  m_LocalScale: {x: 0.5, y: 3, z: 0.5}
+  m_LocalPosition: {x: 1, y: 0.5, z: -1}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3418,8 +3424,8 @@ Transform:
   m_GameObject: {fileID: 699980691}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 1.5, z: 1.5}
-  m_LocalScale: {x: 0.5, y: 3, z: 0.5}
+  m_LocalPosition: {x: 1, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4539,7 +4545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rubbishButton: {fileID: 1183164361}
-  grabObject: {fileID: 0}
+  grabObject: {fileID: 330585550}
   newProject: {fileID: 3662198253251919071, guid: e0041b0062e25904ab3f555620b1277a,
     type: 3}
   blueprints:
@@ -6329,8 +6335,8 @@ Transform:
   m_GameObject: {fileID: 1404161467}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 4, y: 0.2, z: 4}
+  m_LocalPosition: {x: 0, y: 1.15, z: 0}
+  m_LocalScale: {x: 3, y: 0.25, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6524,8 +6530,8 @@ Transform:
   m_GameObject: {fileID: 1480172651}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 1.5, z: -1.5}
-  m_LocalScale: {x: 0.5, y: 3, z: 0.5}
+  m_LocalPosition: {x: -1, y: 0.5, z: -1}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

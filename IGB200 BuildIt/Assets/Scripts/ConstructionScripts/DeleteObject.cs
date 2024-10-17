@@ -20,7 +20,7 @@ public class DeleteObject : MonoBehaviour
         if (Time.time - startTime > lifeTime)
         {
             transform.localScale -= Vector3.one * shrinkRate * Time.deltaTime * (Time.time - startTime);
-            if (transform.localScale.x < 0.05f)
+            if (transform.localScale.y < 0.05f)
                 Destroy(this.gameObject);
         }
     }
