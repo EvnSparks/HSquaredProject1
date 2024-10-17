@@ -49,6 +49,17 @@ public class Finish_UI : MonoBehaviour
     public void MainMenu()
     {
         GameManager.instance.inventory.Add(item);
+        
+        // Add to quest tracker based on the following
+        if (item.accuracyRating >= 4.5 && item.projectType == InventoryItem.ProjectType.Plank)
+        {
+            GameManager.instance.fiveStarPlanksCount++;
+        }
+        else if (GameManager.instance.questactive == 2 && item.accuracyRating >= 2.5 && item.projectType == InventoryItem.ProjectType.Sign)
+        {
+            GameManager.instance.threeStarSignCount++;
+        }
+
         SceneManager.LoadScene("WorkShop");
     }
 

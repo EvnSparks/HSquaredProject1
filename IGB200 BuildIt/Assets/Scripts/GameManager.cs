@@ -46,6 +46,15 @@ public class GameManager : MonoBehaviour
     public bool firstTime = true;
     public bool tutorialActive = false;
 
+    //Quest Tracking
+    public bool quest1complete = false;
+    public bool quest2complete = false;
+    public bool quest3complete = false;
+
+    public int questactive = 1;
+    public int fiveStarPlanksCount = 0;
+    public int threeStarSignCount = 0;
+
     public enum State
     {
         Default, // resets to last tool used

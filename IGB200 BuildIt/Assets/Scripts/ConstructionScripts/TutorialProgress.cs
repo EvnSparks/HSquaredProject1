@@ -68,6 +68,7 @@ public class TutorialProgress : MonoBehaviour
                         currentTutorialText = 4;
                     }
                     GameManager.instance.tutorialActive = false;
+                    GameManager.instance.firstTime = false;
                     break;
                 default:
                     animations[0].SetActive(false);

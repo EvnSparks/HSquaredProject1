@@ -49,8 +49,7 @@ public class MainMenu : MonoBehaviour
         if (nameInput.text.Length > 1)
         {
             GameManager.instance.playerName = nameInput.text;
-            GameManager.instance.firstTime = false;
-            SceneManager.LoadScene("Workshop");
+            SceneManager.LoadScene("Tutorial");
             error.text = "";
         }
         else

@@ -98,6 +98,7 @@ public class Tutorial : MonoBehaviour
     {
         isTutorialActive = true;
         TutText.text = TutDialogue[0];
+        GameManager.instance.tutorialActive = true;
         StartButtons.SetActive(false);
 
     }

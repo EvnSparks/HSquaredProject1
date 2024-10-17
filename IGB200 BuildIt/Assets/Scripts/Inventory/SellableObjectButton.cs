@@ -90,14 +90,14 @@ public class SellableObjectButton : MonoBehaviour
         GameManager.instance.money += sellPrice;
 
         // Prevent going into negatives
-        if (inventoryReference != 0)
+        if (inventoryReference != 0 || GameManager.instance.inventory.Count != 1)
         {
             GameManager.instance.inventory.RemoveAt(inventoryReference - GameManager.instance.itemrefmodifier);
             GameManager.instance.itemrefmodifier += 1;
         }
         else
         {
-            GameManager.instance.inventory.RemoveAt(inventoryReference);
+            GameManager.instance.inventory.RemoveAt(0);
         }
 
         Destroy(gameObject);

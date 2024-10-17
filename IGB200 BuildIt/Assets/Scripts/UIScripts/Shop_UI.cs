@@ -9,7 +9,7 @@ public class Shop_UI : MonoBehaviour
 
     //Stores triggers 
     public DialogueTrigger Talk;
-    public DialogueTrigger SpecialQuest;
+    public DialogueTriggerQuest SpecialQuest;
     public DialogueTrigger Sell;
 
     // Object Spawner Script
