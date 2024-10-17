@@ -14,11 +14,13 @@ public class SellableObjectButton : MonoBehaviour
     public float timeScore;
     private float timeScoreVisible; // rounded, only used for display
     public float basePrice;
-    public InventoryItem originalItem;
+    public string material;
+
     public int inventoryReference;
 
+    public InventoryItem item;
+
     private float sellPrice;
-    private float buyPrice;
     private int activeShop;
 
     // GUI Variables
@@ -53,7 +55,7 @@ public class SellableObjectButton : MonoBehaviour
             else
             {
                 // Calc for time Shop
-                sellPrice = basePrice * timeScore;
+                sellPrice = basePrice * timeScoreVisible;
             }
                 
             // Update all the values in the window
@@ -62,6 +64,8 @@ public class SellableObjectButton : MonoBehaviour
                 "Precision Score: " + precisionScoreVisible.ToString() + "/5";
             itemViewerGUI.transform.Find("ItemVariables/TimeScore").GetComponent<TextMeshProUGUI>().text =
                 "Time Score: " + timeScoreVisible.ToString() + "/5";
+            itemViewerGUI.transform.Find("ItemVariables/Material").GetComponent<TextMeshProUGUI>().text =
+                "Material: " + material.ToString();
             itemViewerGUI.transform.Find("ItemVariables/Price").GetComponent<TextMeshProUGUI>().text =
                 "Sell Price: $" + sellPrice.ToString();
         }
@@ -85,12 +89,19 @@ public class SellableObjectButton : MonoBehaviour
     {
         GameManager.instance.money += sellPrice;
 
-        // This currently does not delete the object from the inventory list - Evan
-        GameManager.instance.inventory.Remove(originalItem);
+        // Prevent going into negatives
+        if (inventoryReference != 0)
+        {
+            GameManager.instance.inventory.RemoveAt(inventoryReference - GameManager.instance.itemrefmodifier);
+            GameManager.instance.itemrefmodifier += 1;
+        }
+        else
+        {
+            GameManager.instance.inventory.RemoveAt(inventoryReference);
+        }
 
         Destroy(gameObject);
         itemViewerGUI.SetActive(false);
         GameManager.instance.shopItemSelected = false;
     }
-
 }

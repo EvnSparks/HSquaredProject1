@@ -13,10 +13,17 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject sellButton;
     public SellButton sellScript;
 
+    // Inventory reference number
+    private int inventoryReference;
+
     // This works for the moment, need to edit this to combine with the inventory system later
 
     private void Start()
     {
+        // Reset reference number
+        inventoryReference = 0;
+        GameManager.instance.itemrefmodifier = 0;
+
         SellableObjectButton objectSettings = craftedObject.GetComponent<SellableObjectButton>();
         objectSettings.itemViewerGUI = itemViewerGUI;
         objectSettings.sellButton = sellButton;
@@ -25,9 +32,16 @@ public class ObjectSpawner : MonoBehaviour
         {
             objectSettings.objectName = item.projectType.ToString();
             objectSettings.precisionScore = item.accuracyRating;
-            objectSettings.timeScore = Random.Range(1, 5);
-            objectSettings.basePrice = 3;
-            objectSettings.originalItem = item;
+            objectSettings.timeScore = item.speedRating;
+            objectSettings.basePrice = GameManager.instance.materialInventory[(int)item.materialQuality].costMultiplier * ((int)GameManager.instance.projectType + 1);
+            objectSettings.material = item.materialQuality.ToString();
+            
+            objectSettings.inventoryReference = inventoryReference;
+            inventoryReference++;
+
+            // Works here but does not carry over for some reason??? - Evan
+            //objectSettings.item = item;
+
             Instantiate(craftedObject, this.transform);
         }
     }

@@ -61,6 +61,22 @@ public class Buttons_UI : MonoBehaviour, IPointerEnterHandler
         rating = ((rating / enabledCount) + leastAccurate) / 2;
         Debug.Log(rating);
         Debug.Log(5 - (Time.time - time) / 60);
-        Finish.ShowMenu(new InventoryItem(rating, Time.time - time, materialsUsed, 1, GameManager.instance.projectType));
+
+        // Adjusts inventory amount of material based on object and material type
+        if (GameManager.instance.projectType == InventoryItem.ProjectType.Plank)
+        {
+            GameManager.instance.materialInventory[((int)GameManager.instance.materialselected)].inventoryAmount -= 1;
+        }
+        else if (GameManager.instance.projectType == InventoryItem.ProjectType.Sign)
+        {
+            GameManager.instance.materialInventory[((int)GameManager.instance.materialselected)].inventoryAmount -= 2;
+        }
+        else if (GameManager.instance.projectType == InventoryItem.ProjectType.Table)
+        {
+            GameManager.instance.materialInventory[((int)GameManager.instance.materialselected)].inventoryAmount -= 3;
+        }
+
+        Finish.ShowMenu(new InventoryItem(rating, Time.time - time, GameManager.instance.materialInventory[(int)GameManager.instance.materialselected].materialCost, 
+            GameManager.instance.materialselected, GameManager.instance.projectType));
     }
 }

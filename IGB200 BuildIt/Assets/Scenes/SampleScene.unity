@@ -776,7 +776,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScene: 
+  itemrefmodifier: 0
   projectType: 0
+  materialselected: 0
   activeShop: 0
   shopItemSelected: 0
   money: 0
@@ -1066,7 +1068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6cb1aeb4466cd344aa07aeebe22a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectType: 1
+  projectType: 2
 --- !u!65 &293742605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2363,7 +2365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6cb1aeb4466cd344aa07aeebe22a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectType: 1
+  projectType: 2
 --- !u!65 &458041688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3335,7 +3337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6cb1aeb4466cd344aa07aeebe22a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectType: 1
+  projectType: 2
 --- !u!65 &699980693
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4751,7 +4753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6cb1aeb4466cd344aa07aeebe22a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectType: 2
+  projectType: 1
 --- !u!65 &1077663828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6246,7 +6248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6cb1aeb4466cd344aa07aeebe22a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectType: 1
+  projectType: 2
 --- !u!65 &1404161469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6441,7 +6443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6cb1aeb4466cd344aa07aeebe22a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectType: 1
+  projectType: 2
 --- !u!65 &1480172653
 BoxCollider:
   m_ObjectHideFlags: 0

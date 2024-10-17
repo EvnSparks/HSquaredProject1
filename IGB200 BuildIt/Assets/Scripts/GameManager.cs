@@ -11,7 +11,20 @@ public class GameManager : MonoBehaviour
     public string currentScene;
     public List<InventoryItem> inventory = new List<InventoryItem>();
     public InventoryItem currentProject;
+
+    // Inventory Reference Number Checker
+    public int itemrefmodifier;
+
+    // Object Building Variables
     public InventoryItem.ProjectType projectType = InventoryItem.ProjectType.Plank;
+    public enum Material
+    {
+        lowQuality,
+        medQuality,
+        highQuality
+    }
+
+    public Material materialselected;
 
     //Inventory of Materials - Hard coded unless we wanted to make selling inventory bigger?
     public List<MaterialItem> materialInventory = new List<MaterialItem>

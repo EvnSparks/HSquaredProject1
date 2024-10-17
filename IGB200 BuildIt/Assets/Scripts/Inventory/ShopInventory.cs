@@ -33,7 +33,7 @@ public class ShopInventory : MonoBehaviour
         private void Material_1()
         {
             craftedObject.GetComponent<BuyObjectButton>().objectName = "Low Quality";
-            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 5;
+            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 3;
 
             Instantiate(craftedObject,this.transform);
         }
@@ -42,7 +42,7 @@ public class ShopInventory : MonoBehaviour
         private void Material_2()
         {
             craftedObject.GetComponent<BuyObjectButton>().objectName = "Med Quality";
-            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 10;
+            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 9;
             Instantiate(craftedObject,this.transform);
         }
 
@@ -51,7 +51,7 @@ public class ShopInventory : MonoBehaviour
         private void Material_3()
         {
             craftedObject.GetComponent<BuyObjectButton>().objectName = "High Quality";
-            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 15;
+            craftedObject.GetComponent<BuyObjectButton>().buyPrice = 20;
             Instantiate(craftedObject, this.transform);
         }
 }

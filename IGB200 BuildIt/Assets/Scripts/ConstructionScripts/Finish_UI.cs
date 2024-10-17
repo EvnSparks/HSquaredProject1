@@ -79,8 +79,9 @@ public class Finish_UI : MonoBehaviour
             yield return new WaitForSeconds(waitTime[1]);
         }
         yield return new WaitForSeconds(waitTime[0]);
+        
         float cost = 0;
-        for (int i = 0; i < item.materialCost * item.materialQuality * 5; i++)
+        for (int i = 0; i < item.materialCost; i++)
         {
             cost++;
             tmp.text = originalText + cost.ToString();
