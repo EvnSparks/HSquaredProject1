@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Button_UI: MonoBehaviour, IPointerEnterHandler
+public class Buttons_UI : MonoBehaviour, IPointerEnterHandler
 {
     // Setting up variables
     public GameObject rubbishButton;
@@ -30,7 +30,7 @@ public class Button_UI: MonoBehaviour, IPointerEnterHandler
             GameManager.instance.SetState(GameManager.State.NewProject);
             materialsUsed++;
         }
-            
+
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -61,6 +61,6 @@ public class Button_UI: MonoBehaviour, IPointerEnterHandler
         rating = ((rating / enabledCount) + leastAccurate) / 2;
         Debug.Log(rating);
         Debug.Log(5 - (Time.time - time) / 60);
-        Finish.ShowMenu(new InventoryItem(rating, Time.time - time, materialsUsed, 1,  GameManager.instance.projectType));
+        Finish.ShowMenu(new InventoryItem(rating, Time.time - time, materialsUsed, 1, GameManager.instance.projectType));
     }
 }

@@ -985,7 +985,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1028505678}
-        m_TargetAssemblyTypeName: Button_UI, Assembly-CSharp
+        m_TargetAssemblyTypeName: Buttons_UI, Assembly-CSharp
         m_MethodName: SaveProject
         m_Mode: 1
         m_Arguments:
@@ -4533,7 +4533,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1028505669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 034b68ea292b1dc468405c28716f5dc2, type: 3}
+  m_Script: {fileID: 11500000, guid: 6025996c7ea98104a9b3b763309bfc7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rubbishButton: {fileID: 1183164361}
@@ -8122,7 +8122,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1028505678}
-        m_TargetAssemblyTypeName: Button_UI, Assembly-CSharp
+        m_TargetAssemblyTypeName: Buttons_UI, Assembly-CSharp
         m_MethodName: CreateNewProject
         m_Mode: 1
         m_Arguments:
