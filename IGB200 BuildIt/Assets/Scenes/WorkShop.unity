@@ -28388,7 +28388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1844545779
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28479,7 +28479,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
 --- !u!114 &1844545782
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7855,12 +7855,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScene: 
+  itemrefmodifier: 0
   projectType: 0
+  materialselected: 0
   activeShop: 0
   shopItemSelected: 0
   money: 10
   playerName: 
   firstTime: 1
+  tutorialActive: 0
+  quest1complete: 0
+  quest2complete: 0
+  quest3complete: 0
+  questactive: 1
+  fiveStarPlanksCount: 0
+  threeStarSignCount: 0
   state: 1
 --- !u!4 &1295800530
 Transform:

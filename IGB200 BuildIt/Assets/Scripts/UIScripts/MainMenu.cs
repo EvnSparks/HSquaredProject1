@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -45,8 +46,8 @@ public class MainMenu : MonoBehaviour
 
     public void NameSubmit()
     {
-        // Checks that the textfield is not empty, for some reason null is considered 1 by the text input field.
-        if (nameInput.text.Length > 1)
+        // Checks if the input for player name is not null or is just empty spaces
+        if (!string.IsNullOrWhiteSpace(nameInput.text))
         {
             GameManager.instance.playerName = nameInput.text;
             SceneManager.LoadScene("Tutorial");
@@ -54,7 +55,7 @@ public class MainMenu : MonoBehaviour
         }
         else
         {
-            error.text = "Name cannot be empty!";
+            error.text = "Name cannot be empty or have spaces!";
         }
     }
 

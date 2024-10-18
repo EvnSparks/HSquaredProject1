@@ -15,7 +15,7 @@ public class Title : MonoBehaviour
         }
         if (GameManager.instance.quest2complete)
         {
-            title.text = "Title: Intermediate Carpenter";
+            title.text = "Title: Carpenter's Helper";
         }
         if (GameManager.instance.quest3complete)
         {
