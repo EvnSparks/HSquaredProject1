@@ -8725,7 +8725,7 @@ MonoBehaviour:
   SettingsPanel: {fileID: 1412401518}
   namePanel: {fileID: 444444891}
   buttons: {fileID: 1188727416}
-  nameInput: {fileID: 567461166}
+  nameInput: {fileID: 1900502362}
   error: {fileID: 852570168}
 --- !u!1 &1600912400
 GameObject:

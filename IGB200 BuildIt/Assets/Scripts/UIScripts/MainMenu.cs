@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,7 +12,7 @@ public class MainMenu : MonoBehaviour
     public GameObject SettingsPanel;
     public GameObject namePanel;
     public GameObject buttons;
-    public TextMeshProUGUI nameInput;
+    public TMP_InputField nameInput;
     public TextMeshProUGUI error;
 
     void Start()
