@@ -20,11 +20,12 @@ public class Shop_Navigator : MonoBehaviour
         GameManager.instance.activeShop = activeShop;
         ShopOpen();
        
-        if (GameManager.instance.firstTime)
+        if (GameManager.instance.tutorialActive)
         {
             if (tutorial.DialogueIndex == 8)
             {
                 tutorial.IndexClick();
+                tutorial.canClick = true;
             }
         }
     }
@@ -49,7 +50,7 @@ public class Shop_Navigator : MonoBehaviour
         ShopScenes[activeShop].SetActive(false);
         ShopScenes[4].SetActive(false);
         
-        if (GameManager.instance.firstTime)
+        if (GameManager.instance.tutorialActive)
         {
             if (tutorial.DialogueIndex == 10)
             {
@@ -63,6 +64,10 @@ public class Shop_Navigator : MonoBehaviour
     {
         ShopScenes[0].SetActive(false);
         ShopScenes[activeShop].SetActive(true);
-        dialogueScript.ShopWelcome(activeShop);
+
+        if (!GameManager.instance.tutorialActive)
+        {
+            dialogueScript.ShopWelcome(activeShop);
+        }
     }
 }

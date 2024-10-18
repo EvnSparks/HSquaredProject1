@@ -1542,6 +1542,7 @@ MonoBehaviour:
   - {fileID: 2070063074}
   - {fileID: 240570522}
   - {fileID: 0}
+  tutorial: {fileID: 1875257947}
 --- !u!1001 &106352303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6650,16 +6651,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Welcome to BuildIt! Enable Tutorial?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a0be45260f50dd048970d7330512a8de, type: 2}
-  m_sharedMaterial: {fileID: 4825452519255540300, guid: a0be45260f50dd048970d7330512a8de,
+  m_fontAsset: {fileID: 11400000, guid: 20bd85fafdd389242b4d26d53d2dd848, type: 2}
+  m_sharedMaterial: {fileID: -6957873131914976316, guid: 20bd85fafdd389242b4d26d53d2dd848,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6679,10 +6680,10 @@ MonoBehaviour:
   m_fontSize: 70
   m_fontSizeBase: 70
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 60
+  m_fontSizeMax: 70
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -7524,7 +7525,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 537776262}
   m_OnClick:
     m_PersistentCalls:
@@ -7540,7 +7541,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
 --- !u!114 &537776262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8223,7 +8224,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 569720409}
   m_OnClick:
     m_PersistentCalls:
@@ -8239,7 +8240,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
 --- !u!114 &569720409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14105,7 +14106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.75370026, y: -370}
+  m_AnchoredPosition: {x: -0.75370026, y: -384}
   m_SizeDelta: {x: 1827.7635, y: 221.7432}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &917597399
@@ -15444,7 +15445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000022888184, y: 0}
+  m_AnchoredPosition: {x: -0.000022888184, y: -10}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1000981515
@@ -18363,7 +18364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1157423080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23852,7 +23853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71, y: 166}
+  m_AnchoredPosition: {x: 39, y: 306}
   m_SizeDelta: {x: 100, y: 279.8159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1438225822
@@ -26116,7 +26117,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1593368297}
   m_OnClick:
     m_PersistentCalls:
@@ -26132,7 +26133,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
 --- !u!114 &1593368297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30782,7 +30783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6f61fa1a057412692b903f9a580eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTutorialActive: 0
+  canClick: 1
   isTutorialCompleted: 0
   ActiveButtons:
   - {fileID: 1003504543}
@@ -30796,6 +30797,7 @@ MonoBehaviour:
   - {fileID: 1385317915}
   - {fileID: 1385317915}
   - {fileID: 855426858}
+  - {fileID: 1514814842}
   TutDialogue:
   - This here is your profile. You can see your available funds and profile details.
   - Let's click on this Objective Icon to view the tasks you need to  do
@@ -30803,21 +30805,24 @@ MonoBehaviour:
     lost. Let's show you the shop before teaching you how to craft
   - Click on the shop cart button here to go to the shop
   - This is the shop. This is where you can buy or sell things to different sellers
-  - 'Shop 1: This buyer values precision. You can sell your products with higher
-    accuracy score here'
-  - 'Shop 2: This buyer values efficiency and likes to sell in bulk. You should sell
-    your products with a higher time score here.'
-  - 'Shop 3: You can buy materials for building here later.'
-  - Now Click on Shop 1
-  - Welcome to shop 1. The most important function of the shop is to sell your materials
-    in the shop after you obtain them
-  - You don't have any to sell at the moment so lets go back to the main menu
-  - You don't have any to sell at the moment so lets go back to the main menu
-  - Now, let's begin crafting. Click on the crafting button
-  - Let's Begin by making a plank
-  - Here, we need to pick a material for our product. Let's Begin with Mat type 1
-  - After selecting, you can read the description of the chosen material
-  - Let's start crafting! Click on the start button
+  - 'The Master Craftsmen: A local carpenter that values objects made with high precision.
+    You can sell here or gain some useful information to help in your carpentry journey.'
+  - 'Speedy Saw Works: This buyer values items made quickly. You should sell your
+    products with a higher time score here.'
+  - 'Materials Galore!: Is said to have the largest range of material supplies in
+    the area. The perfect place to stock up on building materials.'
+  - Now Click on The Master Craftsmen.
+  - Welcome to The Master Craftsmen. This alongside Speedy Saw Works are places that
+    allow you to sell your crafted objects after you make them.
+  - "You don't have anything to sell at the moment so let\u2019s go back to the main
+    menu."
+  - Just one more button to go :D.
+  - Now, let's begin crafting. Click on the BuildIt! Button.
+  - Let's Begin by crafting a plank.
+  - Here, we need to pick a material for our product. Let's Begin with Mat type 1.
+  - After selecting, you can read the description of the chosen material and see
+    the potential profit and costs.
+  - Let's start crafting! Click on the start button.
   TutArrows:
   - {fileID: 1416368967}
   - {fileID: 90901645}
@@ -33342,15 +33347,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Click Anywhere to Continue...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a0be45260f50dd048970d7330512a8de, type: 2}
+  m_sharedMaterial: {fileID: 4825452519255540300, guid: a0be45260f50dd048970d7330512a8de,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -33373,7 +33379,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535

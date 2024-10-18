@@ -8,7 +8,11 @@ using UnityEngine.SceneManagement;
 
 public class Tutorial : MonoBehaviour
 {
-    public bool isTutorialActive, isTutorialCompleted;
+    // Track Dialogue States
+    public bool canClick = true;
+
+    public bool isTutorialCompleted;
+    
     //toggle visible
     private GameObject TutorialPanel, StartButtons, prompt;
 
@@ -62,53 +66,35 @@ public class Tutorial : MonoBehaviour
     
     void Update()
     {
-        Debug.Log(DialogueIndex);
-        if(isTutorialActive)
+        if(GameManager.instance.tutorialActive)
         {
+            Debug.Log(DialogueIndex);
             prompt.SetActive(true);
 
             IndexLogic();
             
             if(Input.GetMouseButtonDown(0))
             {
-                if(DialogueIndex !=3 && DialogueIndex !=8 && DialogueIndex != 10 && DialogueIndex !=11
-                && DialogueIndex !=12 && DialogueIndex !=13 && DialogueIndex != 14)
+                if(canClick)
                 {
                     IndexClick();
                 }
-            }
-        }
-        else
-        {
-            
-            isTutorialCompleted = true;
-            //enable these buttons
-            GameStartB.GetComponent<Button>().interactable = true;
-            ShopB.GetComponent<Button>().interactable = true;
-
-            //Re-enable all buttons
-            for(int i=0; i< ActiveButtons.Length ;i++)
-            {
-                ActiveButtons[i].GetComponent<Button>().interactable = true;
             }
         }
     }
 
     public void EnableTutorial()
     {
-        isTutorialActive = true;
-        TutText.text = TutDialogue[0];
         GameManager.instance.tutorialActive = true;
+
+        TutText.text = TutDialogue[0];
         StartButtons.SetActive(false);
 
     }
 
-    public void DisableTutorial()
+    public void FinishTutorial()
     {
-        isTutorialActive = false;
         TutorialPanel.SetActive(false);
-        GameManager.instance.tutorialActive = false;
-        GameManager.instance.firstTime = false;
         SceneManager.LoadScene("WorkShop");
     }
 
@@ -138,61 +124,96 @@ public class Tutorial : MonoBehaviour
     public void IndexLogic()
     {
         if(DialogueIndex ==0)
-            {
-                GameStartB.GetComponent<Button>().interactable = false;
-                ShopB.GetComponent<Button>().interactable = false;
-            }
+        {
+            GameStartB.GetComponent<Button>().interactable = false;
+            ShopB.GetComponent<Button>().interactable = false;
+        }
 
-            if(DialogueIndex ==3)
-            {
-                ShopB.GetComponent<Button>().interactable = true;
-                TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location1.transform.position,10f);
-            }
-            if(DialogueIndex ==5)
-            {
-                ActiveButtons[0].GetComponent<Button>().interactable = false;
-                ActiveButtons[1].GetComponent<Button>().interactable = false;
-                ActiveButtons[2].GetComponent<Button>().interactable = false;
-                ActiveButtons[3].GetComponent<Button>().interactable = false;
-                TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location2.transform.position,10f);
-            }
-            if(DialogueIndex == 8)
-            {
-                ActiveButtons[1].GetComponent<Button>().interactable = true;
-            }
+        if (DialogueIndex == 1)
+        {
+            canClick = false;
+            prompt.SetActive(false);
+        }
 
-            if(DialogueIndex == 9)
-            {
-                TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location1.transform.position,10f);
-            }
+        if(DialogueIndex ==3)
+        {
+            canClick = false;
+            prompt.SetActive(false);
+            ShopB.GetComponent<Button>().interactable = true;
+            TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location1.transform.position,10f);
+        }
+        if(DialogueIndex ==5)
+        {
+            ActiveButtons[0].GetComponent<Button>().interactable = false;
+            ActiveButtons[1].GetComponent<Button>().interactable = false;
+            ActiveButtons[2].GetComponent<Button>().interactable = false;
+            ActiveButtons[3].GetComponent<Button>().interactable = false;
+            TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location2.transform.position,10f);
+        }
+        if(DialogueIndex == 8)
+        {
+            canClick = false;
+            prompt.SetActive(false);
+            ActiveButtons[1].GetComponent<Button>().interactable = true;
+        }
 
-            if(DialogueIndex ==10)
-            {
-                ActiveButtons[0].GetComponent<Button>().interactable = true;
-                ActiveButtons[1].GetComponent<Button>().interactable = false;
-                ActiveButtons[2].GetComponent<Button>().interactable = false;
-                ActiveButtons[3].GetComponent<Button>().interactable = false;
-            }
-            if(DialogueIndex ==12)
-            {
-                GameStartB.GetComponent<Button>().interactable = true;
-                TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location3.transform.position,10f);
-                ActiveButtons[4].GetComponent<Button>().interactable = false;
-                ActiveButtons[5].GetComponent<Button>().interactable = false;
-                ActiveButtons[6].GetComponent<Button>().interactable = false;
-                ActiveButtons[7].GetComponent<Button>().interactable = false;
-                ActiveButtons[8].GetComponent<Button>().interactable = false;
-                ActiveButtons[9].GetComponent<Button>().interactable = false;
-                ActiveButtons[10].GetComponent<Button>().interactable = false;
-            }
+        if(DialogueIndex == 9)
+        {
+            TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location1.transform.position,10f);
+        }
 
-            if(DialogueIndex == 15)
-            {
-                TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location2.transform.position,10f);
-            }
-            if(DialogueIndex == 16)
-            {
-                TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location3.transform.position,10f);
-            }
+        if(DialogueIndex ==10)
+        {
+            TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position, location1.transform.position, 10f);
+            canClick = false;
+            prompt.SetActive(false);
+            ActiveButtons[11].SetActive(true);
+            ActiveButtons[0].GetComponent<Button>().interactable = true;
+            ActiveButtons[1].GetComponent<Button>().interactable = false;
+            ActiveButtons[2].GetComponent<Button>().interactable = false;
+            ActiveButtons[3].GetComponent<Button>().interactable = false;
+        }
+
+        if (DialogueIndex == 11)
+        {
+            prompt.SetActive(false);
+        }
+
+        if(DialogueIndex ==12)
+        {
+            canClick = false;
+            prompt.SetActive(false);
+            ShopB.GetComponent<Button>().interactable = false;
+            GameStartB.GetComponent<Button>().interactable = true;
+            TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location3.transform.position,10f);
+            ActiveButtons[4].GetComponent<Button>().interactable = false;
+            ActiveButtons[5].GetComponent<Button>().interactable = false;
+            ActiveButtons[6].GetComponent<Button>().interactable = false;
+            ActiveButtons[7].GetComponent<Button>().interactable = false;
+            ActiveButtons[8].GetComponent<Button>().interactable = false;
+            ActiveButtons[9].GetComponent<Button>().interactable = false;
+            ActiveButtons[10].GetComponent<Button>().interactable = false;
+        }
+
+        if (DialogueIndex == 13)
+        {
+            prompt.SetActive(false);
+        }
+
+        if (DialogueIndex == 14)
+        {
+            prompt.SetActive(false);
+        }
+
+        if (DialogueIndex == 15)
+        {
+            canClick = true;
+            TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location2.transform.position,10f);
+        }
+        if(DialogueIndex == 16)
+        {
+            prompt.SetActive(false);
+            TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location3.transform.position,10f);
+        }
     } 
 }

@@ -157,12 +157,11 @@ public class Workshop_UI : MonoBehaviour
         GameManager.instance.projectType = selectedProject;
 
         // Checks if the tutorial is active
-        if (GameManager.instance.firstTime)
+        if (GameManager.instance.tutorialActive)
         {
             if (tutorial.DialogueIndex == 16)
             {
-                tutorial.isTutorialActive = false;
-                tutorial.isTutorialCompleted = true;
+                //tutorial.isTutorialActive = false;
             }
         }
 
@@ -233,7 +232,7 @@ public class Workshop_UI : MonoBehaviour
     {
         CanvasList[2].SetActive(true);
 
-        if (GameManager.instance.firstTime)
+        if (GameManager.instance.tutorialActive)
         {
             if (tutorial.DialogueIndex == 12)
             {
@@ -295,7 +294,7 @@ public class Workshop_UI : MonoBehaviour
         // Turn on the start button
         CanvasList[5].SetActive(true);
 
-        if (GameManager.instance.firstTime)
+        if (GameManager.instance.tutorialActive)
         {
             if (tutorial.DialogueIndex == 14)
             {
@@ -343,11 +342,12 @@ public class Workshop_UI : MonoBehaviour
         CanvasList[0].SetActive(false);
         CanvasList[2].SetActive(false);
 
-        if (GameManager.instance.firstTime)
+        if (GameManager.instance.tutorialActive)
         {
             if (tutorial.DialogueIndex == 3)
             {
                 tutorial.IndexClick();
+                tutorial.canClick = true;
             }
         }
     }
@@ -358,11 +358,12 @@ public class Workshop_UI : MonoBehaviour
         CanvasList[1].SetActive(false);
         CanvasList[2].SetActive(false);
 
-        if (GameManager.instance.firstTime)
+        if (GameManager.instance.tutorialActive)
         {
             if (tutorial.DialogueIndex == 11)
             {
                 tutorial.IndexClick();
+                tutorial.canClick = true;
             }
         }
     }

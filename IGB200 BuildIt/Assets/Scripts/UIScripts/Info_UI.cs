@@ -10,6 +10,9 @@ public class Info_UI : MonoBehaviour
     public GameObject[] CanvasList;
     public TextMeshProUGUI[] ObjectList;
 
+    // Reference to the tutorial class
+    public Tutorial tutorial;
+
     private void Start()
     {
         // Set the player name upon scene being started up
@@ -36,6 +39,13 @@ public class Info_UI : MonoBehaviour
         if (GameManager.instance.quest3complete)
         {
             ObjectList[2].fontStyle = FontStyles.Strikethrough;
+        }
+
+        // When the player selects the to do list in tutorial advance it and allow click
+        if (GameManager.instance.tutorialActive && tutorial.DialogueIndex == 1)
+        {
+            tutorial.IndexClick();
+            tutorial.canClick = true;
         }
     }   
 

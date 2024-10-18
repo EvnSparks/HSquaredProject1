@@ -88,7 +88,9 @@ public class GameManager : MonoBehaviour
                 break; 
         }
         if (Input.GetKeyDown(KeyCode.Alpha1)) SetState(State.UsingSaw);
-        if (Input.GetKeyDown(KeyCode.Alpha2)) SetState(State.UsingHammer);
+
+        // Removed as the hammer is not functional
+        //if (Input.GetKeyDown(KeyCode.Alpha2)) SetState(State.UsingHammer);
     }
 
     public void SetState(State newState)
@@ -112,15 +114,5 @@ public class GameManager : MonoBehaviour
         else if (instance != this)
             //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
             Destroy(gameObject);
-    }
-
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("Main Menu");
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
