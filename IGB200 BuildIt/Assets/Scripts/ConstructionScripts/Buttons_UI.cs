@@ -15,6 +15,7 @@ public class Buttons_UI : MonoBehaviour, IPointerEnterHandler
     public Finish_UI Finish;
     private float time;
     private int materialsUsed = 1;
+    public TutorialProgress tutorialProgress;
 
     private void Start()
     {
@@ -29,6 +30,7 @@ public class Buttons_UI : MonoBehaviour, IPointerEnterHandler
             grabObject.grabbedProject = Instantiate(newProject, hitInfo.point, Quaternion.Euler(0, 0, 0)).GetComponent<Projects>();
             GameManager.instance.SetState(GameManager.State.NewProject);
             materialsUsed++;
+            tutorialProgress.create = true;
         }
 
     }

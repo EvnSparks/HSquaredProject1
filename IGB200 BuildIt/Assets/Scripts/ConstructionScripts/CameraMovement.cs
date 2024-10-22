@@ -16,7 +16,7 @@ public class CameraMovement : MonoBehaviour
     public float minZoom = 10;
 
     private float anglex = 0;
-    private float angley = 0;
+    public float angley = 0;
     private float cameraHeight = 0.5f;
     private float cameraZoom;
 

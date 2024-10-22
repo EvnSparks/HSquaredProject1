@@ -8,10 +8,26 @@ public class TutorialProgress : MonoBehaviour
 
     public GameObject[] animations;
 
+    public CameraMovement camera;
+
     public int progress = 0;
     private int currentTutorialText = 1000;
     public bool slice = false;
     public DetectOverlap blueprint;
+    public Animator animator;
+    public bool create = false;
+
+    private void Start()
+    {
+        if (GameManager.instance.projectType == InventoryItem.ProjectType.Sign)
+        {
+            progress = 7;
+        }
+        if (GameManager.instance.projectType == InventoryItem.ProjectType.Table)
+        {
+            progress = 12;
+        }
+    }
 
     private void Update()
     {
@@ -36,8 +52,11 @@ public class TutorialProgress : MonoBehaviour
                         ExitDialogue();
                         currentTutorialText = 2;
                     }
-                    if (slice) // change to saw cut detection
+                    if (slice)
+                    {
                         progress = 3;
+                        slice = false;
+                    }  
                     break;
                 case 3:
                     StartTutorialText(3);
@@ -65,10 +84,50 @@ public class TutorialProgress : MonoBehaviour
                     if (progress != currentTutorialText)
                     {
                         ExitDialogue();
-                        currentTutorialText = 4;
+                        currentTutorialText = 6;
                     }
                     GameManager.instance.tutorialActive = false;
                     GameManager.instance.firstTime = false;
+                    break;
+                case 7:
+                    StartTutorialText(7);
+                    if ((camera.angley > 80 && camera.angley < 280) && TutorialEnqueue.Instance.textFinished)
+                        progress = 8;
+                    break;
+                case 8:
+                    StartTutorialText(8);
+                    if (slice && TutorialEnqueue.Instance.textFinished)
+                    {
+                        progress = 9;
+                        slice = false;
+                    }
+                        
+                    break;
+                case 9:
+                    StartTutorialText(9);
+                    animator.SetTrigger("MoveTutorial");
+                    if (Input.GetKeyDown(KeyCode.Mouse0) && TutorialEnqueue.Instance.textFinished)
+                    {
+                        progress = 10;
+                        create = false;
+                    }
+                    break;
+                case 10:
+                    if (progress != currentTutorialText)
+                    {
+                        ExitDialogue();
+                        currentTutorialText = 10;
+                    }
+                    if (create)
+                    {
+                        progress = 11;
+                        create = false;
+                    }
+                    break;
+                case 11:
+                    StartTutorialText(11);
+                    if (Input.GetKeyDown(KeyCode.Mouse0) && TutorialEnqueue.Instance.textFinished)
+                        progress = 12;
                     break;
                 default:
                     animations[0].SetActive(false);
