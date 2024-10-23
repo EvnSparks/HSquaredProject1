@@ -55,7 +55,7 @@ public class SellableObjectButton : MonoBehaviour
             else
             {
                 // Calc for time Shop
-                sellPrice = basePrice * timeScoreVisible;
+                sellPrice = Mathf.Round((basePrice / 2) * timeScoreVisible);
             }
                 
             // Update all the values in the window

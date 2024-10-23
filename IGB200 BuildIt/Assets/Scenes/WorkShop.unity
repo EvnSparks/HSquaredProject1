@@ -11788,6 +11788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bp2: {fileID: 1940919625}
+  bp3: {fileID: 1844545778}
 --- !u!1 &874128198
 GameObject:
   m_ObjectHideFlags: 0
@@ -19621,7 +19622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1. Make 3 planks 5/5 Quality.
+  m_text: 1. Make 3 planks with an Accuracy Quality of 5/5.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20bd85fafdd389242b4d26d53d2dd848, type: 2}
   m_sharedMaterial: {fileID: -6957873131914976316, guid: 20bd85fafdd389242b4d26d53d2dd848,
@@ -32302,7 +32303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2. Make 3 Signs 3/5 Quality.
+  m_text: 2. Make 3 Signs of 3/5 Accuracy Quality with Medium Quality Materials.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20bd85fafdd389242b4d26d53d2dd848, type: 2}
   m_sharedMaterial: {fileID: -6957873131914976316, guid: 20bd85fafdd389242b4d26d53d2dd848,
