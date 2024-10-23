@@ -42,6 +42,7 @@ public class Buttons_UI : MonoBehaviour, IPointerEnterHandler
             Destroy(grabObject.grabbedProject.gameObject);
             materialsUsed--;
         }
+        //add resize on hover
     }
 
     public void SaveProject()

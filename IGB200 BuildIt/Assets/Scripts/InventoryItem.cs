@@ -14,7 +14,7 @@ public class InventoryItem
     //public GameObject item;
     public float accuracyRating;
     public float speedRating;
-    public float materialCost;
+    public float predictedProfit;
     public GameManager.Material materialQuality;
     public ProjectType projectType;
     
@@ -22,9 +22,9 @@ public class InventoryItem
     {
         //this.item = item;
         this.accuracyRating = accuracyRating;
-        this.materialCost = materialCost;
         this.projectType = projectType;
         this.materialQuality = materialQuality;
-        this.speedRating = Mathf.Max(5-(timeTaken/60), 1);
+        this.speedRating = Mathf.Max(5-(timeTaken/60), 1); 
+        this.predictedProfit = GameManager.instance.materialInventory[(int)GameManager.instance.materialselected].costMultiplier * ((int)GameManager.instance.projectType + 1) * (accuracyRating + this.speedRating) / 2;
     }
 }

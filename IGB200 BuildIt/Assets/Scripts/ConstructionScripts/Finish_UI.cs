@@ -92,7 +92,7 @@ public class Finish_UI : MonoBehaviour
         yield return new WaitForSeconds(waitTime[0]);
         
         float cost = 0;
-        for (int i = 0; i < item.materialCost; i++)
+        for (int i = 0; i < item.predictedProfit; i++)
         {
             cost++;
             tmp.text = originalText + cost.ToString();

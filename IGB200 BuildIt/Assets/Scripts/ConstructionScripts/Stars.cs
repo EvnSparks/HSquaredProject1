@@ -5,7 +5,7 @@ using UnityEngine;
 public class Stars : MonoBehaviour
 {
     private float count;
-    private float max = 40;
+    private float max = 30;
     public void Spawn()
     {
         gameObject.transform.localScale = Vector3.one * 3; 
