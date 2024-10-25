@@ -7920,7 +7920,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSourceButton: {fileID: 1936379558}
+  buySound: {fileID: 8300000, guid: 36ab90eb48e7948ef9384356b2705816, type: 3}
   buttonClickSound: {fileID: 8300000, guid: 598f1b7055d624370ac77261d2c1296f, type: 3}
+  shopButton:
+  - {fileID: 1713101783}
+  - {fileID: 899526252}
 --- !u!1 &590025584
 GameObject:
   m_ObjectHideFlags: 0
@@ -29030,9 +29034,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5ca2a0a60877947a7b321571fc6bfb8c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

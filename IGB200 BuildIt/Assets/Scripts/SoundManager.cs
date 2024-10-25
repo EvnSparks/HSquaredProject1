@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,31 +9,30 @@ public class SoundManager : MonoBehaviour
 {
     public AudioSource audioSourceButton;
     
-    //don't think we need this we're just playing music on loop
-    //public AudioSource audioSourceMusic;
+    public AudioClip buySound;
     public AudioClip buttonClickSound;
-    // void Start()
-    // {
-    //     //assign all buttons to make sound
-    //     Button[] buttons = FindObjectsOfType<Button>();
-        
-    //     foreach (Button button in buttons)
-    //     {
-    //         button.onClick.AddListener(PlayButtonSound);
-    //     }
-    // }
+    public Button[] shopButton;
     
     void Update()
     {
         Button[] buttons = FindObjectsOfType<Button>();
+
+        foreach (Button button in shopButton)
+        {
+            button.onClick.AddListener(PurchaseSound);
+        }
         
         foreach (Button button in buttons)
         {
+            //make sure selling won't play this sound
+            
             button.onClick.AddListener(PlayButtonSound);
+            
         }
+        
     }
 
-    // Update is called once per frame
+    
     private void PlayButtonSound()
     {
         //just to make sure sound doesn't overlap when we click too fast.
@@ -42,4 +42,12 @@ public class SoundManager : MonoBehaviour
         }
     }
     
+    private void PurchaseSound()
+    {
+        if(!audioSourceButton.isPlaying)
+        {
+            audioSourceButton.PlayOneShot(buySound);
+        }
+    }
+
 }
