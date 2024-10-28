@@ -35,10 +35,23 @@ public class DialogueManager : MonoBehaviour
                 dialogueArea.text = currentLine.line;
 
                 // Only shows the continue/ exit buttons if all inventories and exit workshop button is off
-                if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[3].activeSelf == false && CanvasDialogue[5].activeSelf == false)
+                // The following is very inelegant but idk how else to fix this... - Evan
+
+                if (GameManager.instance.activeShop == 3)
                 {
-                    CanvasDialogue[1].SetActive(true);
-                    CanvasDialogue[4].SetActive(true);
+                    if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[5].activeSelf == false)
+                    {
+                        CanvasDialogue[1].SetActive(true);
+                        CanvasDialogue[4].SetActive(true);
+                    }
+                }
+                if (GameManager.instance.activeShop == 1 || GameManager.instance.activeShop == 2)
+                {
+                    if (CanvasDialogue[2].activeSelf == false && CanvasDialogue[3].activeSelf == false)
+                    {
+                        CanvasDialogue[1].SetActive(true);
+                        CanvasDialogue[4].SetActive(true);
+                    }
                 }
             }
         }

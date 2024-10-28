@@ -60,6 +60,7 @@ public class Tutorial : MonoBehaviour
         if(isTutorialCompleted)
         {
             TutorialPanel.SetActive(false);
+
         }
     }
 
@@ -95,6 +96,7 @@ public class Tutorial : MonoBehaviour
     public void FinishTutorial()
     {
         TutorialPanel.SetActive(false);
+        GameManager.instance.tutorialActive = false;
         SceneManager.LoadScene("WorkShop");
     }
 
@@ -187,6 +189,7 @@ public class Tutorial : MonoBehaviour
             GameStartB.GetComponent<Button>().interactable = true;
             TutorialPanel.transform.position = Vector3.MoveTowards(TutorialPanel.transform.position,location3.transform.position,10f);
             ActiveButtons[4].GetComponent<Button>().interactable = false;
+            ActiveButtons[12].GetComponent<Button>().interactable = false;
             ActiveButtons[5].GetComponent<Button>().interactable = false;
             ActiveButtons[6].GetComponent<Button>().interactable = false;
             ActiveButtons[7].GetComponent<Button>().interactable = false;

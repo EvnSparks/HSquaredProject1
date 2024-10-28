@@ -63,7 +63,7 @@ public class SellableObjectButton : MonoBehaviour
             itemViewerGUI.transform.Find("ItemVariables/PrecisionScore").GetComponent<TextMeshProUGUI>().text =
                 "Precision Score: " + precisionScoreVisible.ToString() + "/5";
             itemViewerGUI.transform.Find("ItemVariables/TimeScore").GetComponent<TextMeshProUGUI>().text =
-                "Time Score: " + timeScoreVisible.ToString() + "/5";
+                "Efficiency Score: " + timeScoreVisible.ToString() + "/5";
             itemViewerGUI.transform.Find("ItemVariables/Material").GetComponent<TextMeshProUGUI>().text =
                 "Material: " + material.ToString();
             itemViewerGUI.transform.Find("ItemVariables/Price").GetComponent<TextMeshProUGUI>().text =
