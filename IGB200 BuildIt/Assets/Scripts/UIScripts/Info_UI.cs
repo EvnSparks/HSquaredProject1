@@ -21,12 +21,6 @@ public class Info_UI : MonoBehaviour
 
     public void ToDoList()
     {
-        CanvasList[1].SetActive(true);
-        CanvasList[0].SetActive(false);
-
-        // Resets To Do List to top of list
-        CanvasList[2].GetComponent<ScrollRect>().verticalNormalizedPosition = 1;
-
         // Adjust variables based on completness
         if (GameManager.instance.quest1complete)
         {
@@ -40,6 +34,12 @@ public class Info_UI : MonoBehaviour
         {
             ObjectList[2].fontStyle = FontStyles.Strikethrough;
         }
+
+        CanvasList[1].SetActive(true);
+        CanvasList[0].SetActive(false);
+
+        // Resets To Do List to top of list
+        CanvasList[2].GetComponent<ScrollRect>().verticalNormalizedPosition = 1;
 
         // When the player selects the to do list in tutorial advance it and allow click
         if (GameManager.instance.tutorialActive && tutorial.DialogueIndex == 1)

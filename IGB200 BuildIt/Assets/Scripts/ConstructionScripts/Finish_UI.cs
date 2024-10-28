@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -55,9 +56,23 @@ public class Finish_UI : MonoBehaviour
         {
             GameManager.instance.fiveStarPlanksCount++;
         }
-        else if (GameManager.instance.questactive == 2 && item.accuracyRating >= 2.5 && item.projectType == InventoryItem.ProjectType.Sign)
+        else if (GameManager.instance.questactive == 2 && item.accuracyRating >= 2.5 && item.projectType == InventoryItem.ProjectType.Sign && item.materialQuality == GameManager.Material.medQuality)
         {
             GameManager.instance.threeStarSignCount++;
+        }
+
+        // Adjusts inventory amount of material based on object and material type
+        if (GameManager.instance.projectType == InventoryItem.ProjectType.Plank)
+        {
+            GameManager.instance.materialInventory[((int)GameManager.instance.materialselected)].inventoryAmount -= 1;
+        }
+        else if (GameManager.instance.projectType == InventoryItem.ProjectType.Sign)
+        {
+            GameManager.instance.materialInventory[((int)GameManager.instance.materialselected)].inventoryAmount -= 2;
+        }
+        else if (GameManager.instance.projectType == InventoryItem.ProjectType.Table)
+        {
+            GameManager.instance.materialInventory[((int)GameManager.instance.materialselected)].inventoryAmount -= 3;
         }
 
         SceneManager.LoadScene("WorkShop");
