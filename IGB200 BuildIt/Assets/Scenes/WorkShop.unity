@@ -8219,7 +8219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSourceButton: {fileID: 1936379558}
   buySound: {fileID: 8300000, guid: 36ab90eb48e7948ef9384356b2705816, type: 3}
-  buttonClickSound: {fileID: 8300000, guid: 598f1b7055d624370ac77261d2c1296f, type: 3}
+  buttonClickSound: {fileID: 0}
   shopButton:
   - {fileID: 1713101783}
   - {fileID: 899526252}

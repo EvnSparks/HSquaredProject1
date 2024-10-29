@@ -9,6 +9,8 @@ using UnityEngine.UIElements;
 
 public class Finish_UI : MonoBehaviour
 {
+    public AudioClip starSound;
+    public AudioSource SoundPlayer;
     private bool escapeMenuActive = false;
     private InventoryItem item;
     
@@ -95,6 +97,7 @@ public class Finish_UI : MonoBehaviour
         {
             accStars[i].Spawn();
             //add SFX here
+            SoundPlayer.PlayOneShot(starSound);
             yield return new WaitForSeconds(waitTime[1]);
         }
         yield return new WaitForSeconds(waitTime[0]);
@@ -102,6 +105,7 @@ public class Finish_UI : MonoBehaviour
         {
             speedStars[i].Spawn();
             // add SFX here
+            SoundPlayer.PlayOneShot(starSound);
             yield return new WaitForSeconds(waitTime[1]);
         }
         yield return new WaitForSeconds(waitTime[0]);

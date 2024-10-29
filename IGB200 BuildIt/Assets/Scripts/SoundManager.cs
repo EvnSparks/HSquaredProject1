@@ -13,6 +13,10 @@ public class SoundManager : MonoBehaviour
     public AudioClip buttonClickSound;
     public Button[] shopButton;
     
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     void Update()
     {
         Button[] buttons = FindObjectsOfType<Button>();
@@ -49,5 +53,7 @@ public class SoundManager : MonoBehaviour
             audioSourceButton.PlayOneShot(buySound);
         }
     }
+
+    
 
 }
