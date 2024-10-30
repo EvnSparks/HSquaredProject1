@@ -730,6 +730,7 @@ MonoBehaviour:
   playerName: 
   firstTime: 0
   tutorialActive: 0
+  secondTutorialStage: 0
   quest1complete: 0
   quest2complete: 0
   quest3complete: 0
@@ -14198,7 +14199,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 2. Craft 3 signs with an Accuracy Score of 3/5 with Medium Quality Materials.
-    Speak to Reggie (Speedy Saw Works).
+    Speak to Reggie (Efficient Saw Works).
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20bd85fafdd389242b4d26d53d2dd848, type: 2}
   m_sharedMaterial: {fileID: -6957873131914976316, guid: 20bd85fafdd389242b4d26d53d2dd848,

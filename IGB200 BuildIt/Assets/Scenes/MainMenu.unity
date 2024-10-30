@@ -2145,7 +2145,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f0c75e582ec8a4f5ab2be85ab2000a9f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8120,6 +8120,7 @@ MonoBehaviour:
   playerName: 
   firstTime: 1
   tutorialActive: 0
+  secondTutorialStage: 0
   quest1complete: 0
   quest2complete: 0
   quest3complete: 0
@@ -9119,7 +9120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSourceButton: {fileID: 1917728691}
-  buySound: {fileID: 0}
+  buySound: {fileID: 8300000, guid: 36ab90eb48e7948ef9384356b2705816, type: 3}
   buttonClickSound: {fileID: 8300000, guid: 598f1b7055d624370ac77261d2c1296f, type: 3}
   shopButton: []
 --- !u!4 &1602998408
