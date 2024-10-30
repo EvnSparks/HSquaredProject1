@@ -58,7 +58,7 @@ public class Finish_UI : MonoBehaviour
         {
             GameManager.instance.fiveStarPlanksCount++;
         }
-        else if (GameManager.instance.questactive == 2 && item.accuracyRating >= 2.5 && item.projectType == InventoryItem.ProjectType.Sign && item.materialQuality == GameManager.Material.medQuality)
+        else if (GameManager.instance.questactive == 2 && item.accuracyRating >= 2.5 && item.projectType == InventoryItem.ProjectType.Sign && (item.materialQuality == GameManager.Material.medQuality || item.materialQuality == GameManager.Material.highQuality))
         {
             GameManager.instance.threeStarSignCount++;
         }
