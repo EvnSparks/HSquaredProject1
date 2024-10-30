@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class SawMovement : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class SawMovement : MonoBehaviour
     public float cutSpeed = 5f;
     public float sawAnimationSpeed = 1f;
     public float sawAnimationStrength = 1f;
+    public float sawAnimationTurnStrength = 0.1f;
     public int cutting = 0;
     float speedMultiplier;
     PlaneSlice planeSlice;
@@ -51,6 +53,9 @@ public class SawMovement : MonoBehaviour
                 transform.position += (hitInfo.point - transform.position) * cutSpeed * Time.fixedDeltaTime;
                 //add sawing motion
                 sawMotion.transform.position += (transform.position - Camera.main.transform.position).normalized * sawAnimationStrength * Mathf.Sin(Time.time * sawAnimationSpeed) * Time.fixedDeltaTime;
+                Vector3 lookPos = hitInfo.point - sawMotion.transform.position;
+                Quaternion rotation = Quaternion.LookRotation(-lookPos, transform.forward);
+                sawMotion.transform.localRotation = Quaternion.Euler(0, 180, Mathf.RoundToInt(rotation.eulerAngles.z/45)*45);
             }
             else
                 transform.position += (hitInfo.point - transform.position) * baseSpeed * Time.fixedDeltaTime;
