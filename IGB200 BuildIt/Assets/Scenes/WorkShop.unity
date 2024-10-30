@@ -4183,6 +4183,134 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1753761772}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &343571024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343571026}
+  - component: {fileID: 343571025}
+  m_Layer: 0
+  m_Name: SellBuySound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &343571025
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343571024}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.4
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &343571026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343571024}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 880.0202, y: 468.91632, z: -40.871216}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &343945371
 GameObject:
   m_ObjectHideFlags: 0
@@ -4404,7 +4532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3. Make $1000 and get your apprenticeship from Materials Galore!
+  m_text: 3. Make $500 and get your apprenticeship from Materials Galore!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20bd85fafdd389242b4d26d53d2dd848, type: 2}
   m_sharedMaterial: {fileID: -6957873131914976316, guid: 20bd85fafdd389242b4d26d53d2dd848,
@@ -7446,6 +7574,9 @@ MonoBehaviour:
   buyObject: {fileID: 0}
   amountText: {fileID: 1224819820}
   buyAmount: 0
+  buyButton: {fileID: 899526252}
+  audioSourceButton: {fileID: 343571025}
+  buySound: {fileID: 8300000, guid: 36ab90eb48e7948ef9384356b2705816, type: 3}
 --- !u!1 &556011215
 GameObject:
   m_ObjectHideFlags: 0
@@ -10643,6 +10774,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sellObject: {fileID: 0}
+  sellButton: {fileID: 1713101783}
+  audioSourceButton: {fileID: 343571025}
+  sellSound: {fileID: 8300000, guid: 36ab90eb48e7948ef9384356b2705816, type: 3}
 --- !u!1 &799733263
 GameObject:
   m_ObjectHideFlags: 0
@@ -16682,9 +16816,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "We hope you enjoyed the game learnt a little on carpentry and the building
-    industry. If you so choose the following resources are available to help further
-    if you choose to do an apprenticeship in carpentry!\n\nLink 1: https://awic.org.au/ 
+  m_text: "We hope you enjoyed the game and learnt a little on carpentry and the
+    building industry. If you so choose the following resources are available to
+    help further if you choose to do an apprenticeship in carpentry!\n\nLink 1: https://awic.org.au/ 
     \n\nLink 2: https://tafeqld.edu.au/course/17/17746/certificate-iii-in-carpentry\n\nTo
     reset the game quit and re-open it. Otherwise feel free to continue playing :D"
   m_isRightToLeft: 0
@@ -20276,12 +20410,12 @@ MonoBehaviour:
   quest_Dialogue:
     dialogueLines:
     - line: Well done on getting to this stage. I have a special task for you and
-        it will help you evolve your skills. Make $1000 from selling your crafted
+        it will help you evolve your skills. Make $500 from selling your crafted
         products and come back to see me.
-    - line: 'Progress: $0/$1000'
+    - line: 'Progress: $0/$500'
   completed_Dialogue:
     dialogueLines:
-    - line: I can't believe you completed the task!! $1000 earned is a great achievement.
+    - line: I can't believe you completed the task!! $500 earned is a great achievement.
         I think it's time for you to get some professional training. It will be great
         to see you getting your apprenticeship and working with me in the future!
   finished_Dialogue:
@@ -34680,3 +34814,4 @@ SceneRoots:
   - {fileID: 1051388432}
   - {fileID: 50192056}
   - {fileID: 390394423}
+  - {fileID: 343571026}

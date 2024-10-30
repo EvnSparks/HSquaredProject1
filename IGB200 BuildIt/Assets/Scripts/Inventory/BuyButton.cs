@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class BuyButton : MonoBehaviour
 {
@@ -10,7 +11,12 @@ public class BuyButton : MonoBehaviour
    public TMP_Text amountText;
    public int buyAmount = 0;
 
-   private int materialReference;
+   public Button buyButton;     
+   public AudioSource audioSourceButton;
+   public AudioClip buySound;
+
+
+    private int materialReference;
 
    public void BuyObject()
    {
@@ -34,6 +40,7 @@ public class BuyButton : MonoBehaviour
             }
 
             GameManager.instance.materialInventory[materialReference].inventoryAmount += buyAmount;
+            audioSourceButton.PlayOneShot(buySound);
             buyObject.Buy();
         }
    }

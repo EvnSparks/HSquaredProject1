@@ -42,7 +42,7 @@ public class Info_UI : MonoBehaviour
         CanvasList[2].GetComponent<ScrollRect>().verticalNormalizedPosition = 1;
 
         // When the player selects the to do list in tutorial advance it and allow click
-        if (GameManager.instance.tutorialActive && tutorial.DialogueIndex == 1)
+        if (GameManager.instance.firstTime && tutorial.DialogueIndex == 1)
         {
             tutorial.IndexClick();
             tutorial.canClick = true;

@@ -15,31 +15,14 @@ public class SoundManager : MonoBehaviour
     public AudioClip buttonClickSound;
     public Button[] shopButton;
 
+    public bool isBuySound;
+
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
     }
-    void Update()
-    {
-        Button[] buttons = FindObjectsOfType<Button>();
 
-        foreach (Button button in shopButton)
-        {
-            button.onClick.AddListener(PurchaseSound);
-        }
-        
-        foreach (Button button in buttons)
-        {
-            //make sure selling won't play this sound
-            
-            button.onClick.AddListener(PlayButtonSound);
-            
-        }
-        
-    }
-
-    // Awake Checks - Singleton setup
-    void Awake()
+    private void Awake()
     {
         //Check if instance already exists
         if (instance == null)
@@ -49,10 +32,32 @@ public class SoundManager : MonoBehaviour
 
         //If instance already exists and it's not this:
         else if (instance != this)
-            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a SoundManager.
+            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
             Destroy(gameObject);
     }
 
+    void Update()
+    {
+        if (!isBuySound)
+        {
+            Button[] buttons = FindObjectsOfType<Button>();
+
+            foreach (Button button in buttons)
+            {
+                //make sure selling won't play this sound
+
+                button.onClick.AddListener(PlayButtonSound);
+
+            }
+        }
+        else
+        {
+            foreach (Button button in shopButton)
+            {
+                button.onClick.AddListener(PurchaseSound);
+            }
+        }
+    }
 
     private void PlayButtonSound()
     {

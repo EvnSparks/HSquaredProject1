@@ -50,7 +50,7 @@ public class Shop_Navigator : MonoBehaviour
         ShopScenes[activeShop].SetActive(false);
         ShopScenes[4].SetActive(false);
         
-        if (GameManager.instance.tutorialActive)
+        if (GameManager.instance.firstTime)
         {
             if (tutorial.DialogueIndex == 10)
             {

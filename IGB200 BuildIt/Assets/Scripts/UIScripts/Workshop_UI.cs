@@ -223,7 +223,7 @@ public class Workshop_UI : MonoBehaviour
     {
         CanvasList[2].SetActive(true);
 
-        if (GameManager.instance.tutorialActive)
+        if (GameManager.instance.firstTime)
         {
             if (tutorial.DialogueIndex == 12)
             {
@@ -285,7 +285,7 @@ public class Workshop_UI : MonoBehaviour
         // Turn on the start button
         CanvasList[5].SetActive(true);
 
-        if (GameManager.instance.tutorialActive)
+        if (GameManager.instance.firstTime)
         {
             if (tutorial.DialogueIndex == 14)
             {
@@ -333,7 +333,7 @@ public class Workshop_UI : MonoBehaviour
         CanvasList[0].SetActive(false);
         CanvasList[2].SetActive(false);
 
-        if (GameManager.instance.tutorialActive)
+        if (GameManager.instance.firstTime)
         {
             if (tutorial.DialogueIndex == 3)
             {
@@ -349,7 +349,7 @@ public class Workshop_UI : MonoBehaviour
         CanvasList[1].SetActive(false);
         CanvasList[2].SetActive(false);
 
-        if (GameManager.instance.tutorialActive)
+        if (GameManager.instance.firstTime)
         {
             if (tutorial.DialogueIndex == 11)
             {

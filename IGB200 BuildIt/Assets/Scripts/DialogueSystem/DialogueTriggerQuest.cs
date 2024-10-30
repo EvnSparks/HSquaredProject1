@@ -67,10 +67,11 @@ public class DialogueTriggerQuest : MonoBehaviour
 
         if (GameManager.instance.activeShop == 3)
         {
-            if (GameManager.instance.questactive == 3 && GameManager.instance.money >= 1000)
+            if (GameManager.instance.questactive == 3 && GameManager.instance.money >= 500)
             {
                 GameManager.instance.quest3complete = true;
                 GameManager.instance.questactive += 1;
+                GameManager.instance.money -= 500;
                 DialogueManager.Instance.StartDialogue(completed_Dialogue, dialogueBoxWidth, dialogueBoxHeight);
             }
             else if (GameManager.instance.quest3complete && GameManager.instance.questactive != 3)
@@ -83,7 +84,7 @@ public class DialogueTriggerQuest : MonoBehaviour
             }
             else if (GameManager.instance.questactive == 3 && !GameManager.instance.quest3complete)
             {
-                quest_Dialogue.dialogueLines[1].line = "Current Progress: $" + GameManager.instance.money.ToString() + "/$1000";
+                quest_Dialogue.dialogueLines[1].line = "Current Progress: $" + GameManager.instance.money.ToString() + "/$500";
                 DialogueManager.Instance.StartDialogue(quest_Dialogue, dialogueBoxWidth, dialogueBoxHeight);
             }   
         }
