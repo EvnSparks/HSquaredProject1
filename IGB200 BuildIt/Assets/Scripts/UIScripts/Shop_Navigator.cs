@@ -65,7 +65,7 @@ public class Shop_Navigator : MonoBehaviour
         ShopScenes[0].SetActive(false);
         ShopScenes[activeShop].SetActive(true);
 
-        if (!GameManager.instance.tutorialActive)
+        if (!GameManager.instance.firstTime)
         {
             dialogueScript.ShopWelcome(activeShop);
         }
