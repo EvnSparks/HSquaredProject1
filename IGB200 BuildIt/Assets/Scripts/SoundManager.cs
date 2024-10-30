@@ -7,13 +7,15 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
+    public static SoundManager instance = null;
+
     public AudioSource audioSourceButton;
     
     public AudioClip buySound;
     public AudioClip buttonClickSound;
     public Button[] shopButton;
-    
-    void Awake()
+
+    private void Start()
     {
         DontDestroyOnLoad(gameObject);
     }
@@ -36,7 +38,22 @@ public class SoundManager : MonoBehaviour
         
     }
 
-    
+    // Awake Checks - Singleton setup
+    void Awake()
+    {
+        //Check if instance already exists
+        if (instance == null)
+
+            //if not, set instance to this
+            instance = this;
+
+        //If instance already exists and it's not this:
+        else if (instance != this)
+            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a SoundManager.
+            Destroy(gameObject);
+    }
+
+
     private void PlayButtonSound()
     {
         //just to make sure sound doesn't overlap when we click too fast.
