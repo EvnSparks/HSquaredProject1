@@ -5,6 +5,9 @@ using static UnityEngine.GraphicsBuffer;
 
 public class SawMovement : MonoBehaviour
 {
+    public AudioClip sawSound;
+    public AudioSource soundPlayer;
+    public float soundDuration = 10;
     public GameObject slicer;
     public float baseSpeed = 50f;
     public float cutSpeed = 5f;
@@ -16,6 +19,8 @@ public class SawMovement : MonoBehaviour
     PlaneSlice planeSlice;
     public List<MeshRenderer> meshRenderer;
     public Transform sawMotion;
+
+    private float soundStartTime;
 
     void Start()
     {
@@ -55,9 +60,16 @@ public class SawMovement : MonoBehaviour
                 sawMotion.transform.position += (transform.position - Camera.main.transform.position).normalized * sawAnimationStrength * Mathf.Sin(Time.time * sawAnimationSpeed) * Time.fixedDeltaTime;
                 Vector3 lookPos = hitInfo.point - sawMotion.transform.position;
                 Quaternion rotation = Quaternion.LookRotation(-lookPos, transform.forward);
-                sawMotion.transform.localRotation = Quaternion.Euler(0, 180, Mathf.RoundToInt(rotation.eulerAngles.z/45)*45);
+                sawMotion.transform.localRotation = Quaternion.Euler(0, 180, Mathf.RoundToInt(rotation.eulerAngles.z / 45) * 45);
+                if (Time.time > soundStartTime + soundDuration)
+                {
+                    soundPlayer.Stop();
+                    soundPlayer.PlayOneShot(sawSound);
+                    soundStartTime = Time.time;
+                }
             }
             else
+                soundPlayer.Stop();
                 transform.position += (hitInfo.point - transform.position) * baseSpeed * Time.fixedDeltaTime;
         }
     }
