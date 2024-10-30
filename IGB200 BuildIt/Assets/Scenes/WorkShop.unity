@@ -730,6 +730,7 @@ MonoBehaviour:
   playerName: 
   firstTime: 0
   tutorialActive: 0
+  secondTutorialStage: 0
   quest1complete: 0
   quest2complete: 0
   quest3complete: 0
@@ -6682,7 +6683,7 @@ Transform:
   m_GameObject: {fileID: 506768867}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 301, y: 30.2, z: 239.7}
+  m_LocalPosition: {x: 301, y: 30.2, z: 286.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
