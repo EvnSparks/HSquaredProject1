@@ -17,15 +17,6 @@ public class SellButton : MonoBehaviour
     {
         sellObject.Sell();
         audioSourceButton.PlayOneShot(sellSound);
-        //sellButton.onClick.AddListener(PlayButtonSound);
     }
 
-    private void PlayButtonSound()
-    {
-        //just to make sure sound doesn't overlap when we click too fast.
-        if (!audioSourceButton.isPlaying)
-        {
-            audioSourceButton.PlayOneShot(sellSound);
-        }
-    }
 }
