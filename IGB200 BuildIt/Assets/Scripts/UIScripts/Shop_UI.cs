@@ -28,7 +28,7 @@ public class Shop_UI : MonoBehaviour
     public void SellTalk()
     {
         Sell.TriggerDialogue();
-        
+
         // Set active inventory menu
         ShopUI[1].SetActive(true);
     }
