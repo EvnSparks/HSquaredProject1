@@ -2468,8 +2468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 620, y: -381.33002}
-  m_SizeDelta: {x: 600, y: 117.11}
+  m_AnchoredPosition: {x: 620, y: -849.70996}
+  m_SizeDelta: {x: 600, y: 175.65}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &240570521
 MonoBehaviour:
@@ -2505,7 +2505,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3. Get your apprenticeship from Materials Galore!.
+  m_text: 3. Make $1000 and get your apprenticeship from Materials Galore!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20bd85fafdd389242b4d26d53d2dd848, type: 2}
   m_sharedMaterial: {fileID: -6957873131914976316, guid: 20bd85fafdd389242b4d26d53d2dd848,
@@ -2569,7 +2569,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 61.917053, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -16163,8 +16163,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 620, y: -127.11}
-  m_SizeDelta: {x: 600, y: 117.11}
+  m_AnchoredPosition: {x: 620, y: -302.76}
+  m_SizeDelta: {x: 600, y: 292.76}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1266072261
 MonoBehaviour:
@@ -16200,7 +16200,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1. Make 3 planks 5/5 Quality.
+  m_text: 1. Craft 3 planks with an Accuracy Score of 5/5 and speak with Ella (Master
+    Craftsmen).
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20bd85fafdd389242b4d26d53d2dd848, type: 2}
   m_sharedMaterial: {fileID: -6957873131914976316, guid: 20bd85fafdd389242b4d26d53d2dd848,
@@ -16264,7 +16265,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 46.77063, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20276,7 +20277,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 535843900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.31161988}
+  m_AnchorMin: {x: 0, y: 0.5880947}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -22200,7 +22201,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 583, y: 508.44}
+  m_SizeDelta: {x: 620, y: 849.70996}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1663656762
 MonoBehaviour:
@@ -22917,7 +22918,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1523653625}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.6883801
+  m_Size: 0.41190526
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -27628,8 +27629,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 620, y: -254.22}
-  m_SizeDelta: {x: 600, y: 117.11}
+  m_AnchoredPosition: {x: 620, y: -664.06}
+  m_SizeDelta: {x: 600, y: 351.3}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &2070063074
 MonoBehaviour:
@@ -27651,7 +27652,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2. Make 3 Signs 3/5 Quality.
+  m_text: 2. Craft 3 signs with an Accuracy Score of 3/5 with Medium Quality Materials.
+    Speak to Reggie (Speedy Saw Works).
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20bd85fafdd389242b4d26d53d2dd848, type: 2}
   m_sharedMaterial: {fileID: -6957873131914976316, guid: 20bd85fafdd389242b4d26d53d2dd848,
@@ -27715,7 +27717,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 49.58783, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

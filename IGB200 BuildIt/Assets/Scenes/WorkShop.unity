@@ -12927,7 +12927,17 @@ MonoBehaviour:
     dialogueLines:
     - line: Hi my name is Vince, you won't have our range beat from the cheapest
         to the best quality materials one could ask for.
-    - line: If you aren't convinced why don't you try using my materials?
+    - line: I appreciate that you're trying to make your way into the industry. I
+        am happy to share some tips.
+    - line: It's good to keep a good attitude, take notice of the direction of the
+        industry and any incoming and emerging trends.
+    - line: "Another big part is networking with people from the industry, it's not
+        necessarily what you know but who you know. \r"
+    - line: "For me it was getting into contact with local producers like yourself
+        and finding a gap in the market, realising that these producers needed produce
+        to make product.\r"
+    - line: I started the local supply store to ensure that the local producers and
+        emerging ones like yourself.
   dialogueManagerScript: {fileID: 629665931}
   dialogueBoxWidth: 1000
   dialogueBoxHeight: 300
@@ -20183,19 +20193,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pending_Quest:
     dialogueLines:
-    - line: Sorry lad, you're trying to be a little too efficient, I don't have a
-        special quest at the current moment. Remember efficiency is great but safety
-        is of greater importance.
+    - line: I'm not quite ready to tell you about the quest I want you to complete.
+        Finish another quest before learning about mine.
   quest_Dialogue:
     dialogueLines:
-    - line: Ooo I have a nice quest for yah, if you could make 3 signs of 3/5 star
-        quality with medium quality material. I'll give you a new title and table
-        blueprint.
+    - line: Ok, I'm ready for you to try and complete my special quest. Ella Carter
+        says you are a great crafter and gave me a good reference. I'm looking forward
+        to working with you. Please make me 3 signs of medium materials, 3/5 accuracy
+        quality. The reward will be worth it for you!
     - line: 'Progress: 0/3'
   completed_Dialogue:
     dialogueLines:
-    - line: Congrats here's that table blueprint. I'll also give you the title Carpenter's
-        Helper. Best of luck in your journey!
+    - line: "Thank you so much for completing my special quest, here is a special
+        blueprint for crafting a table and a new title Carpenter\u2019s Helper. Don't
+        forget to come back and continue selling your products to me. I would love
+        to see some of the tables you make with this blueprint."
   finished_Dialogue:
     dialogueLines:
     - line: Hope you're finding the table a good experience and challenge. Best of
@@ -20258,21 +20270,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pending_Quest:
     dialogueLines:
-    - line: haha, I need you to have a better title before I offer the final quest.
+    - line: I don't think you're ready to start my task. Come back after unlocking
+        the table blueprint, I think you will be ready by then.
   quest_Dialogue:
     dialogueLines:
-    - line: Well looks like you have been training diligently, how about I offer
-        you a start. An apprenticeship equipment and start. You will need $1000 to
-        get this.
-    - line: 'Progress: $0/$500'
+    - line: Well done on getting to this stage. I have a special task for you and
+        it will help you evolve your skills. Make $1000 from selling your crafted
+        products and come back to see me.
+    - line: 'Progress: $0/$1000'
   completed_Dialogue:
     dialogueLines:
-    - line: Congratulations on getting an apprenticeship. This is the first step
-        to becoming a great carpenter! I wish you the best of luck!
+    - line: I can't believe you completed the task!! $1000 earned is a great achievement.
+        I think it's time for you to get some professional training. It will be great
+        to see you getting your apprenticeship and working with me in the future!
   finished_Dialogue:
     dialogueLines:
     - line: Congratulations on getting an apprenticeship. This is the first step
-        to becoming a great carpenter! I wish you the best of luck!
+        to becoming a great carpenter! I hope we get to work together sometime!
   dialogueManagerScript: {fileID: 629665931}
   dialogueBoxWidth: 1000
   dialogueBoxHeight: 300
@@ -34290,7 +34304,10 @@ MonoBehaviour:
     dialogueLines:
     - line: Hi yah lad, the names Reggie, I like to buy products that are made efficiently
         and to a minimum standard.
-    - line: Now let's keep being efficient, was there anything you needed?
+    - line: 'I know your new to this but you are already making great progress. '
+    - line: I thought I might be good to tell you a little about my career.
+    - line: I started as a tradie and worked my way up the ladder. Once I had established
+        myself, I decided I would be happy with making a small store for myself.
   dialogueManagerScript: {fileID: 629665931}
   dialogueBoxWidth: 1000
   dialogueBoxHeight: 300
