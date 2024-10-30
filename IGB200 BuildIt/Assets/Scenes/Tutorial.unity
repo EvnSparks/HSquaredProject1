@@ -5752,7 +5752,7 @@ Transform:
   m_GameObject: {fileID: 506768867}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 301, y: 30.2, z: 239.7}
+  m_LocalPosition: {x: 301, y: 30.200012, z: 286.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22256,12 +22256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8660c4fff79804eabf792ae026c6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taskList:
-  - {fileID: 1266072262}
-  - {fileID: 2070063074}
-  - {fileID: 240570522}
-  - {fileID: 0}
-  planksMade: 0
 --- !u!4 &1674491915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4bcc84ac8d018e04ca2cc0801c5cb4f3,
