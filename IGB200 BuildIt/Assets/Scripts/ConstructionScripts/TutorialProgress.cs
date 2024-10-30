@@ -23,7 +23,7 @@ public class TutorialProgress : MonoBehaviour
         {
             progress = 7;
         }
-        if (GameManager.instance.projectType == InventoryItem.ProjectType.Table)
+        else if (GameManager.instance.projectType == InventoryItem.ProjectType.Table || (GameManager.instance.projectType == InventoryItem.ProjectType.Plank && GameManager.instance.secondTutorialStage))
         {
             progress = 12;
         }
@@ -86,7 +86,7 @@ public class TutorialProgress : MonoBehaviour
                         ExitDialogue();
                         currentTutorialText = 6;
                     }
-                    GameManager.instance.tutorialActive = false;
+                    GameManager.instance.secondTutorialStage = true;
                     GameManager.instance.firstTime = false;
                     break;
                 case 7:
@@ -126,8 +126,15 @@ public class TutorialProgress : MonoBehaviour
                     break;
                 case 11:
                     StartTutorialText(11);
+
                     if (Input.GetKeyDown(KeyCode.Mouse0) && TutorialEnqueue.Instance.textFinished)
+                    {
                         progress = 12;
+                        animations[0].SetActive(false);
+                        animations[1].SetActive(false);
+                        ExitDialogue();
+                        GameManager.instance.tutorialActive = false;
+                    }
                     break;
                 default:
                     animations[0].SetActive(false);

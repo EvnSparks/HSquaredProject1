@@ -156,15 +156,6 @@ public class Workshop_UI : MonoBehaviour
         // Set the projecttype
         GameManager.instance.projectType = selectedProject;
 
-        // Checks if the tutorial is active
-        if (GameManager.instance.tutorialActive)
-        {
-            if (tutorial.DialogueIndex == 16)
-            {
-                //tutorial.isTutorialActive = false;
-            }
-        }
-
         // Check what material is selected and the blueprint, throw an error if the player does not have enough materials to craft...
         if (selectedProject == InventoryItem.ProjectType.Plank)
         {

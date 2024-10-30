@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     //Game State Tracker
     public bool firstTime = true;
     public bool tutorialActive = false;
+    public bool secondTutorialStage = false;
 
     //Quest Tracking
     public bool quest1complete = false;
